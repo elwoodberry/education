@@ -1,9 +1,9 @@
-# education
+# Education
 All the things I teach myself.
 
 
-JavaScript
-  Servers
-    Node
-  HTML Template Engines
-    Jade
+1. JavaScript
+  * Servers
+    * Node
+  * **HTML Template Engines**
+    * [Jade](http://www.link.com)
