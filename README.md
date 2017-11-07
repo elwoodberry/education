@@ -7,7 +7,9 @@ All the things I teach myself.
       * Node
     * **HTML Template Engines**
       * [Jade](dir/javascript/jade)
-        * [Jade](dir/javascript/jade/jade-pug)
+        * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
     * **eCommerce Libraries**
       * Stripe.JS
         * Simple eBook
+    * **Frameworks**
+      * [Angular](dir/javascript/angular)
