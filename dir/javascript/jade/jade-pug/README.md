@@ -1,15 +1,23 @@
 # Jade Pug Tutorial
-**Author**: [Derek Banas]()
-**URL**: [](https://youtu.be/l5AXcXAP4r8)
+**Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
+**URL**: [Video](https://youtu.be/l5AXcXAP4r8)  
 
-### GETTING STARTED (00:32)
+## Table Of Contents
+1. [Get Started](#getting-started)
+2. [DOCTYPE](#doctype)
+3. [HTML](#html)
+
+
+
+#### GETTING STARTED
+(00:32)
 1. [Node.js](http://www.linkgoeshere.com)
 2. Install [Jade](http://www.linkgoeshere.com) Globally
 ```
 $ npm install jade -g
 ```
 
-### DOCTYPE (01:38)
+#### DOCTYPE (01:38)
 
 1. To render jade files
 ```
@@ -42,14 +50,14 @@ $ doctype basic
 $ doctype mobile
 ```
 
-### HTML (03:00)
+#### HTML (03:00)
 Include 'html'
 ```
 doctype
 html
 ```
 
-### HEAD (03:10)
+#### HEAD (03:10)
 
 Create a head section
 ```
@@ -65,7 +73,7 @@ html
   include ./head.jade
 ```
 
-### BODY (03:38)
+#### BODY (03:38)
 Include the body
 ```
 doctype
@@ -74,13 +82,13 @@ html
   body
 ```
 
-### GENERATE JAVASCRIPT FILE (04:45)
+#### GENERATE JAVASCRIPT FILE (04:45)
 Generate JavaScript file.
 ```
 $ jade --client --no-debug file.jade
 ```
 
-### PARAGRAPH (05:33)
+#### PARAGRAPH (05:33)
 A paragraph followed by a space and then the text inside of the paragraph.
 ```
 p(id="one") First Paragraph - Quisque et ....
@@ -110,7 +118,7 @@ p(id="four",
 ```
 
 
-### DIV's (07:53)
+#### DIV's (07:53)
 If nothing is declared, 'div' is used by default  
 
 DIV with three classes and some style attributes and using DOT
@@ -124,7 +132,7 @@ DIV with an ID and a class.
 #idOne.with-special-class The Second DIV - Quisque et felis tort....
 ```
 
-### LISTS (08:39)
+#### LISTS (08:39)
 ```
 ul
   li#first-list-item
@@ -142,7 +150,7 @@ ul
   li#first-list-item: a(href='#') Link One
 ```
 
-### INTERPOLATION (09:56)
+#### INTERPOLATION (09:56)
 
 **Comments**
 Can't see...
@@ -189,4 +197,4 @@ ul
 ```
 
 
-### LOGIC OPERATORS (14:49)
+#### LOGIC OPERATORS (14:49)
