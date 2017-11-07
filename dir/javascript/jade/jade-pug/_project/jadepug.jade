@@ -101,6 +101,12 @@ html
       //- OR
       p !{someInfo}
 
+
+
+
+
+
+
       //- Using the '- '
       - date = new Date()
       - hour = date.getHours()
@@ -130,3 +136,80 @@ html
       //- Ternary operator
       - dayTime = ((hour >= 6) && (hour > 17) ? 'Day Time 2' : 'Night Time 2')
       h3 #{dayTime}
+
+      //- CASE Operator
+      - name = "Sue"
+
+      case name
+        when "Sally"
+          h3 Hi Sally
+        when "Sue"
+          h3 Hi Sue
+        default
+          h3 Hi You!
+
+
+
+
+
+
+
+      //- Run JavaScript
+      script.
+        console.log("Hi Sally")
+
+      //- Using The '- '
+      - qbs = ['Palmer', 'Brees', 'Rivers', 'Brady']
+
+      ul
+        - for(i = 0; i < qbs.length; i++){
+          li= qbs[i]
+        - }
+
+      //- Using indentation
+      ul
+        each qb in qbs
+          li= qb
+
+      //- WHILE loops
+      - i = 0
+
+      ul
+        while i <= 20
+          li= i
+
+          - i++;
+
+
+
+
+
+
+      //- MIXINS
+
+      //- With parameters
+      mixin nflPlayer(name, pos, team)
+        li #{name} is the #{pos} for the #{team}
+
+      ul#nflPlayers
+        +nflPlayer("Tom Brady", "Quarterback", "Patriots")
+        +nflPlayer("Payton Manning", "Quarterback", "Broncos")
+
+      // - Without parameters
+      mixin copyr
+        | &#169;
+
+      p
+        +copyr 
+        | 2016
+
+
+      //- Varible number of arguments
+      mixin makeList()
+        ul
+          - args = Array.prototype.slice.call(arguments);
+
+          for item in args
+            li= item
+
+      +makeList('Dog', 'Cat', 'Snake')

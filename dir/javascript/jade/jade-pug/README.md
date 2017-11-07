@@ -5,16 +5,19 @@
 
 ## Table Of Contents
 1. [Get Started](#getting-started) (00:32)
-2. [DOCTYPE](#doctype) (01:38)
-3. [HTML](#html) (03:00)
-4. [HEAD](#head) (03:10)
-4. [BODY](#body) (03:38)
-4. [Generate JavaScript File](#generate-javascript-file) (04:45)
-4. [PARAGRAPH](#paragraph) (05:33)
-4. [DIV's](#divs) (07:53)
-4. [LISTS](#lists) (08:39)
-4. [Interpolation](#interpolation) (09:56)
-4. [Logic Operators](#logic-operators) (14:49)
+1. [DOCTYPE](#doctype) (01:38)
+1. [HTML](#html) (03:00)
+1. [HEAD](#head) (03:10)
+1. [BODY](#body) (03:38)
+1. [Generate JavaScript File](#generate-javascript-file) (04:45)
+1. [PARAGRAPH](#paragraph) (05:33)
+1. [DIV's](#divs) (07:53)
+1. [LISTS](#lists) (08:39)
+1. [Interpolation](#interpolation) (09:56)
+1. [Logic Operators](#logic-operators) (14:49)
+1. [Looping](#looping) (19:36)
+1. [Mixins](#mixins) (21:15)
+1. [Extends](#extends) (23:43)
 ## +
 
 ### GETTING STARTED
@@ -280,3 +283,91 @@ Ternary operator
 - dayTime = ((hour >= 6) && (hour > 17) ? 'Day Time 2' : 'Night Time 2')
 h3 #{dayTime}
 ```
+
+CASE Conditional Operator
+```
+- name = "Sue"
+
+case name
+  when "Sally"
+    h3 Hi Sally
+  when "Sue"
+    h3 Hi Sue
+  default
+    h3 Hi You!
+```
+
+Run JavaScript
+```
+script.
+  console.log("Hi Sally")
+```
+
+### LOOPING
+
+Using The '- '
+```
+- qbs = ['Palmer', 'Brees', 'Rivers', 'Brady']
+
+ul
+  - for(i = 0; i < qbs.length; i++){
+    li= qbs[i]
+  - }
+```
+
+Using indentation
+```
+ul
+  each qb in qbs
+    li= qb
+```
+
+WHILE loops
+```
+- i = 0
+
+ul
+  while i <= 20
+    li= i
+
+    - i++;
+```
+
+### MIXINS
+Re-useable chunks of code.  
+
+Resuable chunk for displaying object data with parameters
+```
+mixin nflPlayer(name, pos, team)
+  li #{name} is the #{pos} for the #{team}
+
+ul#nflPlayers
+  +nflPlayer("Tom Brady", "Quarterback", "Patriots")
+  +nflPlayer("Payton Manning", "Quarterback", "Broncos")
+```
+
+Without parameters
+```
+mixin copyr
+  | &#169;
+
+p
+  +copyr
+  |  2016
+```
+
+Varible number of arguments
+```
+mixin makeList()
+  ul
+    - args = Array.prototype.slice.call(arguments);
+
+    for item in args
+      li= item
+
++makeList('Dog', 'Cat', 'Snake')
+```
+
+
+
+### EXTENDS
