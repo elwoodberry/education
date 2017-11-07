@@ -1,7 +1,8 @@
 # Jade Pug Tutorial
 **Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
 **URL**: [Video](https://youtu.be/l5AXcXAP4r8)  
-**Duration**: 26:14
+**Duration**: 26:14  
+**Donate to Author**: [Patreon](https://www.patreon.com/derekbanas)  
 
 ## Table Of Contents
 1. [Get Started](#getting-started) (00:32)
