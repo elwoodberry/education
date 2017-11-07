@@ -1,31 +1,36 @@
 # Jade Pug Tutorial
 **Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
-**URL**: [Video](https://youtu.be/l5AXcXAP4r8)  
+**URL**: [Video](https://youtu.be/l5AXcXAP4r8)
+**Duration**: 26:14
 
 ## Table Of Contents
-1. [Get Started](#getting-started)
-2. [DOCTYPE](#doctype)
-3. [HTML](#html)
+1. [Get Started](#getting-started) (00:32)
+2. [DOCTYPE](#doctype) (01:38)
+3. [HTML](#html) (03:00)
+4. [HEAD](#head) (03:10)
+4. [BODY](#body) (03:38)
+4. [Generate JavaScript File](#generate-javascript-file) (04:45)
+4. [PARAGRAPH](#paragraph) (05:33)
+4. [DIV's](#divs) (07:53)
+4. [LISTS](#lists) (08:39)
+4. [Interpolation](#interpolation) (09:56)
+4. [Logic Operators](#logic-operators) (14:49)
+##.
 
-
-
-#### GETTING STARTED
-(00:32)
+### GETTING STARTED
 1. [Node.js](http://www.linkgoeshere.com)
 2. Install [Jade](http://www.linkgoeshere.com) Globally
 ```
 $ npm install jade -g
 ```
-
-#### DOCTYPE
-(01:38)
-
+### DOCTYPE
 1. To render jade files
 ```
 $ jade file.jade
 ```
 
 Learn More About [Doctypes In JADE](http://jade-lang.com/reference/doctype)  
+
 **XML**
 ```
 $ doctype xml
@@ -51,17 +56,14 @@ $ doctype basic
 $ doctype mobile
 ```
 
-#### HTML
-(03:00)  
-
+### HTML
 Include 'html'
 ```
 doctype
 html
 ```
 
-#### HEAD (03:10)
-
+### HEAD
 Create a head section
 ```
 head
@@ -76,7 +78,7 @@ html
   include ./head.jade
 ```
 
-#### BODY (03:38)
+### BODY
 Include the body
 ```
 doctype
@@ -84,14 +86,13 @@ html
   include ./head.jade
   body
 ```
-
-#### GENERATE JAVASCRIPT FILE (04:45)
+### GENERATE JAVASCRIPT FILE
 Generate JavaScript file.
 ```
 $ jade --client --no-debug file.jade
 ```
 
-#### PARAGRAPH (05:33)
+### PARAGRAPH
 A paragraph followed by a space and then the text inside of the paragraph.
 ```
 p(id="one") First Paragraph - Quisque et ....
@@ -121,7 +122,7 @@ p(id="four",
 ```
 
 
-#### DIV's (07:53)
+### DIV's
 If nothing is declared, 'div' is used by default  
 
 DIV with three classes and some style attributes and using DOT
@@ -135,7 +136,7 @@ DIV with an ID and a class.
 #idOne.with-special-class The Second DIV - Quisque et felis tort....
 ```
 
-#### LISTS (08:39)
+### LISTS
 ```
 ul
   li#first-list-item
@@ -153,8 +154,7 @@ ul
   li#first-list-item: a(href='#') Link One
 ```
 
-#### INTERPOLATION (09:56)
-
+### INTERPOLATION
 **Comments**
 Can't see...
 ```
@@ -199,5 +199,70 @@ ul
  li#first-list-item: a(href='#') #{pairs[3]}
 ```
 
+Block Quotes
+```
+- bq = "block Quote"
+#{bq} is a bad idea because no one will know what it means.
+```
 
-#### LOGIC OPERATORS (14:49)
+Display Data From A Variable
+```
+- contentData = "Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt"
+
+div(class="card")= contentData
+```
+
+Variable stores the values for the attributes of an input.
+```
+- firstNameValues = {"type": "text", "name":"FNAME"}
+div(class="form-group")
+  label First Name
+  input(class="form-control" type=firstNameValues.type, name=firstNameValues.name)
+```
+
+Tags are encoded for security reasons
+```
+- someInfo = "<i>Some Information As Is</i>"
+```
+
+Encoding ON
+```
+p= someInfo
+```
+
+Encoding OFF
+```
+p!= someInfo
+```
+
+OR
+```
+p !{someInfo}
+```
+
+### LOGIC OPERATORS
+
+
+Using the '- '
+```
+- date = new Date()
+- hour = date.getHours()
+
+- if((hour >= 6) && (hour <= 17)){
+  h3 Day Time
+- } else {
+  h3 Night Time
+- }
+```
+
+Using indentation
+```
+- age = 18
+
+if((age >= 16) && (age < 18))
+  h3 You can drive!
+else if age >= 18
+  h3 You can drive and vote
+else
+  h3 You can wait until you are 16.
+```

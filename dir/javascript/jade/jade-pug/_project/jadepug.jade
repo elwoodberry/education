@@ -100,3 +100,23 @@ html
 
       //- OR
       p !{someInfo}
+
+      //- Using the '- '
+      - date = new Date()
+      - hour = date.getHours()
+
+      - if((hour >= 6) && (hour <= 17)){
+        h3 Day Time
+      - } else {
+        h3 Night Time
+      - }
+
+      //- Using indentation
+      - age = 18
+
+      if((age >= 16) && (age < 18))
+        h3 You can drive!
+      else if age >= 18
+        h3 You can drive and vote
+      else
+        h3 You can wait until you are 16.
