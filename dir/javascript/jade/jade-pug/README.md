@@ -1,6 +1,6 @@
 # Jade Pug Tutorial
 **Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
-**URL**: [Video](https://youtu.be/l5AXcXAP4r8)
+**URL**: [Video](https://youtu.be/l5AXcXAP4r8)  
 **Duration**: 26:14
 
 ## Table Of Contents
@@ -15,7 +15,7 @@
 4. [LISTS](#lists) (08:39)
 4. [Interpolation](#interpolation) (09:56)
 4. [Logic Operators](#logic-operators) (14:49)
-##.
+## +
 
 ### GETTING STARTED
 1. [Node.js](http://www.linkgoeshere.com)
