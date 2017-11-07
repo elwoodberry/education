@@ -120,3 +120,13 @@ html
         h3 You can drive and vote
       else
         h3 You can wait until you are 16.
+
+      //- Using LESS Operator
+      unless age >= 16
+        h3 You'll drive at 16
+      else
+        h3 You can drive.
+
+      //- Ternary operator
+      - dayTime = ((hour >= 6) && (hour > 17) ? 'Day Time 2' : 'Night Time 2')
+      h3 #{dayTime}
