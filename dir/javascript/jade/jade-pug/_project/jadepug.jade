@@ -1,0 +1,102 @@
+doctype transitional
+html
+  include ./head.jade
+  body
+    div(class="container")
+
+      p(id="one") First Paragraph - Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt.
+
+      p(id="two")
+        | Second Paragraph - Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt.
+        br
+        br
+        | Third Paragraph - Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt.
+        br
+
+      p(id="three").
+        <strong>Fourth Paragraph</strong> - Quisque et felis tortor. <i>Cras</i> id tortor at sapien varius mattis. Sed et dictum enim. Donec <a href="#">suscipit</a> arcu id erat aliquet tincidunt.
+
+      p(id="four",
+        class="special-class").
+          <strong>Fifth Paragraph</strong> - Quisque et felis tortor. <i>Cras</i> id tortor at sapien varius mattis. Sed et dictum enim. Donec <a href="#">suscipit</a> arcu id erat aliquet tincidunt.
+
+      .card.classTwo.classThree(style="padding:10px; margin-bottom: 15px;").
+        The First DIV - Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt.
+        <br>
+        <br>
+
+      #idOne.with-special-class The Second DIV - Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt.
+        br
+        br
+
+      h4 List One
+      ul
+        li#first-list-item
+          a(href='#') Link One
+        li#first-list-item
+          a(href='#') Link One
+        li#first-list-item
+          a(href='#') Link One
+
+      h4 List Two
+      ul
+        li#first-list-item: a(href='#') Link One
+        li#first-list-item: a(href='#') Link One
+        li#first-list-item: a(href='#') Link One
+
+      // Comment Can't ...
+
+
+      //- JavaScript Form
+      //- What I was thinking when I wrote this crap.
+
+      //- Define A Variable
+      - myName = "Whatever"
+
+      //- Display Variable
+      p Issa
+        span(class="badge badge-primary") #{myName}
+
+      //- Math
+      p 10000 x 56 = #{10000 * 56}
+
+      //- Set variable and use it as a attribute value
+      - website = "http://www.google.com"
+      a(href="#{website}" class="btn btn-secondary" target="_blank") Launch This Website!
+
+      //- A variable equals an array. Display the array
+      - pairs = ['EURUSD', 'USDCAN', 'EURJPY', 'USDJPY', 'USDGBP']
+      h4 Major Pairs
+      ul
+       li#first-list-item: a(href='#') #{pairs[0]}
+       li#first-list-item: a(href='#') #{pairs[2]}
+       li#first-list-item: a(href='#') #{pairs[3]}
+
+      //- Block Quotes
+      - bq = "block Quote"
+      #{bq} is a bad idea because no one will know what it means.
+
+      //- Display Data From A Variable
+      - contentData = "Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt"
+
+      div(class="card")= contentData
+
+
+      //- Variable stores the values for the attributes of an input.
+      - firstNameValues = {"type": "text", "name":"FNAME"}
+      div(class="form-group")
+        label First Name
+        input(class="form-control" type=firstNameValues.type, name=firstNameValues.name)
+
+
+      //- Tags are encoded for security reasons
+      - someInfo = "<i>Some Information As Is</i>"
+
+      //- Encoding ON
+      p= someInfo
+
+      //- Encoding OFF
+      p!= someInfo
+
+      //- OR
+      p !{someInfo}
