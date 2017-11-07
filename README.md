@@ -3,8 +3,6 @@ All the things I teach myself.
 
 
 1. JavaScript
-    * Servers
-      * Node
     * **HTML Template Engines**
       * [Jade](dir/javascript/jade)
         * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
@@ -13,3 +11,6 @@ All the things I teach myself.
         * Simple eBook
     * **Frameworks**
       * [Angular](dir/javascript/angular)
+        * [Angular.io](dir/javascript/angular/angular-io) by Angular 
+    * **Servers**
+      * Node
