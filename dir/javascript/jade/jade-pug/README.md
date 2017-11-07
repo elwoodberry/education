@@ -17,7 +17,8 @@
 $ npm install jade -g
 ```
 
-#### DOCTYPE (01:38)
+#### DOCTYPE
+(01:38)
 
 1. To render jade files
 ```
@@ -50,7 +51,9 @@ $ doctype basic
 $ doctype mobile
 ```
 
-#### HTML (03:00)
+#### HTML
+(03:00)  
+
 Include 'html'
 ```
 doctype
