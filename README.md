@@ -6,4 +6,8 @@ All the things I teach myself.
     * Servers
       * Node
     * **HTML Template Engines**
-      * [Jade](http://www.link.com)
+      * Jade
+        * [Jade](dir/javascript/jade/jade-pug/README.md)
+    * **eCommerce Libraries**
+      * Stripe.JS
+        * Simple eBook
