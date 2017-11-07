@@ -200,7 +200,7 @@ html
         | &#169;
 
       p
-        +copyr 
+        +copyr
         | 2016
 
 
@@ -213,3 +213,20 @@ html
             li= item
 
       +makeList('Dog', 'Cat', 'Snake')
+
+
+      //- Extending A Template
+      extends extend-tmpl
+      block header
+        h3 The Title
+      block content
+        p
+          | Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt
+
+      block append content2
+        p
+          | Appended DATA
+
+      block prepend content3
+        p
+          | I Come First

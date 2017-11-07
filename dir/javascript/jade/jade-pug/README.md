@@ -371,3 +371,5 @@ mixin makeList()
 
 
 ### EXTENDS
+Allow use to place blocks in a template
+Blocks are containers that can be replaced appended or prepended.
