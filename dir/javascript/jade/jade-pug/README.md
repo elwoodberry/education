@@ -373,3 +373,42 @@ mixin makeList()
 ### EXTENDS
 Allow use to place blocks in a template
 Blocks are containers that can be replaced appended or prepended.
+
+Create a new file 'extend-tmpl.jade'
+```
+doctype transitional
+html
+  include ./head.jade
+  body
+    div(class="container")
+      block header
+        h3 Default header
+      block content
+        p Default Content
+      block content2
+        p Default Content 2
+      block content3
+        p Default Content 3
+      block content4
+        p Default Content 4
+      block footer
+        p Default Footer
+```
+
+In the main file...
+```
+extends extend-tmpl
+block header
+  h3 The Title
+block content
+  p
+    | Quisque et felis tortor. Cras id tortor at sapien varius mattis. Sed et dictum enim. Donec suscipit arcu id erat aliquet tincidunt
+
+block append content2
+  p
+    | Appended DATA
+
+block prepend content3
+  p
+    | I Come First
+```
