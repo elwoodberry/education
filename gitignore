@@ -1,2 +1,5 @@
 # EDUCATION REPO
-# 
+#
+
+# All Apple Generated Files
+*.DS_Store
