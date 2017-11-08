@@ -9,7 +9,9 @@
 ## In My Own Words
 
 ## Tutorials
-1. [Express v4.16.1](express_v4-16-1)
+1. [Express v4.16.1](express_v4-16-1) by Express.js
+1. [Express Tutorial](express-tutorial) by Derek Banas
+1. [ExpressJS Crash Course](expressjs-crash-course) by Traversy Media
 
 ## References
 1. [Express](https://expressjs.com/)

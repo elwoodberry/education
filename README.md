@@ -18,6 +18,9 @@ All the things I teach myself.
       * [Angular](dir/javascript/angular)
         * [Angular.io](dir/javascript/angular/angular-io) by Angular
       * [Express](dir/javascript/express)
+        * [Express v4.16.1](dir/javascript/express/express_v4-16-1) by Express
+        * [Express Tutorial](dir/javascript/express/express-tutorial) by Derek Banas
+        * [ExpressJS Crash Course](dir/javascript/express/expressjs-crash-course) by Traversy Media
       * [Ionic](dir/javascript/ionic)
 
     * **Servers**
