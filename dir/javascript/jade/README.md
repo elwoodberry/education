@@ -11,4 +11,4 @@ https://en.wikipedia.org/wiki/Comparison_of_web_template_engines
 ### Learning Tasks
 Questions, gray areas and/or any voids I want to address
 
-1. How do you want the jade file with a task runner?
+1. How do you watch the jade file with a task runner?

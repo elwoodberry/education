@@ -3,7 +3,7 @@ All the things I teach myself.
 
 
 1. JavaScript
-    * [Authentication](dir/javascript/express)
+    * **Authentication**
       * [Auth0](dir/javascript/express)
 
     * **HTML Template Engines**
