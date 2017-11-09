@@ -6,9 +6,10 @@ An overview of Express JS
 **Donate to Author**: [Patreon](https://www.patreon.com/derekbanas)  
 
 ## Table Of Contents
-1. [Installation (Windows)](#installation-windows) (00:00)
-1. [Installation (Mac)](#installation-mac) (05:37)
+1. [Installation (Windows/Mac)](#installation-windows) (00:00)
+1. [Create Template Files](#create-template-files)
 1. [Build Entry Point](#build-entry-point) (10:05)
+
 ## +
 
 ### Stack
@@ -17,7 +18,7 @@ An overview of Express JS
 1. [Express](https://expressjs.com/)
 1. [Bootstrap](http://getbootstrap.com/)
 
-**Modification Challenge**
+**Modification Challenge**  
 Update the project application for this tutorial.
 1. [ECMA 6](https://en.wikipedia.org/wiki/ECMAScript)
 1. [Jade](http://jade-lang.com/)
@@ -75,9 +76,6 @@ Run App
 $ node app.js
 ```
 
-
-### INSTALLATION (Mac)
-
 Folder Structure
 ```
 app.js  
@@ -96,12 +94,7 @@ package.json
 ```
 
 
-### BUILD ENTRY POINT
-
-1. Disable header from containing information about the server
-    ```
-    app.disable('x-powered-by');
-    ```
+### CREATE TEMPLATE FILES
 1. Create: 'views > layouts > main.jade' file
 1. Create: 'views > home.jade' file
 1. Create: 'views > about.jade' file
@@ -109,17 +102,25 @@ package.json
 1. Create: 'views > 500.jade' file
 1. Create: 'views > partials > head.jade' file
 1. Define the head partial
-    ```
-    meta(charset='UTF-8')
-    // If IE use the latest rendering engine
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    // Set the page to the width of the device and set the zoom level
-    meta(name='viewport' content='width = device-width, initial-scale = 1')
-    // Include BootStrap 4
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
-    // jQuery ???
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-
-    ```
 1. Create: 'views > partials > navbar.jade' file
-1. Define the view engine
+
+### BUILD ENTRY POINT
+##### Require Express, Path & Jade
+```
+const express = require('express');
+const path = require('path');
+const jade = require('jade');
+```
+##### Define 'app' variable as the Express function.
+```
+const app = express();
+```
+##### Disable 'x-powered-by'
+```
+app.disable('x-powered-by');
+```
+##### Define view engine
+```
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+```
