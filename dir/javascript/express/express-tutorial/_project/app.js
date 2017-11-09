@@ -19,9 +19,14 @@ app.set('port', process.env.PORT || 3000);
 // Allow access to static files
 app.use(express.static(__dirname + '/public'));
 
-// Define routes
+// Define root route
 app.get('/', (req, res) => {
   res.render('index');
+});
+
+// Define about route
+app.get('/about', (req, res) => {
+  res.render('about');
 });
 
 // Listen on open port

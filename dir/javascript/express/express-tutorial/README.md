@@ -2,13 +2,14 @@
 An overview of Express JS  
 **Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
 **URL**: [Video](https://youtu.be/xDCKcNBFsuI)  
-**Duration**: 26:14  
+**Duration**: 52:01 
 **Donate to Author**: [Patreon](https://www.patreon.com/derekbanas)  
 
 ## Table Of Contents
 1. [Installation (Windows/Mac)](#installation-windows) (00:00)
 1. [Create Template Files](#create-template-files)
 1. [Build Entry Point](#build-entry-point) (10:05)
+1. [Middleware](#middleware) (23:03)
 
 ## +
 
@@ -144,3 +145,11 @@ app.listen(app.get('port'), () => {
   console.log('Listening Port: ' + app.get('port'));
 });
 ```
+##### Define About Route
+```
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+```
+
+## MIDDLEWARE
