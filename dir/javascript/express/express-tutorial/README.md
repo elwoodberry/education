@@ -115,7 +115,7 @@ const jade = require('jade');
 ```
 const app = express();
 ```
-##### Disable 'x-powered-by'
+##### Disable header from containing information about the server
 ```
 app.disable('x-powered-by');
 ```
@@ -123,4 +123,24 @@ app.disable('x-powered-by');
 ```
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+```
+##### Define Port that application will run on
+```
+app.set('port', process.env.PORT || 3000);
+```
+##### Allow access to static files
+```
+app.use(express.static(__dirname + '/public'));
+```
+##### Define Root routes
+```
+app.get('/', (req, res) => {
+  res.render('index');
+});
+```
+##### Listen on open port
+```
+app.listen(app.get('port'), () => {
+  console.log('Listening Port: ' + app.get('port'));
+});
 ```
