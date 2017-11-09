@@ -2,7 +2,7 @@
 An overview of Express JS  
 **Author**: [Derek Banas](https://www.youtube.com/user/derekbanas)  
 **URL**: [Video](https://youtu.be/xDCKcNBFsuI)  
-**Duration**: 52:01 
+**Duration**: 52:01   
 **Donate to Author**: [Patreon](https://www.patreon.com/derekbanas)  
 
 ## Table Of Contents
