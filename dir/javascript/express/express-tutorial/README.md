@@ -10,7 +10,9 @@ An overview of Express JS
 1. [Create Template Files](#create-template-files)
 1. [Build Entry Point](#build-entry-point) (10:05)
 1. [Middleware](#middleware) (23:03)
-
+1. [404 and 500 Error Routes](#404-and-500-error-routes) (25:48)
+1. [Body Parser](#body-parser) (27:49)
+1. [Process The Form](#process-the-form) (32:36)
 ## +
 
 ### Stack
@@ -153,3 +155,99 @@ app.get('/about', (req, res) => {
 ```
 
 ## MIDDLEWARE
+##### Display URL in the console.
+Learn more about [next](http://www.link.com) function.  
+The next function looks for the next proper route.
+Receives a request object and a response object and a next function.
+```
+app.use((req, res, next) => {
+    console.log('Looking for URL: '+ req.url);
+    next();
+});
+```
+##### Throw an error for route that does not exist.
+User has looked for a URL that does not exist.
+```
+app.get('/junk', (req, res, next) => {
+  console.log('Tried to access /junk.');
+  throw new Error('/junk' does not exist.)
+});
+```
+##### Catch an error
+```
+app.use((err, req, res, next) => {
+  console.log('Error:' + err.message);
+  next();
+});
+```
+
+## 404 AND 500 ERROR ROUTES
+
+##### 404
+```
+app.use((req, res) => {
+  // Response type is text and HTML
+  res.type('text/html');
+  // Response status is 404
+  res.status(404);
+  // Render the 404 page.
+  res.render('404');
+});
+```
+
+##### 500
+```
+app.use((err, req, res, next) => {
+  // Log the error to the console
+  console.error(err.stack);
+  // Response status is 500
+  res.status(500);
+  // Render the 500 page
+  res.render('500');
+})
+```
+
+## BODY PARSER
+
+1. Create a new view. "contacts.jade"
+1. Install [Body Parser](http://www.link.com)
+1. Install [Formidable](http://www.link.com)
+1. Install [Cookie Parser](http://www.link.com)
+
+##### Set up Body parser
+```
+app.use(require('body-parser').urlencoded({extended: true}));
+```
+##### Set up Formidable
+```
+const formidable = require('formidable');
+```
+##### Create a credentials file to secure cookies and help with sessions
+In the project root, create 'credentials.js'
+```
+module.exports = {cookieSecret: 'sitting sideways poised in a daze',};
+```
+Reference the credentials file in the app.js
+```
+const credentials = require('./credentials');
+```
+Allow app to use cookies
+```
+app.use(require('cookie-parser')(credentials.cookieSecret));
+```
+Create a route to the contact view
+```
+app.get('/contact', (req, res) => {
+  res.render('contact', {csrf: 'CSRF Token Here'});
+});
+```
+Create a route to a thank you view
+```
+app.get('/thankyou', (req, res) => {
+  res.render('thankyou');
+});
+```
+Create the Thank You view
+
+
+## PROCESS THE FORM

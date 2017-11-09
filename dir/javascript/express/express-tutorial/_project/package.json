@@ -17,7 +17,10 @@
   "author": "Elwood Berry (me@elwoodberry)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
+    "formidable": "^1.1.1",
     "jade": "^1.11.0"
   }
 }
