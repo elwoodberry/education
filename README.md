@@ -6,6 +6,11 @@ All the things I teach myself.
     * **Authentication**
       * [Auth0](dir/javascript/express)
 
+    * **Database**  
+      * [MongoDB]()
+        * [MongoDB]()
+        * [Mongoose]()
+
     * **HTML Template Engines**
       * [Jade](dir/javascript/jade)
         * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
@@ -25,3 +30,7 @@ All the things I teach myself.
 
     * **Servers**
       * [Node](dir/javascript/node)
+
+    * **Standards**
+      * [ECMAScript](dir/javascript/ecmascript)
+        * [ECMAScript 6 Tutorial](dir/javascript/ecmascript/ecmascript-6-tutorial)
