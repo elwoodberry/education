@@ -400,3 +400,40 @@ app.get('/viewcount', (req, res, next) => {
 ```
 
 ## READ AND WRITE FILES
+##### Install File System module
+[Learn More About File System](https://www.npmjs.com/package/fs)
+```
+$ npm install --save fs
+```
+##### Include the File System module
+```
+const fs = require('fs');
+```
+##### Read a file
+```
+app.get('/readfile', (req, res, next) => {
+  fs.readFile('./public/randomfile.txt', (err, data) => {
+    if(err){
+      return console.error(err);
+    }
+    res.send("The File: " + data.toString());
+  });
+});
+```
+##### Write a file
+```
+app.get('/writefile', (req, res, next) => {
+  fs.writeFile('./public/randomfile-2.txt', 'This is some text that was created.', (err) => {
+    if(err){
+      return console.error(err);
+    }
+  });
+
+  fs.readFile('./public/randomfile-2.txt', (err, data) => {
+    if(err){
+      return console.error(err);
+    }
+    res.send("The File: " + data.toString());
+  });
+});
+```

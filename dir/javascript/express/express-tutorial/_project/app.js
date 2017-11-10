@@ -6,6 +6,7 @@ const formidable = require('formidable');
 const credentials = require('./credentials');
 const session = require('express-session');
 const parseurl = require('parseurl');
+const fs = require('fs')
 
 // Define 'app' variable as the Express function.
 const app = express();
@@ -150,9 +151,36 @@ app.use((req, res, next) => {
 
 });
 
-//
+// Display the number of times in the browser
 app.get('/viewcount', (req, res, next) => {
   res.send('You have viewed this page ' + req.session.views['/viewcount'] + ' times.');
+});
+
+// Read a file
+app.get('/readfile', (req, res, next) => {
+  fs.readFile('./public/randomfile.txt', (err, data) => {
+    if(err){
+      return console.error(err);
+    }
+    res.send("The File: " + data.toString());
+  });
+});
+
+// Write a file
+app.get('/writefile', (req, res, next) => {
+  fs.writeFile('./public/randomfile-2.txt', 'This is some text that was created.', (err) => {
+    if(err){
+      return console.error(err);
+    }
+  });
+
+  // Read the file that was created.
+  fs.readFile('./public/randomfile-2.txt', (err, data) => {
+    if(err){
+      return console.error(err);
+    }
+    res.send("The File: " + data.toString());
+  });
 });
 
 // 404
