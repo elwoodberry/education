@@ -289,7 +289,11 @@ app.get('/upload', (req, res) => {
 
 
 #### Passing the year and date from the route above
-<span style="color:red">some **ROAD BLOCK** text</span>
+**ROAD BLOCK**  
+Wednesday, November 9th, 2017  
+Getting a 404 on the submission of the form.  
+The url is correct in that it contains the year and the month.  
+When you click return to submit the url again, it goes through.
 ```
 app.get('/upload/:year/:month', (req, res) => {
   let form = new formidable.IncomingForm();
