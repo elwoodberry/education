@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tag Template Literals</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 07:13
+  // Tag Template Literals
+  // Modify an output using a function
+
+  function doMath(strings, ...values){
+
+    // 'strings' is an array
+    // 'values' is an array
+
+    if(strings[0] == "Add"){
+      document.write(`${values[0]} + ${values[1]} = ${values[0] + values[1]}<br/>`);
+    }else if(strings[0] == "Sub"){
+      document.write(`${values[0]} - ${values[1]} = ${values[0] - values[1]}<br/>`);
+    }
+
+  }
+
+
+  doMath `Add${10} ${20}`;
+  doMath `Sub${20} ${10}`;
+
+  // RESULT
+  // 10 + 20 = 30
+  // 20 - 10 = 10
+
+
+</script>
+</body>
+</html>

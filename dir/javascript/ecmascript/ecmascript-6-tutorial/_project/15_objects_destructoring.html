@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Destructuring</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 21:50
+  // Object Destructuring
+
+  function createCandle(open, high, low, close){
+    return {
+      open,
+      high,
+      low,
+      close,
+      getInfo(){
+        return `Open: ${this.open}<br/> High: ${this.high}<br/> Low: ${this.low}<br/> Close: ${this.close}`;
+      },
+      session: {
+        name: "New York",
+        date: "September 1st, 2017",
+        time: "6:00 pm"
+      }
+    };
+  }
+
+  var candle = createCandle(1.00001, 2.00001, 0.00001, 1.00101);
+
+
+
+
+  // Get the values from the returned object.
+  let {open, high, low, close} = candle;
+  document.write(`Open: ${open}<br/><br/>`);
+
+
+  // Get an inner class value.
+  let {session} = candle;
+  document.write(`Session: ${session.name}<br/><br/>`);
+
+  // Destructuring arrays
+  let anotherArray = [1,2,3,4,5];
+
+  // Get the last value of the array.
+  let [,,boom] = anotherArray;
+  document.write(`Boom = ${boom}<br/><br/>`);
+
+  // Using the REST parameter to grab part of an item
+  let [, ...last2] = anotherArray;
+  document.write(`2nd Number In The Array Is: ${last2[0]}<br/><br/>`);
+
+  // Switch values
+  let val1 = 100,
+      val2 = 200;
+
+  [val1, val2] = [val2, val1];
+  document.write(`Value 2: ${val2}<br/><br/>`);
+
+</script>
+</body>
+</html>

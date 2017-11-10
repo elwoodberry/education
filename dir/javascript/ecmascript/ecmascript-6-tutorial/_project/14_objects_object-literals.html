@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Literals</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 19:10
+  // Object Literals
+
+  function createCandle(open, high, low, close){
+    return {
+      open,
+      high,
+      low,
+      close,
+      getInfo(){
+        return `Open: ${this.open}<br/> High: ${this.high}<br/> Low: ${this.low}<br/> Close: ${this.close}`;
+      },
+      session: {
+        name: "New York",
+        date: "September 1st, 2017",
+        time: "6:00 pm"
+      }
+    };
+  }
+
+  var candle = createCandle(1.00000, 2.00000, 0.00001, 1.00100);
+
+  document.write(`${candle.getInfo()}<br/>`);
+
+  document.write(`Session: ${candle.session.name}<br/>Date: ${candle.session.date}<br/><br/>`);
+
+
+
+
+  // Get properties and methods of an Object
+  document.write(`${Object.getOwnPropertyNames(candle).join(" ")}`);
+
+</script>
+</body>
+</html>

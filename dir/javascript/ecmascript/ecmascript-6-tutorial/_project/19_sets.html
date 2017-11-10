@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sets</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 36:19
+  // Sets
+  // A list of values with no duplications.
+
+  var randSet = new Set();
+
+  randSet.add(10);
+
+  randSet.add("Word");
+
+  document.write(`Has 10: ${randSet.has(10)}<br/><br/>`);
+
+  document.write(`Set Size: ${randSet.size}<br/><br/>`);
+
+  randSet.delete(10);
+
+  for(let val of randSet)
+
+  document.write(`Set Value: ${val}<br/><br/>`);
+
+
+</script>
+</body>
+</html>

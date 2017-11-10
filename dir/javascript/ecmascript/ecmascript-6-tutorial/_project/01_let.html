@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"let"</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	// 01:10
+
+	// let
+
+	// "What is the difference between 'let" and 'var'?
+
+	// VAR = A variable that is available globally.
+
+	// LET = A variable that is only available to its block's scope
+
+	// EXAMPLES
+
+
+
+	// 'var'
+
+	if(true){
+		var x = 10;
+
+		document.write("x = " + x + "<br/>");
+	}
+
+	document.write("x = " + x + "<br/>");
+
+	// RESULT
+	// "x = 10"
+	// "x = 10"
+
+
+	// 'let'
+	if(true){
+		let x = 10;
+
+		document.write("x = " + x + "<br/>");
+	}
+
+	document.write("x = " + x + "<br/>");
+
+	// RESULT
+	// "x = 10"
+	// console error: 'x is undefined...'
+
+
+	// Why This Is Important
+	// Global variables are all over the place & can cause conflicts or effect other variables and functions.
+
+
+
+
+	// ANOTHER EXAMPLE
+
+	var y = 10;
+
+	if(true){
+		let y = 20;
+	}
+
+	document.write("Y = " + y);
+
+	// RESULT
+	// 'Y = 10'
+
+	// 
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

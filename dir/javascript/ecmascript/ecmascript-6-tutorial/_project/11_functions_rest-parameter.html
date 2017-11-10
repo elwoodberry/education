@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions - Rest Parameter</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 13:49
+  // Functions - Rest Parameter
+
+  function getSumMore(...vals){
+    let sum = 0;
+
+    for(let i = 0, len = vals.length; i < len; i++){
+      sum += vals[i];
+    }
+
+    document.write(`The sum is ${sum}`);
+  }
+
+  getSumMore(1,2,3,40);
+
+
+
+</script>
+</body>
+</html>

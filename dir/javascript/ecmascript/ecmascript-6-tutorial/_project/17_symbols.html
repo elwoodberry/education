@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Symbols</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 31:47
+  // Symbols
+  // Immuntable = Can't Be Changed
+
+  let capital = Symbol("State Capital");
+
+  let michigan = {};
+
+  michigan[capital] = "Ann Arbor";
+
+  document.write(`Capital of MI: ${michigan[capital]}</br></br>`);
+
+  document.write(`Symbol Capital: ${capital.toString()}</br></br>`);
+
+
+  //
+
+  let employNum = Symbol.for("Employee Number");
+
+  let bobSmith = {};
+
+  bobSmith[employNum] = 10;
+
+  let sallyMarks = {};
+
+  sallyMarks[employNum] = 10;
+
+  document.write(`Bob Smith: ${bobSmith[employNum]}</br></br>`);
+
+  document.write(`Sally Marks: ${sallyMarks[employNum]}</br></br>`);
+
+</script>
+</body>
+</html>

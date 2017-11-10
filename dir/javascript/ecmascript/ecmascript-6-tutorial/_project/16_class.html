@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classes</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 24:11
+  // Classes
+
+// Define a Class
+class Mammal {
+
+  // Constructors
+  constructor(name){
+    // 'this' refers to the object you create
+    // Protect this object by using the underscore followed by variable name.
+    this._name = name;
+  }
+
+  // Getters
+  get name(){
+    return this._name;
+  }
+
+  // Setters
+  set name(name){
+    this._name = name;
+  }
+
+  // Static Methods
+  // Create mammel objects and pass them back.
+  static makeMammal(name){
+    return new Mammal(name);
+  }
+
+  // Simple Methods
+  // Return a string about our object
+  getInfo(){
+    return `${this.name} is a mammel.`;
+  }
+}
+
+
+
+
+// 26:11
+// Test Your object
+
+// Create an object...
+let monkey = new Mammal("Fred");
+
+// Change the name...
+monkey.name = "Mark";
+
+// Call the Getters
+document.write(`Mammal 1: ${monkey.name}<br/><br/>`);
+
+// Create an object using our static method...
+let chipmunk = Mammal.makeMammal("Chipper");
+document.write(`Mammal 2: ${chipmunk.name}<br/><br/>`);
+
+
+
+
+
+
+// 27:25
+// Extending a class
+// Inherit all the properties and methods.
+class Marsupial extends Mammal {
+
+  // New constructor..
+  // Takes an additional argument of 'hasPouch'
+  constructor(name, hasPouch){
+
+    // Calling the super constructor from the original 'Mammel' class.
+    // Takes care of the 'name'
+    super(name);
+
+    // New protected variable...
+    this._hasPouch = hasPouch
+  }
+  // Getters
+  get hasPouch(){
+    return this._hasPouch;
+  }
+
+  // Setter
+  set hasPouch(hasPouch){
+    this._hasPouch = hasPouch;
+  }
+
+  // Override Simple Method
+  getInfo(){
+    return `<strong>${this.name}</strong> is a Marsupial class.`;
+  }
+}
+
+// 29:05
+// Test out the extended class.
+
+// Create an object...
+let kangaroo = new Marsupial("Paul", true);
+document.write(`It is ${kangaroo.hasPouch} that ${kangaroo.name} has a pouch.<br/><br/><br/><br/>`);
+
+// 29:46
+// Test the overridden method
+document.write(`${chipmunk.getInfo()}<br/>`);
+document.write(`${kangaroo.getInfo()}<br/>`);
+
+// 30:10
+// Dynamically inherit from classes
+function getClass(classType){
+  if(classType == 1){
+    return Mammal;
+  }else {
+    return Marsupial;
+  }
+}
+
+
+class Kola extends getClass(2){
+  constructor(name){
+    super(name);
+  }
+}
+
+// Test the Dynamically inherited class.
+let carl = new Kola("Carl");
+document.write(`${carl.getInfo()}<br/>`);
+
+
+
+
+</script>
+</body>
+</html>

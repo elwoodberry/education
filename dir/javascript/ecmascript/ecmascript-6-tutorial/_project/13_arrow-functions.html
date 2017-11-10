@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Functions</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 15:12
+  // Arrow Functions
+  // Define parameters followed by the body of a function
+
+  let difference = (num1, num2) => num1 - num2;
+
+  document.write(`1000 - 200 = <strong>${difference(1000, 200)}</strong><br/><br/>`);
+
+
+
+
+  // Using the arrow function with more than one statement.
+  let multiStatement = (membership, gross) => {
+    let net = membership * gross;
+    document.write(`$${membership} * ${gross} members = $${net} per month<br/><br/>`);
+  }
+
+  multiStatement(49.99, 1000);
+
+
+
+
+  // Using arrow functions with 'map', 'filter' and 'reduce'
+
+
+
+  // REDUCE
+  // Apply a function against an accumulator to get a single result
+  // In this case we sum all the values
+
+  let reduceArray = [100, 200, 300, 4, 20];
+  let sumArray = reduceArray.reduce((a, b) => a + b);
+  let reduceString = "Using REDUCE to sum the values until there are no more values."
+
+  document.write(`${reduceString}<br/><strong>${sumArray}</strong><br/><br/>`);
+
+
+
+
+
+
+  // FILTER
+  // Returns the values that meet the condition
+
+
+  let filterArray = [100, 201, 300, 41, 29];
+  let evens = filterArray.filter(v => v % 2 == 0);
+  let filterString = "Using FILTER to return the values that meet the condition.";
+
+  document.write(`${filterString}<br/><strong>${evens}</strong><br/><br/>`);
+
+
+
+  // MAP
+  // Perform an action on every item passed to it
+
+  let mapArray = [100, 201, 300, 41, 29];
+  let doubleAll = mapArray.map(v => v * 2);
+  let mapString = "Using MAP to perform an action on every item passed to it";
+
+  document.write(`${mapString}<br/><strong>${doubleAll}</strong><br/><br/>`);
+
+
+
+
+
+</script>
+</body>
+</html>

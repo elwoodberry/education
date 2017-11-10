@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions - Pass Array</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 14:59
+  // Functions - Pass Array
+
+	// Pass an array
+	let anArray = [1,2,3,40];
+
+	function getSumMore(...vals){
+    let sum = 0;
+
+    for(let i = 0, len = vals.length; i < len; i++){
+      sum += vals[i];
+    }
+
+    document.write(`The sum is ${sum}`);
+  }
+	
+	getSumMore(...anArray);
+
+</script>
+</body>
+</html>

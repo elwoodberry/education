@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions - Default Values</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 12:33
+  // Functions - Default Values
+
+  function getSum(num1 = 1, num2 = 2){
+    document.write(`${num1} + ${num2} = ${num1 + num2}<br/><br/>`);
+
+    // The reserved 'arguments' keyword
+    document.write(`${arguments[0]} + ${arguments[1]}`);
+  }
+
+  getSum(3);
+
+  // RESULT
+  // '3 + 2 = 5' (No value was supplied for the second value so it filled it in with the default value.)
+  // '3 + undefined' (Arguments does not use the default value.)
+
+</script>
+</body>
+</html>

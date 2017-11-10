@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 38:07
+  // Maps
+  // A collection of key value pairs.
+
+  var randMap = new Map();
+
+  randMap.set("key1", "Random String...");
+
+  randMap.set("key2", 1000);
+
+  document.write(`Key 1: ${randMap.get("key1")}<br></br>`);
+
+  document.write(`Key 2: ${randMap.get("key2")}<br></br>`);
+
+  // Get the size...
+  document.write(`Map Size: ${randMap.size}<br></br>`);
+
+  // Iterate over...
+  randMap.forEach(function(value, key){
+    document.write(`${key} / ${value}<br></br>`);
+  });
+</script>
+</body>
+</html>

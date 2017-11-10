@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+  // 40:06
+  // Promises
+  // Promises define code that will be executed later...
+  // They only 'succeed' or 'fail' once
+  // They will have a state of 'fullfilled', 'rejected', 'pending', or 'settled'
+
+
+  // EXAMPLE #1
+  // A promise that is handled immediatelly.
+  // 'then' function takes optional arguments, callback for success & callback for failure.
+  var p1 = Promise.resolve("Resolve Me");
+  p1.then((res) => document.write(`${res}<br></br>`));
+
+
+
+  // EXAMPLE #2
+  // A promise that will execute after 2 seconds
+  var p2 = new Promise(function(resolve, reject){
+    setTimeout(() => resolve('What Up Mutha Fucka??'), 2000);
+  });
+
+  p2.then((res) => document.write(`${res}<br/><br/>`));
+
+// 42:46
+// A promise can be fulfilled or rejected
+
+  let randomValue = 2000;
+  var p3 = new Promise(function(resolve, reject){
+    if(randomValue == 2000){
+      resolve("Good Value");
+    }else{
+      reject("Bad Value");
+    }
+  });
+
+p3.then((val) => document.write(`${val}<br></br>`),
+(err) => document.write(`${err}<br></br>`));
+
+// 43:50
+// Add a catch to the chain to handle all errors
+let newValue = 300001;
+
+var p4 = new Promise(function(resolve, reject){
+  if(newValue <= 12){
+    throw new Error("Can Not Vote");
+  }else {
+    resolve("Can Vote");
+  }
+});
+
+p4.then((val) => document.write(`${val}<br/>`))
+.catch((err) => document.write(`${err.message}<br/>`));
+
+
+
+</script>
+</body>
+</html>
