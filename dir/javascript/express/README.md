@@ -8,6 +8,9 @@
 
 ## In My Own Words
 
+**The Order Of The Document Matters**  
+The question was always in the back of my mind. Today I just got my answer. The order of the routes, middleware, etc DOES matter.
+
 **View Engines**  
 It became clear that you are going to have to understand view engines. I worked in Jade(Pug) first and wanted to keep that as the view engine for all the tutorial projects. The view engines I need to become familiar with once I have a firm grip on Express.
 1. [Express Handlebars](https://www.npmjs.com/package/express-handlebars)

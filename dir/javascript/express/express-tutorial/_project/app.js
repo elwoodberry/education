@@ -66,6 +66,19 @@ app.get('/thankyou', (req, res) => {
   res.render('thankyou');
 });
 
+app.post('/process', (req, res) => {
+    // Log the request query of the form
+    console.log('Form: ' + req.query.form);
+    // Log the Token
+    console.log('Token: ' + req.body._csrf);
+    // Log the email
+    console.log('Email: ' + req.body.email);
+    // Log the question
+    console.log('Question: ' + req.body.question);
+    // Redirect to the thank you view
+    res.redirect(303, '/thankyou');
+});
+
 // 404
 app.use((req, res) => {
   // Response type is text and HTML

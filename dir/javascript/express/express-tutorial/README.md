@@ -13,6 +13,7 @@ An overview of Express JS
 1. [404 and 500 Error Routes](#404-and-500-error-routes) (25:48)
 1. [Body Parser](#body-parser) (27:49)
 1. [Process The Form](#process-the-form) (32:36)
+1. [Upload Files](#upload-files) (35:48)
 ## +
 
 ### Stack
@@ -251,3 +252,19 @@ Create the Thank You view
 
 
 ## PROCESS THE FORM
+```
+app.post('/process', (req, res) => {
+    // Log the request query of the form
+    console.log('Form: ' + req.query.form);
+    // Log the Token
+    console.log('Token: ' + req.body._csrf);
+    // Log the email
+    console.log('Email: ' + req.body.email);
+    // Log the question
+    console.log('Question: ' + req.body.question);
+    // Redirect to the thank you view
+    res.redirect(303, '/thankyou');
+});
+```
+
+## UPLOAD FILES 
