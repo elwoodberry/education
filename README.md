@@ -1,15 +1,15 @@
 # Education
-All the things I teach myself.
+All the things I teach myself.  
 
+1. [JavaScript](dir/javascript)
 
-1. JavaScript
     * **Authentication**
       * [Auth0](dir/javascript/express)
 
     * **Database**  
-      * [MongoDB]()
+      * [MongoDB](dir/javascript/mongodb)
         * [MongoDB]()
-        * [Mongoose]()
+        * [Mongoose JS]()
 
     * **HTML Template Engines**
       * [Jade](dir/javascript/jade)
