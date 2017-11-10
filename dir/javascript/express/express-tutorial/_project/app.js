@@ -66,6 +66,7 @@ app.get('/thankyou', (req, res) => {
   res.render('thankyou');
 });
 
+// Route for processing the form
 app.post('/process', (req, res) => {
     // Log the request query of the form
     console.log('Form: ' + req.query.form);
@@ -78,6 +79,21 @@ app.post('/process', (req, res) => {
     // Redirect to the thank you view
     res.redirect(303, '/thankyou');
 });
+
+// Route for the upload
+app.get('/upload', (req, res) => {
+  let now = new Date();
+  res.render('upload', {
+    year: now.getFullYear(),
+    month: now.getMonth()
+  });
+});
+
+// Passing the year and date from the route above
+app.get('/upload/:year/:month', (req, res) => {
+  res.send('Thanks!');
+});
+
 
 // 404
 app.use((req, res) => {

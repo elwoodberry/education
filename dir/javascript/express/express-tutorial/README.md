@@ -267,4 +267,39 @@ app.post('/process', (req, res) => {
 });
 ```
 
-## UPLOAD FILES 
+## UPLOAD FILES
+##### Create the upload form view.
+[See 'upload.jade'](_project/views/upload.jade)
+
+##### Handle the route
+```
+app.get('/upload', (req, res) => {
+  let now = new Date();
+  res.render('upload', {
+    year: now.getFullYear(),
+    month: now.getMonth()
+  });
+});
+```
+
+#### Create the upload error view
+
+
+
+
+
+#### Passing the year and date from the route above
+<span style="color:red">some **ROAD BLOCK** text</span>
+```
+app.get('/upload/:year/:month', (req, res) => {
+  let form = new formidable.IncomingForm();
+  form.parse(req, function(err, fields, file){
+    if(err)
+      return res.redirect(303, '/upload-error');
+      console.log('Received File');
+      console.log(file);
+      // Redirect to the thank you view
+      res.redirect(303, '/thankyou');
+  })
+});
+```

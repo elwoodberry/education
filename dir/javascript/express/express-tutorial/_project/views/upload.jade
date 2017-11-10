@@ -1,0 +1,38 @@
+extends ./layouts/main
+
+block content
+  header
+    h3 Upload
+
+    form(
+    class="form-horizontal"
+    role="form"
+    enctype="multipart/form-data"
+    method="POST"
+    action="/upload/3000/10")
+
+      .form-group
+        label(for="uploadName" class="col-sm-2 control-label") Name
+        .col-sm-4
+          input(type="text" class="form-control" id="uploadName" name="name")
+
+      .form-group
+        label(for="uploadEmail" class="col-sm-2 control-label") Email
+        .col-sm-4
+          input(type="email" class="form-control" id="uploadEmail" name="email")
+
+      .form-group
+        label(for="uploadPhoto" class="col-sm-2 control-label") Vacation Photo
+        .col-sm-4
+
+          input(
+          type="file"
+          class="form-control"
+          id="uploadPhoto"
+          name="photo"
+          accept="image/*"
+          required)
+
+      .form-group
+          .col-sm-offset-2.col-sm-4
+            button(type="submit" class="btn btn-primary") Submit
