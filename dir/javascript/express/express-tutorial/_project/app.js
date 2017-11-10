@@ -4,6 +4,8 @@ const path = require('path');
 const jade = require('jade');
 const formidable = require('formidable');
 const credentials = require('./credentials');
+const session = require('express-session');
+const parseurl = require('parseurl');
 
 // Define 'app' variable as the Express function.
 const app = express();
@@ -105,6 +107,53 @@ app.post('/upload/:year/:month', (req, res) => {
 
 });
 
+// Set the cookie
+app.get('/cookie', (req, res) => {
+    res.cookie('username', 'Elwood Berry', {expire: new Date() + 9999}).send('Username has the value of Elwood Berry');
+});
+
+// Show cookie in the console
+app.get('/listcookies', (req, res) => {
+  console.log("Cookies: ", req.cookies);
+  res.send('Look in the console for cookies');
+});
+
+// Delete cookies
+app.get('/delete', (req, res) => {
+  res.clearCookie('username');
+  res.send('Username Cookie deleted.');
+});
+
+//
+app.use(session({
+  resave: false, // Only store session if a change has been made
+  saveUninitialized: true, // Store session if it is new even if it hasn't been modified.
+  secret: credentials.cookieSecret,
+}));
+
+// Track how many times a user has come to this page.
+app.use((req, res, next) => {
+  // Define total number of views.
+  let views = req.session.views;
+  // The pathname they are currently on
+  let pathname = parseurl(req).pathname;
+
+  if(!views){ // If there are no views...
+    // Create an array where the key is the url and
+    views = req.session.views = {};
+  }
+
+  // Each time increment
+  views[pathname] = (views[pathname] || 0 ) + 1;
+
+  next();
+
+});
+
+//
+app.get('/viewcount', (req, res, next) => {
+  res.send('You have viewed this page ' + req.session.views['/viewcount'] + ' times.');
+});
 
 // 404
 app.use((req, res) => {

@@ -14,6 +14,9 @@ An overview of Express JS
 1. [Body Parser](#body-parser) (27:49)
 1. [Process The Form](#process-the-form) (32:36)
 1. [Upload Files](#upload-files) (35:48)
+1. [Cookies](#cookies) (40:31)
+1. [Sessions](#sessions) (43:16)
+1. [Read and Write Files](#read-and-write-files) (48:15)
 ## +
 
 ### Stack
@@ -311,3 +314,89 @@ app.post('/upload/:year/:month', (req, res) => {
   })
 });
 ```
+
+## COOKIES
+##### If they type in 'cookie'
+Set the cookie and output it on the screen.
+```
+app.get('/cookie', (req, res) => {
+    res.cookie('username', 'Elwood Berry', {expire: new Date() + 9999}).send('Username has the value of Elwood Berry');
+});
+```
+##### Show cookie in the console.
+```
+app.get('/listcookies', (req, res) => {
+  console.log("Cookies: " + req.cookies);
+  res.send('Look in the console for cookies');
+});
+```
+
+##### Delete Cookies
+```
+app.get('/delete', (req, res) => {
+  res.clearCookie('username');
+  res.send('Username Cookie deleted.');
+});
+```
+
+
+## SESSIONS
+##### Install Express Session
+[Learn More About Express Session](https://www.npmjs.com/package/express-session)  
+This will allow us to store the session id in a cookie and session data on the server.
+```
+$ npm install --save express-session
+```
+##### Include the Express Session package
+```
+const session = require('express-session');
+```
+##### Install Parse URL
+[Learn More About Parse URL](https://www.npmjs.com/package/parseurl)  
+This is going to provide information on the url of the request object that is passed to us.
+```
+$ npm install --save parseurl
+```
+##### Include the Parse URL package
+```
+const parseurl = require('parseurl');
+```
+
+##### Saving session data
+```
+app.use(session({
+  resave: false, // Only store session if a change has been made
+  saveUninitialized: true, // Store session if it is new even if it hasn't been modified.
+  secret: credentials.cookieSecret,
+}));
+```
+
+#### Session Middleware  
+Track how many times a user has come to this page.
+```
+app.use((req, res, next) => {
+  // Define total number of views.
+  let views = req.session.views;
+  // The pathname they are currently on
+  let pathname = parseurl(req).pathname;
+
+  if(!views){ // If there are no views...
+    // Create an array where the key is the url and
+    views = req.session.views = {};
+  }
+
+  // Each time increment
+  views[pathname] = (views[pathname] || 0 ) + 1;
+
+  next();
+
+});
+```
+##### See how many times you have visited the page.
+```
+app.get('/viewcount', (req, res, next) => {
+  res.send('You have viewed this page ' + req.session.views['/viewcount'] + 'times');
+});
+```
+
+## READ AND WRITE FILES

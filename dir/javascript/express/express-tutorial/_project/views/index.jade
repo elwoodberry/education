@@ -2,3 +2,17 @@ extends ./layouts/main
 
 block content
   h3 Welcome to my Express Tutorial
+
+  h4 Cookies
+  ul
+    li
+      a(href="/cookie") Set the username cookie
+    li
+      a(href="/listcookies") Show cookie in the console
+    li
+      a(href="/delete") Delete the username cookie
+
+  h4 Sessions
+  ul
+    li
+      a(href="/viewcount") View Count
