@@ -90,8 +90,19 @@ app.get('/upload', (req, res) => {
 });
 
 // Passing the year and date from the route above
-app.get('/upload/:year/:month', (req, res) => {
-  res.send('Thanks!');
+app.post('/upload/:year/:month', (req, res) => {
+
+  let form = new formidable.IncomingForm();
+
+  form.parse(req, function(err, fields, file){
+    if(err)
+      return res.redirect(303, '/upload-error');
+      console.log('Received File');
+      console.log(file);
+      // Redirect to the thank you view
+      res.redirect(303, '/thankyou');
+  });
+
 });
 
 

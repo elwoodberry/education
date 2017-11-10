@@ -293,9 +293,13 @@ app.get('/upload', (req, res) => {
 Wednesday, November 9th, 2017  
 Getting a 404 on the submission of the form.  
 The url is correct in that it contains the year and the month.  
-When you click return to submit the url again, it goes through.
+When you click return to submit the url again, it goes through.  
+
+**SOLUTION**  
+Wednesday, November 9th, 2017  
+I was making a GET request and not a POST request.  
 ```
-app.get('/upload/:year/:month', (req, res) => {
+app.post('/upload/:year/:month', (req, res) => {
   let form = new formidable.IncomingForm();
   form.parse(req, function(err, fields, file){
     if(err)
