@@ -4,18 +4,18 @@ All the things I teach myself.
 1. [JavaScript](dir/javascript)
 
     * **Authentication**
-      * [Auth0](dir/javascript/express)
+      * [Auth0](dir/javascript/auth0)
+        * [Auth0.com](dir/javascript/auth0/auth0)
 
+    * **Build Systems**  
+      * [GulpJS]()
+      
     * **Database**  
       * [MongoDB](dir/javascript/mongodb)
         * [MongoDB]()
         * [Mongoose JS]()
 
-    * **HTML Template Engines**
-      * [Jade](dir/javascript/jade)
-        * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
-
-    * **eCommerce Libraries**
+    * **eCommerce**
       * [Stripe.JS](dir/javascript/stripe)
         * [Simple eBook](dir/javascript/simple-ebook)
 
@@ -27,6 +27,10 @@ All the things I teach myself.
         * [Express Tutorial](dir/javascript/express/express-tutorial) by Derek Banas
         * [ExpressJS Crash Course](dir/javascript/express/expressjs-crash-course) by Traversy Media
       * [Ionic](dir/javascript/ionic)
+
+    * **HTML Template Engines**
+      * [Jade](dir/javascript/jade)
+        * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
 
     * **Servers**
       * [Node](dir/javascript/node)

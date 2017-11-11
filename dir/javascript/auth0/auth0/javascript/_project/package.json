@@ -1,0 +1,23 @@
+{
+  "name": "javascriptlogin",
+  "version": "1.0.0",
+  "description": "Setting up authentication and authorization in your JavaScript apps with Auth0.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elwoodberry/education/tree/master/dir/javascript/auth0"
+  },
+  "keywords": [
+    "auth0"
+  ],
+  "author": "Elwood Berry (me@elwoodberry.com)",
+  "license": "ISC",
+  "dependencies": {
+    "auth0-js": "^8.11.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0"
+  }
+}
