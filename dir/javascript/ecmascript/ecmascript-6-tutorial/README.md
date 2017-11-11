@@ -75,15 +75,34 @@ if(true){
 
 document.write("Y = " + y);
 ```
-**RESULT**
+**RESULT**  
 'Y = 10'  
 
 
 ## CONST
+A variable that is not going to change
 ```
+const PI = 3.15;
+
+if(true){
+  const PI = 2.15;
+  document.write("PI = " + PI);
+}
+document.write("PI = " + PI);
 ```
+**RESULT**  
+"PI = 3.15"  
+"PI = 2.15"
+
 ## DATA TYPES
 ```
+document.write(typeof true + "<br/>"); // boolean  
+document.write(typeof 3.15 + "<br/>"); // number  
+document.write(typeof "string" + "<br/>"); // string  
+document.write(typeof Symbol() + "<br/>"); // symbol  
+document.write(typeof {a:1} + "<br/>"); // object  
+document.write(typeof [1,2,3] + "<br/>"); // object  
+document.write(typeof undefined + "<br/>"); // undefined  
 ```
 ## STRING TEMPLATE LITERALS
 ```
