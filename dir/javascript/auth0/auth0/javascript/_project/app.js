@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// Define Dashboard route
+app.get('/dash', (req, res) => {
+  res.render('app/dash');
+});
+
 // 404
 app.use((req, res) => {
   // Response type is text and HTML

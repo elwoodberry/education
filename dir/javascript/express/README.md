@@ -17,6 +17,15 @@ It became clear that you are going to have to understand view engines. I worked 
 2. [Mustache](https://www.npmjs.com/package/mustache)
 3. [EJS](https://www.npmjs.com/package/ejs)
 
+**Core Modules**
+Going through tutorials in the past they would always include 'path' or us 'fs' in the code. I couldn't quit figure out how and where these files came into play.
+1. [http](https://nodejs.org/api/http.html)
+1. [url](https://nodejs.org/api/http.html)
+1. [querystring](https://nodejs.org/api/http.html)
+1. [path](https://nodejs.org/api/http.html)
+1. [fs](https://nodejs.org/api/http.html)
+1. [util](https://nodejs.org/api/http.html)
+
 ## Tutorials
 1. [Express v4.16.1](express_v4-16-1) by Express.js
 1. [Express Tutorial](express-tutorial) by Derek Banas
