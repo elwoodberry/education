@@ -19,25 +19,31 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Parse JSON
-const people = [{
-  name: 'Jeff',
-  age: 30
+const users = [{
+  id: 1,
+  first_name: 'Jeff',
+  last_name: 'Johnson',
+  email: 'jeff.johnson@gmail.com'
 },{
-  name: 'Jane',
-  age: 23
+  id: 2,
+  first_name: 'Jill',
+  last_name: 'Jameson',
+  email: 'jill.jameson@gmail.com'
 },{
-  name: 'Jill',
-  age: 34
-}]
+  id: 3,
+  first_name: 'Jane',
+  last_name: 'Jeremy',
+  email: 'jane.jeremy@gmail.com'
+}];
 
 // ROUTES
 
 // Root
 app.get('/', (req, res) => {
-  // res.send(people);
   res.render('index',{
     title: "Welcome To The Customer Application!",
-    description: "This is where the description would go."
+    description: "This is where the description would go.",
+    users: users
   });
 });
 

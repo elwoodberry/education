@@ -2,3 +2,9 @@ extends ./layouts/default
 
 block content
   h1 #{title}
+
+  h2 Users
+
+  ul
+  each user in users.length ? users : ['There are no users.']
+    li= user.first_name + " " + user.last_name

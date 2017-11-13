@@ -11,6 +11,7 @@
 1. [Middleware](#middleware) (15:35)
 1. [Parse JSON](#parse-json) (22:15)
 1. [Template Engines](#template-engines) (24:34)
+1. [Pass Data To The UI](#pass-data-to-the-ui) (27:55)
 ## +
 
 ## What Is Express?
@@ -108,4 +109,52 @@ res.json(person);
 ```
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
+```
+## Pass Data To The UI
+### Passing A String
+```
+app.get('/', (req, res) => {
+  res.render('index',{
+    title: "Welcome To The Customer Application!",
+    description: "This is where the description would go."
+  });
+});
+```
+### Display The Variable
+I'm using JADE as my template engine.
+```
+#{title}
+```
+### Create A Users Array
+```
+const users = [{
+  id: 1,
+  first_name: 'Jeff',
+  last_name: 'Johnson',
+  email: 'jeff.johnson@gmail.com'
+},{
+  id: 2,
+  first_name: 'Jill',
+  last_name: 'Jameson',
+  email: 'jill.jameson@gmail.com'
+},{
+  id: 3,
+  first_name: 'Jane',
+  last_name: 'Jeremy',
+  email: 'jane.jeremy@gmail.com'
+}];
+```
+### Update The Route
+```
+app.get('/', (req, res) => {
+  res.render('index',{
+    title: "Welcome To The Customer Application!",
+    description: "This is where the description would go.",
+    users: users
+  });
+});
+```
+### Display A User
+```
+#{users[0].first_name} #{users[0].last_name}
 ```
