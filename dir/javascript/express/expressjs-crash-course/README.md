@@ -9,6 +9,8 @@
 1. [What You'll Learn](#what-youll-learn) (01:46)
 1. [Installation and Setup](#installation-and-setup) (03:12)
 1. [Middleware](#middleware) (15:35)
+1. [Parse JSON](#parse-json) (22:15)
+1. [Template Engines](#template-engines) (24:34)
 ## +
 
 ## What Is Express?
@@ -82,4 +84,28 @@ const logger = function(req, res, next){
 ```
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+```
+### Public Files
+Static files (css, jquery, etc.)
+```
+app.use(express.static(path.join(__dirname, 'public')));
+```
+
+## Parse JSON
+Parse the people object out to the browser.
+```
+const person = {
+  name: 'Jeff',
+  age: 30
+}
+```
+### JSON Response
+```
+res.json(person);
+```
+
+## Template Engines
+```
+app.set('view engine', 'jade');
+app.set('views', path.join(__dirname, 'views'));
 ```
