@@ -1,10 +1,35 @@
 extends ./layouts/default
 
 block content
-  h1 #{title}
 
-  h2 Users
+  h2 Customers
 
+  // Form And Input
+  .card(style="margin-bottom:50px;")
+    .card-body
+      h4(class="card-title") #{title}
+      p(class="card-text") #{description}
+
+      //- If Statement
+      if errors
+        ul
+        each error in errors.length ? errors : ['']
+          li= error.msg
+
+      form(method="POST" action="/users/add")
+        .form-group
+          // label(for="firstName") First Name
+          input(type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name")
+        .form-group
+          // label(for="lastName") Last Name
+          input(type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name")
+        .form-group
+          // label(for="email") Email
+          input(type="email" class="form-control" id="email" name="user_email" placeholder="Email")
+        .form-group
+          input(type="submit" class="btn btn-secondary" id="submit" value="+ Add User" style="cursor:pointer;")
+
+  h4 Current Customers
   ul
   each user in users.length ? users : ['There are no users.']
     li= user.first_name + " " + user.last_name

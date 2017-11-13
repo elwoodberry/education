@@ -12,6 +12,7 @@
 1. [Parse JSON](#parse-json) (22:15)
 1. [Template Engines](#template-engines) (24:34)
 1. [Pass Data To The UI](#pass-data-to-the-ui) (27:55)
+1. [Forms and Input](forms-and-input) (36:32)
 ## +
 
 ## What Is Express?
@@ -157,4 +158,64 @@ app.get('/', (req, res) => {
 ### Display A User
 ```
 #{users[0].first_name} #{users[0].last_name}
+```
+
+## Forms and Input
+
+### Create The Form
+Using jade template engine
+```
+form
+  .form-group
+    // label(for="firstName") First Name
+    input(type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name")
+  .form-group
+    // label(for="lastName") Last Name
+    input(type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name")
+  .form-group
+    // label(for="email") Email
+    input(type="email" class="form-control" id="email" name="user_email" placeholder="Email")
+  .form-group
+    input(type="submit" class="btn btn-secondary" id="submit" value="+ Add User" style="cursor:pointer;")
+
+```
+### Add Attributes To The Form
+```
+form(method="POST" action="/users/add")
+```
+### Create POST request for '/users/add'
+```
+app.post('/users/add', (req, res) => {
+  console.log('Form Submitted');
+});
+```
+### Create a New User Object
+```
+app.post('/users/add', (req, res) => {
+  let newUser = {
+    fName: req.body.first_name,
+    lName: req.body.last_name,
+    email: req.body.user_email
+  };
+  console.log(newUser);
+});
+```
+### Form Validation
+See [Express Validator](https://www.npmjs.com/package/express-validator) NPM package.  
+```
+$ npm install --save express-validator
+```
+### Add Express Validator to app.js
+#### Legacy Usage.  
+See [Legacy API](https://github.com/ctavan/express-validator#legacy-api)  
+Sets global middleware in your express app and decorating the request object with new methods.  
+You must mount the middleware in your app before you get access to the validation/sanitization methods:  
+```
+const expressValidator = require('express-validator');
+app.use(expressValidator(middlewareOptions));
+```
+#### Version 4 Usage
+```
+const { check, validationResult } = require('express-validator/check');
+const { matchedData, sanitize } = require('express-validator/filter');
 ```

@@ -26,6 +26,11 @@ Going through tutorials in the past they would always include 'path' or us 'fs' 
 1. [fs](https://nodejs.org/api/http.html)
 1. [util](https://nodejs.org/api/http.html)
 
+**Middleware**  
+There is ALOT of middleware modules out there.
+1. [Express Validator](https://github.com/ctavan/express-validator)
+    An express.js middleware for node-validator. The challenge is to convert projects from the legacy usage to the most current version(v4).
+
 ## Tutorials
 1. [Express v4.16.1](express_v4-16-1) by Express.js
 1. [Express Tutorial](express-tutorial) by Derek Banas

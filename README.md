@@ -3,12 +3,20 @@ All the things I teach myself.
 
 ## Table Of Contents
 1. [Languages](#languages)
+    1. [Cascading Style Sheets](#version-control)
     1. [JavaScript](#javascript)
+
 1. [Version Control](#version-control)
     1. [Git](#git)
 ## +
 
 ## Languages
+### Cascading Style Sheets
+[CSS](dir/css)
+  * **[Animation](dir/css/animation)**
+    * [CSS Animations Series](dir/css/animation/css-animations-series) by Dev Tips
+
+  * **Preprocessors**
 
 ### JavaScript
 [JavaScript](dir/javascript)

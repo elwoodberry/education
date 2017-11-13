@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const jade = require('jade');
+const expressValidator = require('express-validator');
 
 // Initialize App Variable
 const app = express();
@@ -17,6 +18,31 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // Public (Static) Directory
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Global Variables
+app.use((req, res, next) => {
+  res.locals.errors = null;
+  next();
+});
+
+// Express Validator (Legacy)
+app.use(expressValidator({
+  errorFormatter: function(param, msg, value){
+    var namespace = param.split('.');
+    var root = namespace.shift();
+    var formParam = root;
+
+    while(namespace.length){
+      formParam += '[' + namespace.shift() + ']';
+    }
+
+    return {
+      param: formParam,
+      msg: msg,
+      value: value
+    };
+  }
+}));
 
 // Parse JSON
 const users = [{
@@ -41,10 +67,38 @@ const users = [{
 // Root
 app.get('/', (req, res) => {
   res.render('index',{
-    title: "Welcome To The Customer Application!",
+    title: "Add Customers",
     description: "This is where the description would go.",
     users: users
   });
+});
+
+// 'user/add'
+app.post('/users/add', (req, res) => {
+  req.checkBody('first_name', 'First Name Is Required').notEmpty();
+  req.checkBody('last_name', 'Last Name Is Required').notEmpty();
+  req.checkBody('user_email', 'Email Is Required').notEmpty();
+
+  //
+  var errors = req.validationErrors();
+
+  if(errors){
+    console.log('Errors');
+
+    res.render('index', {
+      title: 'Error Adding Customer',
+      users: users,
+      errors: errors
+    });
+  }else {
+    var newUser = {
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      user_email: req.body.user_email
+    }
+
+    console.log('Success');
+  }
 });
 
 // Listen On Port 3000
