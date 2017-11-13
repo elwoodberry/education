@@ -3,9 +3,9 @@ All the things I teach myself.
 
 ## Table Of Contents
 1. [Languages](#languages)
-  1. [JavaScript](#javascript)
+    1. [JavaScript](#javascript)
 1. [Version Control](#version-control)
-  1. [Git](#git)
+    1. [Git](#git)
 ## +
 
 ## Languages
