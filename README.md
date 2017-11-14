@@ -29,7 +29,7 @@ All the things I teach myself.
 
   * **Database**  
     * [MongoDB](dir/javascript/mongodb)
-      * [MongoDB]()
+      * [MongoDB](dir/javascript/mongodb/mongodb)
       * [Mongoose JS]()
 
   * **eCommerce**
@@ -51,6 +51,7 @@ All the things I teach myself.
 
   * **Servers**
     * [Node](dir/javascript/node)
+      * [Fixing NPM Permissions](dir/javascript/node/fixing-npm-permissions)
 
   * **Standards**
     * [ECMAScript](dir/javascript/ecmascript)
