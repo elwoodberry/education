@@ -22,7 +22,7 @@ All the things I teach myself.
 [JavaScript](dir/javascript)
   * **Authentication**
     * [Auth0](dir/javascript/auth0)
-      * [Auth0.com](dir/javascript/auth0/auth0) by Auth0 
+      * [Auth0.com](dir/javascript/auth0/auth0) by Auth0
 
   * **Build Systems**  
     * [GulpJS]()
@@ -53,7 +53,7 @@ All the things I teach myself.
 
   * **Libraries**  
     * [jQuery](dir/javascript/jquery)
-      * [jQuery](dir/javascript/jquery/jquery) by CodeSchool
+      * [Try jQuery](dir/javascript/jquery/try-jquery) by CodeSchool
 
   * **Servers**
     * [Node](dir/javascript/node)
