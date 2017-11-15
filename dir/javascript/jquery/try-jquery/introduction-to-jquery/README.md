@@ -20,6 +20,22 @@
 1. [The DOM 'ready' event](#the-dom-ready-event)
 1. [Listening for document ready](#listening-for-document-ready)
 1. [What We Have So Far](#what-we-have-so-far)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+
 ## +
 
 
@@ -213,4 +229,95 @@ Our completed code
 jQuery(document).ready(function(){
   $('h1').text('Where to?');
 });
+```
+
+
+
+
+## Install jQuery
+How do I get jQuery onto my web pages?
+1. Download [jQuery](https://jquery.com/)
+1. Load it in your HTML document
+		```
+		<script src="js/jquery.min.js"></script>
+		```
+1. Start using it
+		```
+		<script src="js/main.js"></script>
+		```
+
+## Changing multiple elements at once
+How do we change the text of every '<li>' in this page?
+```
+<h1></h1>
+<h2></h2>
+<p></p>
+<ul>
+	<li>Rome</li>
+	<li>Paris</li>
+	<li class='promo'>Rio</li>
+</ul>
+```
+
+### Find them
+This returns a jquery object with all the 'li'
+```
+$('li');
+```
+### Modify their text
+Changes the text of all the 'li' to 'Orlando'
+```
+$('li').text("Orlando");
+```
+
+## By ID or Class
+
+Selector
+```
+p { ... }
+```
+Selector's jQuery Equivalent
+```
+$('p');
+```
+By ID
+```
+#container{ ... }
+```
+Selector's jQuery Equivalent
+```
+$('#container');
+```
+By Class
+```
+.articles{ ... }
+```
+Selector's jQuery Equivalent
+```
+$('.articles');
+```
+
+
+## Multiple elements at once
+How do we specifically select the <ul> that has a 'destinations' ID?
+```
+<h1></h1>
+<h2></h2>
+<p></p>
+<ul id="destinations">
+	<li>Rome</li>
+	<li>Paris</li>
+	<li class='promo'>Rio</li>
+</ul>
+```
+Find it using the ID
+```
+$('#destinations');
+```
+
+How can we select just the 'li' that has a promo class attribute?  
+
+Find it using the class
+```
+$('.promo');
 ```

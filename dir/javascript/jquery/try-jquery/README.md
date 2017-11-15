@@ -1,5 +1,5 @@
-
-
+# Try jQuery 
+**Author**: [Code School](https://www.codeschool.com)  
 
 ## Courses
 1. [Introduction to jQuery](introduction-to-jquery)
