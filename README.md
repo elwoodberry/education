@@ -21,11 +21,11 @@ All the things I teach myself.
 
 
 ## Cloud Computing
-### [Amazon Web Services](dir/cloud-computing/amazon-web-services)
+### Amazon Web Services
 1. [AWS Introduction](dir/)
 1. [Identity Management](dir/)
 
-### [Google Cloud](dir/cloud-computing)
+### Google Cloud
 1. [Google Domains](dir/)
 
 
@@ -34,19 +34,19 @@ All the things I teach myself.
 
 
 ## Languages
-### [Cascading Style Sheets](dir/languages/css)
-#### [Animation](dir/languages/css/animation)
+### Cascading Style Sheets
+#### Animation
 1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
-#### [Preprocessors](dir/languages/css)
+#### Preprocessors
 
 
 
 
 
 
-### [JavaScript](dir/languages/javascript)
-#### [Authentication](dir/languages/authentication)
+### JavaScript
+#### Authentication
 ##### [Auth0](dir/languages/javascript/auth0)
 1. [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
 
