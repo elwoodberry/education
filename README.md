@@ -2,6 +2,7 @@
 All the things I teach myself.  
 
 ## Table Of Contents
+1. [Cloud Computing](#cloud-computing)
 1. [Languages](#languages)
     1. [Cascading Style Sheets](#version-control)
     1. [JavaScript](#javascript)
@@ -9,6 +10,16 @@ All the things I teach myself.
 1. [Version Control](#version-control)
     1. [Git](#git)
 ## +
+
+
+
+## Cloud Computing
+  * [Amazon Web Services](dir/amazon-web-services)
+    * [AWS Introduction](dir/)
+    * [Identity Management](dir/)
+
+  * [Google Cloud](dir/cloud-computing)
+    * [Google Domains](dir/)
 
 ## Languages
 ### Cascading Style Sheets
@@ -19,49 +30,49 @@ All the things I teach myself.
   * **Preprocessors**
 
 ### JavaScript
-[JavaScript](dir/javascript)
+[JavaScript](dir/languages/javascript)
   * **Authentication**
-    * [Auth0](dir/javascript/auth0)
-      * [Auth0.com](dir/javascript/auth0/auth0) by Auth0
+    * [Auth0](dir/languages/javascript/auth0)
+      * [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
 
   * **Build Systems**  
     * [GulpJS]()
 
   * **Database**  
-    * [MongoDB](dir/javascript/mongodb)
-      * [MongoDB](dir/javascript/mongodb/mongodb) by MongoDB
+    * [MongoDB](dir/languages/javascript/mongodb)
+      * [MongoDB](dir/languages/javascript/mongodb/mongodb) by MongoDB
       * [Mongoose JS]()
 
   * **eCommerce**
-    * [Stripe.JS](dir/javascript/stripe)
-      * [Simple eBook](dir/javascript/simple-ebook) by Traversy Media
+    * [Stripe.JS](dir/languages/javascript/stripe)
+      * [Simple eBook](dir/languages/javascript/simple-ebook) by Traversy Media
 
   * **Frameworks**
-    * [Angular](dir/javascript/angular)
-      * [Angular.io](dir/javascript/angular/angular-io) by Angular
+    * [Angular](dir/languages/javascript/angular)
+      * [Angular.io](dir/languages/javascript/angular/angular-io) by Angular
 
-    * [Express](dir/javascript/express)
-      * [Express v4.16.1](dir/javascript/express/express_v4-16-1) by Express
-      * [Express Tutorial](dir/javascript/express/express-tutorial) by Derek Banas
-      * [ExpressJS Crash Course](dir/javascript/express/expressjs-crash-course) by Traversy Media
+    * [Express](dir/languages/javascript/express)
+      * [Express v4.16.1](dir/languages/javascript/express/express_v4-16-1) by Express
+      * [Express Tutorial](dir/languages/javascript/express/express-tutorial) by Derek Banas
+      * [ExpressJS Crash Course](dir/languages/javascript/express/expressjs-crash-course) by Traversy Media
 
-    * [Ionic](dir/javascript/ionic)
+    * [Ionic](dir/languages/javascript/ionic)
 
   * **HTML Template Engines**
-    * [Jade](dir/javascript/jade)
-      * [Jade Pug](dir/javascript/jade/jade-pug) by Derek Banas
+    * [Jade](dir/languages/javascript/jade)
+      * [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
 
   * **Libraries**  
-    * [jQuery](dir/javascript/jquery)
-      * [Try jQuery](dir/javascript/jquery/try-jquery) by CodeSchool
+    * [jQuery](dir/languages/javascript/jquery)
+      * [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
 
   * **Servers**
-    * [Node](dir/javascript/node)
-      * [Fixing NPM Permissions](dir/javascript/node/fixing-npm-permissions) by NPM
+    * [Node](dir/languages/javascript/node)
+      * [Fixing NPM Permissions](dir/languages/javascript/node/fixing-npm-permissions) by NPM
 
   * **Standards**
-    * [ECMAScript](dir/javascript/ecmascript)
-      * [ECMAScript 6 Tutorial](dir/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
+    * [ECMAScript](dir/languages/javascript/ecmascript)
+      * [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
 
 ## Version Control
 
