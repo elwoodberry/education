@@ -33,3 +33,4 @@ block content
   ul
   each user in users.length ? users : ['There are no users.']
     li= user.first_name + " " + user.last_name
+      a(href="" class="deleteUser" data-id="#{user._id}" style="padding: 0 10px;") Delete
