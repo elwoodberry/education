@@ -1,5 +1,5 @@
 # Try jQuery
-## Introduction To jQuery
+## PART 1: Introduction To jQuery
 **Author**: [Code School](https://www.codeschool.com)   
 
 ## Table Of Contents

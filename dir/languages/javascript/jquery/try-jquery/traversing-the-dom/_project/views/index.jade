@@ -2,10 +2,13 @@ extends ./layouts/default
 
 block content
 
-  h1 Introduction To jQuery
-  h2 Where do you want to go?
+  h1 #{title}
+  h2 #{description}
   p Plan your next adventure.
   ul(id="destinations")
     li Rome
-    li Paris
+      ul(id="france")
+        li Paris
+        li Marseille
+        li Lyon
     li(class='promo') Rio
