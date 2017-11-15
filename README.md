@@ -4,7 +4,7 @@ All the things I teach myself.
 ## Table Of Contents
 1. [Cloud Computing](#cloud-computing)
 1. [Languages](#languages)
-    1. [Cascading Style Sheets](#version-control)
+    1. [Cascading Style Sheets](#cascading-style-sheets)
     1. [JavaScript](#javascript)
 
 1. [Version Control](#version-control)
@@ -14,7 +14,7 @@ All the things I teach myself.
 
 
 ## Cloud Computing
-  * [Amazon Web Services](dir/amazon-web-services)
+  * [Amazon Web Services](dir/cloud-computing/amazon-web-services)
     * [AWS Introduction](dir/)
     * [Identity Management](dir/)
 
