@@ -1,6 +1,10 @@
 # Education
 All the things I teach myself.  
 
+
+
+
+
 ## Table Of Contents
 1. [Cloud Computing](#cloud-computing)
 1. [Languages](#languages)
@@ -13,10 +17,12 @@ All the things I teach myself.
 
 
 
+
+
 ## Cloud Computing
-  * [Amazon Web Services](dir/cloud-computing/amazon-web-services)
-    * [AWS Introduction](dir/)
-    * [Identity Management](dir/)
+### [Amazon Web Services](dir/cloud-computing/amazon-web-services)
+1. [AWS Introduction](dir/)
+1. [Identity Management](dir/)
 
   * [Google Cloud](dir/cloud-computing)
     * [Google Domains](dir/)
