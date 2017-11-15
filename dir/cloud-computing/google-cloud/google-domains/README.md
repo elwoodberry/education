@@ -10,7 +10,7 @@
 
 ## Synthetic Records
 
-[Web Forwarding](https://support.google.com/domains/answer/4522141?hl=en)
+[Web Forwarding](https://support.google.com/domains/answer/4522141?hl=en)  
 From your 'Manage Domains' dashboard
 1. Click the domain name. Then click the Website tab
 1. Scroll down and click Forward

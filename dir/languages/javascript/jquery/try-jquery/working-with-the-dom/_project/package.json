@@ -1,0 +1,20 @@
+{
+  "name": "workingthedom",
+  "version": "1.0.0",
+  "description": "Working with the DOM by CodeSchool.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elwoodberry/education/tree/master/dir/javascript/jquery/try-jquery/introduction-to-jquery"
+  },
+  "author": "Elwood Berry (me@elwoodberry.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0"
+  }
+}
