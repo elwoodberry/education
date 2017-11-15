@@ -226,3 +226,124 @@ const { matchedData, sanitize } = require('express-validator/filter');
 
 ### Install MongoDB
 See [Install MongoDB Community Edition on macOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
+### Start MongoDB
+#### Open a terminal and enter the following.
+```
+$ mongod
+```
+#### Open a second terminal window and enter the following:
+```
+$ mongo
+```
+#### Show al the Databases
+From the second terminal window, type the following.
+```
+$ show dbs
+```
+#### Create a new database
+```
+$ use customerapp
+```
+#### Create a collection in the new database.
+```
+$ db.createCollection('users')
+```
+#### Show all the collections in this database.
+```
+$ show collections
+```
+#### Insert A User Into This Collection
+```
+$ db.users.insert([{first_name:'Jeff', last_name:'Sessions', user_email:'jeff.sessions@gmail.com'}, {first_name:'Donald', last_name:'Trump', user_email:'donald.trump@gmail.com'}, {first_name:'Bob', last_name:'Mueller', user_email:'bob.mueller@gmail.com'}])
+```
+#### Show All Entries In The Collection
+```
+$ db.users.find()
+```
+
+### MONGOJS
+See [Github | MongoJS](https://github.com/mafintosh/mongojs)  
+
+#### Install MongoJS
+```
+$ npm install mongojs --save
+```
+#### Include MongoJS in the project
+```
+const mongojs = require('mongojs');
+
+// Database
+const db = mongojs('customerapp', ['users']);
+```
+#### Update the app.js file
+```
+app.get('/', (req, res) => {
+  db.users.find((err, docs) => {
+    console.log(docs);
+    res.render('index',{
+      title: "Add Customers",
+      description: "This is where the description would go.",
+      users: users
+    });  
+  });
+});
+```
+#### Switch from static array of users to docs from database.
+```
+app.get('/', (req, res) => {
+  db.users.find((err, docs) => {
+    console.log(docs);
+    res.render('index',{
+      title: "Add Customers",
+      description: "This is where the description would go.",
+      users: docs
+    });  
+  });
+});
+```
+#### Update the 'user/add' route
+```
+...  
+
+else {
+  var newUser = {
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    user_email: req.body.user_email
+  }
+
+  console.log('Success');
+
+  // Insert To Database
+  db.users.insert(newUser, (err, result) => {
+    if(err){
+      console.log(err)
+    }
+    res.redirect('/');
+  });
+}
+```
+
+### DELETE REQUEST (01:01:50)
+Making a delete request can be a little more tricky.  
+Making a link that fires off a delete request is not that simple.  
+
+**Recommended Method**  
+Using jQuery(or JavaScript) to make a delete request through aJax.  
+
+#### Add HTML
+```
+ul
+each user in users.length ? users : ['There are no users.']
+  li= user.first_name + " " + user.last_name
+    a(href="#" class="deleteUser" style="padding: 0 10px;") Delete
+```
+#### Include jQuery
+```
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+```
+#### Create/Include main.js
+```
+script(src="js/main.js")
+```
