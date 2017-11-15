@@ -1,3 +1,5 @@
+![Layout](https://raw.github.com/elwoodberry/education/master/_img/headers/890x400__header_education.png)
+
 # Education
 All the things I teach myself.  
 
