@@ -8,18 +8,18 @@
 1. [Document Object Model](#document-object-model)
 1. [Loading HTML into the DOM](#loading-html-into-the-dom)
 1. [DOM Structure](#dom-structure)
-1. [Search The DOM](#Search The DOM)
-1. [Find Things](#Find Things)
-1. [The Catch](#The Catch)
-1. [Basic Usage](#Basic Usage)
-1. [CSS Selectors](#CSS Selectors)
+1. [Search The DOM](#search-the-dom)
+1. [Find Things](#find-things)
+1. [The Catch](#the-catch)
+1. [Basic Usage](#basic-usage)
+1. [CSS Selectors](#css-selectors)
 
-1. [jQuery to find Nodes](#jQuery to find Nodes)
-1. [By Element Name](#By Element Name)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
+1. [jQuery to find Nodes](#jquery-to-find-nodes)
+1. [By Element Name](#by-element-name)
+1. [Before The DOM Loads](#before-the-dom-loads)
+1. [The DOM 'ready' event](#the-dom-ready-event)
+1. [Listening for document ready](#listening-for-document-ready)
+1. [What We Have So Far](#what-we-have-so-far)
 ## +
 
 
@@ -48,7 +48,7 @@ jQuery makes it easy to:
 ```
 
 ### Objective
-How can we modify the text of the <h1> element?
+How can we modify the text of the h1 element?
 1. We need to find it
 2. We need to change it
 
