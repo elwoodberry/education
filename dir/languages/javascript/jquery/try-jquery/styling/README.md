@@ -3,7 +3,13 @@
 **Author**: [Code School](https://www.codeschool.com)   
 
 ## Table Of Contents
-1. [](#)
+1. [Separation Of Concerns](#separation-of-concerns)
+1. [Showing The Price](#showing-the-price)
+1. [Moving Styles to External CSS](#moving-styles-to-external-css)
+1. [Animation](#animation)
+1. [Moving Back Down](#moving-back-down)
+1. [Changing the speed](#changing-the-speed)
+1. [The Next Step with CSS Animations](#the-next-step-with-css-animations)
 ## +
 
 ## Separation Of Concerns
