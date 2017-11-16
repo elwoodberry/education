@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ROUTES
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Working With The DOM by CodeSchool.com',
-    description: 'CodeSchool.com'
+    title: 'Vacation Packages',
+    description: 'jQuery Travels'
   });
 });
 

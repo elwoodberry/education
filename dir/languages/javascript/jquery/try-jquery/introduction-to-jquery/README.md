@@ -20,22 +20,10 @@
 1. [The DOM 'ready' event](#the-dom-ready-event)
 1. [Listening for document ready](#listening-for-document-ready)
 1. [What We Have So Far](#what-we-have-so-far)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-
+1. [Install jQuery](#install-jquery)
+1. [Changing multiple elements at once](#changing-multiple-elements-at-once)
+1. [By ID or Class](#by-id-or-class)
+1. [Multiple elements at once](#multiple-elements-at-once)
 ## +
 
 

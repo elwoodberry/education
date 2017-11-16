@@ -1,11 +1,53 @@
 extends ./layouts/default
 
 block content
+  .row(id="filters")
+    .col-md-8
+      h1 #{title}
+      h2 #{description}
+    .col-md-2
+      button(class="btn btn-secondary onsale-filter") On Sale Now
+    .col-md-2
+      button(class="btn btn-secondary expiring-filter") Expiring Soon
 
-  h1 Introduction To jQuery
-  h2 Where do you want to go?
-  p Plan your next adventure.
-  ul(id="destinations")
-    li Rome
-    li Paris
-    li(class='promo') Rio
+  .row
+    .col-md-4
+      .card
+        .card-body.vacation(data-price="2399.99")
+          h4(class="card-title") Hawaiian Vacation
+          p
+            strong Comments On This Deal
+            br
+            i "Amazing Deal"
+            br
+            i "Can't wait to take this trip"
+
+          button(class="btn btn-primary") Get Price
+
+    .col-md-4
+      .card
+        .card-body.vacation(data-price="1999.99")
+          h4(class="card-title") Hawaiian Vacation
+          p
+            strong Comments On This Deal
+            br
+            i "Amazing Deal"
+            br
+            i "Can't wait to take this trip"
+
+          button(class="btn btn-primary") Get Price
+
+    .col-md-4
+      .card
+        .card-body.vacation(data-price="999.99")
+          h4(class="card-title") Hawaiian Vacation
+          p
+            strong Comments On This Deal
+            br
+            i "Amazing Deal"
+            br
+            i "Can't wait to take this trip"
+
+          button(class="btn btn-primary") Get Price
+
+  p Call Us At (800) 123-4567 To Make A Reservation Today!

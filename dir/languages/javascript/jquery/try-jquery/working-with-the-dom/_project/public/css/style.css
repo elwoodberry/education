@@ -1,6 +1,33 @@
-h1{
-  font-size: 3em;
+h1 {
+  font-size: 30px;
 }
-p{
-  color: blue;
+h2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+h4 {
+  color: #e9ecef;
+}
+strong {
+  color: #FFF;
+}
+i {
+  color: #e9ecef;
+}
+
+
+.container {
+  padding-top: 60px;
+}
+.container > p {
+  margin-top: 20px;
+  text-align: center;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.btn {
+  cursor: pointer;
+  width: 100%;
 }

@@ -8,7 +8,10 @@
 1. [Selecting Direct Children](#selecting-direct-children)
 1. [Selecting Multiple Elements](#selecting-multiple-elements)
 1. [CSS-like pseudo class](#css-like-pseudo-class)
-
+1. [Traversing the DOM](#traversing-the-dom)
+1. [Walking the DOM](#walking-the-dom)
+1. [Walking up the DOM](#walking-up-the-dom)
+1. [Walking Down The DOM](#walking-down-the-dom)
 ## +
 
 
