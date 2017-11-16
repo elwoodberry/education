@@ -1,5 +1,5 @@
 # Try jQuery
-## ## PART 5: Styling
+## PART 5: Styling
 **Author**: [Code School](https://www.codeschool.com)   
 
 ## Table Of Contents

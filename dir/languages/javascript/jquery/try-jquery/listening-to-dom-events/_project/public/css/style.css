@@ -1,6 +1,31 @@
-h1{
-  font-size: 3em;
+h1 {
+  font-size: 24px;
+  margin-top: 50px;
 }
-p{
-  color: blue;
+h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+h4 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+}
+ul {
+  font-size: 14px;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+}
+
+
+.ticket{
+  display: none;
+}
+.comments {
+  display: none;
 }

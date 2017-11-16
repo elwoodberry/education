@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ROUTES
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Listening To DOM Elements by CodeSchool.com',
-    description: 'CodeSchool.com'
+    title: 'jQuery Air Atlantic - Vacation Confirmation',
+    description: 'Confirmations'
   });
 });
 

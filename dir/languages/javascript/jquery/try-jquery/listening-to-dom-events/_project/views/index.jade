@@ -2,10 +2,42 @@ extends ./layouts/default
 
 block content
 
-  h1 Introduction To jQuery
-  h2 Where do you want to go?
-  p Plan your next adventure.
-  ul(id="destinations")
-    li Rome
-    li Paris
-    li(class='promo') Rio
+  h1 #{title}
+  h2 #{description}
+
+  .row
+    .col-md-4(class="confirmation")
+      h4 Hawaiian Vacation
+      p Paid #2,999.99 on January 14, 2018
+      button(class="btn btn-secondary") Flight Details
+
+      ul(class="ticket")
+        li
+          strong Destination:
+          span Honolulu, HI
+        li
+          strong Depart Date:
+          span February 20, 2013 at 09:30
+        li
+          strong Flight Number:
+          span 815
+
+    .col-md-8
+      .row
+        .col-md-6
+          .vacation(data-price="399.99")
+            h3 Hawaiian Vacation
+            p $399.99 per ticket
+            .form-group
+              label Tickets:
+              input(type="number" class="form-control quantity" value="1")
+            p Total Price: $
+              span(id="total") 399.99
+
+            a(href="#" class="expand") Show Comments
+            ul(class="comments")
+              li Comment #1
+              li Comment #2
+              li Comment #3
+
+        .col-md-6
