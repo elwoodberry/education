@@ -2,10 +2,24 @@ extends ./layouts/default
 
 block content
 
-  h1 Introduction To jQuery
-  h2 Where do you want to go?
-  p Plan your next adventure.
-  ul(id="destinations")
-    li Rome
-    li Paris
-    li(class='promo') Rio
+  h1 #{title}
+  h2 #{description}
+
+  .row(id="vacation")
+    .col-md-4
+      .card(class="vacation")
+        .card-body
+          h3 Hawaiian Vacation
+          .price $12,999.99
+    .col-md-4
+      .card(class="vacation")
+        .card-body
+          h3 European Getaway
+          .price $599.99
+    .col-md-4
+      .card(class="vacation")
+        .card-body
+          h3 Visit Japan
+          .price $399.99
+
+  p Call Us At (800) 123-4567 To Make Reservations Today!

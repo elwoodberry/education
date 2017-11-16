@@ -6,236 +6,234 @@
 1. [](#)
 ## +
 
-// 5.2 Taming CSS
+## Separation Of Concerns
+Changing Our Style  
+Let's make all '.vacation' elements clickable and allow people to click on the 'li' element.
+```
+$(document).ready(() => {
+  $('#vacation').on('click', '.vacation', function(){
 
-
-// SLIDE 001
-
-	// Seperation Of Concens
-	// Changing Our Style
-
-	// Let's make all '.vacation' elements clickable and allow people to click on the '<li>' element.
-
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-
-
-			// There are a few ways to get and set CSS.
-			// Set it by specifing the attribute and the value
-			$('class').css('display', 'block');
-
-			// Get it's current value by specifing the attribute
-			$('class').css('display');
-
-			// We can also send in a function.
-
-
-		});
+  });
+});
+```
+There are a few ways to get and set CSS.  
+Set it by specifying the attribute and the value
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).css('background-color', 'rgb(109, 189, 255)')
+		$(this).css('border-color', '1px solid #947');
+  });
+});
+```
+Method chaining
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).css('background-color', 'rgb(109, 189, 255)').css('border-color', '1px solid #947');
+  });
+});
+```
+Using A JavaScript Object
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).css({
+			'background-color': 'rgb(109, 189, 255',
+			'border-color': '1px solid #947'
+	  });
 	});
+});
+```
 
-// SLIDE 002
+## Showing The Price
+When our vacations are clicked, show the price for that vacation.  
+One way to handle this...  
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).css({
+			'background-color': 'rgb(109, 189, 255',
+			'border-color': '1px solid #947'
+	  });
 
-	// Changing the style
-
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-
-			// Set background color for this list item
-			$(this).css('background-color', '#FF0000');
-
-			// Set the border color for this list item
-			$(this).css('background-color', '1px solid #967');
-
-			// Method chaining technique
-			$(this).css('background-color', '#FF0000').css('background-color', '1px solid #967');
-
-			// Object Method
-			$(this).css({
-				'background-color', '#FF0000',
-				'background-color', '1px solid #967'
-			});
-		});
+		// Show Price  
+		$(this).find('.price').css('display', 'block');
 	});
+});
+```
+jquery has object methods that handle the 'display' behavior
+1. 'show'
+1. 'hide'
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).css({
+			'background-color': 'rgb(109, 189, 255',
+			'border-color': '1px solid #947'
+	  });
 
-// SLIDE 003
-
-	// Showing The Price
-
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-			$(this).css({
-				'background-color': '#252B30',
-				'background-color', '1px solid #967'
-			});
-		});
+		// Show Price  
+		$(this).find('.price').show();
 	});
+});
+```
 
-	// When our vacations are clicked, show the price for that vacation.
-	// One way to handle this. ..
-	$(this).find('.price').css('display', 'block');
+## Moving Styles to External CSS
+Create two new classes
+```
+.highlighted {
+	background-color: rgb(109, 189, 255);
+	border-color: 3px solid #947;
+}
+.highlighted .price {
+	display: block;
+}
+```
+Refactored Code
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).addClass('highlighted');
 
-	// jquery has object methods that handle the 'display' behavior
-	// 'show'
-	// 'hide'
-	$(this).find('.price').show();
-
-
-	// The code
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-			$(this).css({
-				'background-color': '#252B30',
-				'background-color', '1px solid #967'
-			});
-			$(this).find('.price').show();
-		});
+		// Show Price
+		$(this).find('.price').show();
 	});
+});
+```
+Refactored Code with 'toggleClass'
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
 
-// SLIDE 004
-
-	// Moving Styles to External CSS
-
-	// The old code...
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-			$(this).css({
-				'background-color': '#252B30',
-				'background-color', '1px solid #967'
-			});
-			$(this).find('.price').show();
-		});
+		// Show Price
+		$(this).find('.price').show();
 	});
+});
+```
 
-	// Create two new classes
-	`
-		.highlighted {
-			background-color: #000;
-			border-color: 1px solid #000;
+## Animation
+Adding Movement  
+Using CSS
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
+
+		$(this).css({'top': '-10px'});
+	});
+});
+```
+jQuery Object Methods  
+'animate(<object>)' Expects an object of CSS
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
+
+		$(this).animate({'top': '-10px'});
+	});
+});
+```
+
+## Moving Back Down
+When this event handler is called we only want it to animate up if we just added the 'highlight' class. If the class is removed we want it to animate back down.  
+
+jQuery Method: 'hasClass'. Expects a string.  
+Animate the vacation back down
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
+
+		if( $(this).hasClass('highlighted') ){
+			$(this).animate({'top': '-10px'});
+		}else {
+			$(this).animate({'top': '0px'});
 		}
-		.highlighted .price {
-			display: block;
+	});
+});
+```
+## Changing the speed
+We can optionally pass in the speed as a second argument to 'animate()'.  
+Defualt Speed. 400 Milliseconds
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
+
+		if( $(this).hasClass('highlighted') ){
+			$(this).animate({'top': '-10px'}, 400);
+		}else {
+			$(this).animate({'top': '0px'}, 400);
 		}
-	`
-
-	// Refactored Code
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-			$(this).addClass('.highlighted');
-		});
 	});
+});
+```
+Using 'Fast'. 200 Milliseconds
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
 
-
-	// Refactored Code with 'toggleClass'
-	$(document).ready(function(){
-		$('.vacations').on('click', '.vacation', function(){
-			$(this).toggleClass('.highlighted');
-		});
+		if( $(this).hasClass('highlighted') ){
+			$(this).animate({'top': '-10px'}, 'fast');
+		}else {
+			$(this).animate({'top': '0px'}, 'fast');
+		}
 	});
-// SLIDE 005
+});
+```
+Using 'Slow'. 600 Milliseconds
+```
+$(document).ready(() => {
+	$('#vacation').on('click', '.vacation', function(){
+		$(this).toggleClass('highlighted');
+		$(this).find('.price').show();
 
-	//
-
-
-  // 5.7 Animation
-
-
-  // SLIDE 001
-
-  	// Adding Movement
-
-  	// Old Code...
-  	$(document).ready(function(){
-  		$('#vacations').on('click', '.vacation', function(){
-  			$(this).toggleClass('highlighted');
-
-  			// jQuery Object Methods
-  			// 'animate(<object>)' Expects an object of CSS
-  			$(this).animate({'top': '-10px'});
-  		});
-  	});
-
-  // SLIDE 002
-
-  	// Moving Back Down
-
-  	// When this event handler is called we only want it to animate up if we just added the 'highlight' class. If the class is removed we want it to animate back down.
-
-  	$(document).ready(function(){
-  		$('#vacations').on('click', '.vacation', function(){
-  			$(this).toggleClass('highlighted');
-
-  			// jQuery Method: 'hasClass'. Expects a string
-  			if( $(this).hasClass('highlighted') ){
-  				// Animate the vacation up
-  				$(this).animate({'top': '-10px'});
-  			}
-  			else{
-  				// Animate the vacation back down
-  				$(this).animate({'top': '0px'});
-  			}
-  		});
-  	});
-
-  // SLIDE 003
-
-  	// Changing the speed
-
-  	// We can optionally pass in the speed as a second argument to 'animate()'
-  	$(document).ready(function(){
-  		$('#vacations').on('click', '.vacation', function(){
-  			$(this).toggleClass('highlighted');
-
-  			if( $(this).hasClass('highlighted') ){
-
-  				// Defualt Speed. 400 Milliseconds
-  				$(this).animate({'top': '-10px'}, 400);
-
-  				// 'Fast'. 200 Milliseconds
-  				$(this).animate({'top': '-10px'}, 'fast');			
-
-  				// 'Slow'. 600 Milliseconds
-  				$(this).animate({'top': '-10px'}, 'slow');
-
-  			}else{
-
-  				$(this).animate({'top': '0px'});
-  			}
-  		});
-  	});
-
-  	// Effects methods like 'animate', 'slideToggle()' and 'fadeToggle()' can also be given a specific speed as a string or in milliseconds.
+		if( $(this).hasClass('highlighted') ){
+			$(this).animate({'top': '-10px'}, 'slow');
+		}else {
+			$(this).animate({'top': '0px'}, 'slow');
+		}
+	});
+});
+```
+Effects methods like 'animate', 'slideToggle()' and 'fadeToggle()' can also be given a specific speed as a string or in milliseconds.
 
 
-
-  // SLIDE 004
-
-  	// The Next Step with CSS Animations
-
-  	// The old code is dirty.. . we need to refactor
-  	$(document).ready(function(){
-  		$('#vacations').on('click', '.vacation', function(){
-  			$(this).toggleClass('highlighted');
-
-  			if( $(this).hasClass('highlighted') ){
-  				$(this).animate({'top': '-10px'}, 'fast');
-  			}else{
-
-  				$(this).animate({'top': '0px'}, 'fast');
-  			}
-  		});
-  	});
-
-  	// You can do these animations in the CSS
-  	`
-  		.vacation {
-  			-moz-transition: top 0.2s;
-  			-o-transition: top 0.2s;
-  			-webkit-transition: top 0.2s;
-  			transition: top 0.2s;
-  		}
-  		.highlighted {
-  			top: -10px;
-  		}
-  	`
-
-  	// Unlike jQuery, with CSS we need to take into account the different browsers and how they handle transitions.
+## The Next Step with CSS Animations
+The old code is dirty.. . we need to refactor.  
+The CSS  
+```
+.vacation {
+  transition: top 0.2s;
+}
+.highlighted {
+	background-color: rgb(109, 189, 255);
+  border: 3px solid rgba(0, 90, 171, 0.29);
+  top: -10px;
+}
+```
+The CSS w/ browser prefixes
+```
+.vacation {
+	-moz-transition: top 0.2s;
+	-o-transition: top 0.2s;
+	-webkit-transition: top 0.2s;
+	top: 0px;
+  transition: top 0.2s;
+}
+.highlighted {
+	background-color: rgb(109, 189, 255);
+  border: 3px solid rgba(0, 90, 171, 0.29);
+  top: -10px;
+}
+```
+Unlike jQuery, with CSS we need to take into account the different browsers and how they handle transitions.
