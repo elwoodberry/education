@@ -1,5 +1,5 @@
 # Try jQuery
-## ## PART 3: Working With The DOM
+## PART 3: Working With The DOM
 **Author**: [Code School](https://www.codeschool.com)   
 
 ## Table Of Contents
@@ -13,7 +13,18 @@
 1. [Prepend To](#prepend-to)
 1. [Insert After](#insert-after)
 1. [Insert Before](#insert-before)
-
+1. [Passing In A Function](#passing-in-a-function)
+1. [Watching for 'click'](#watching-for-click)
+1. [THIS](#this)
+1. [Transversing THIS](#transversing-this)
+1. [Closest Method](#closest-method)
+1. [Data Attribute](#data-attribute)
+1. [Refactoring](#refactoring)
+1. [Reusing jQuery Objects](#reusing-jquery-objects)
+1. [On With A Selector](#on-with-a-selector)
+1. [Filtering HTML](#filtering-html)
+1. [Filtering For Vacations On Sale](#filtering-for-vacations-on-sale)
+1. [Unhighlighting vacations](#unhighlighting-vacations)
 ## +
 
 
@@ -170,7 +181,7 @@ price.insertBefore($('.vacation'));
 ```
 
 
-Passing In A Function  
+## Passing In A Function  
 Listen for when the document is 'ready'  
 ```
 $(document).ready(
@@ -183,7 +194,7 @@ $(document).ready(
 ```
 
 
-Watching for 'click'
+## Watching for 'click'
 ```
 $(document).ready(function(){}
 
@@ -424,13 +435,11 @@ $('#filters').on('click', '.expiring-filter', function(){
 ```
 
 ## Unhighlighting vacations
-How do we make sure not all vacations are highlighted?
+How do we make sure not all vacations are highlighted?  
+When a button is clicked, first thing we'll do is remove the highlighted class before adding it back.
 ```
 $('#filters').on('click', '.expiring-filter', function(){
-
-	// When a button is clicked, first thing we'll do is remove the highlighted class before adding it back.
-	$('highlighted').removeClass('highlighted');
-
+	$('.highlighted').removeClass('highlighted');
 	$('.vacation').filter('.expiring').addClass('highlighted');
 });
 ```

@@ -27,6 +27,9 @@ i {
 .card {
   background-color: rgba(0, 0, 0, 0.4);
 }
+.highlighted {
+  background-color: rgba(72, 0, 95, 0.8) !important;
+}
 .btn {
   cursor: pointer;
   width: 100%;
