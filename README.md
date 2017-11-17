@@ -29,10 +29,9 @@
 
 
 ## Languages
-### Cascading Style Sheets
+> Cascading Style Sheets
 #### Animation
-Alt-H2
-------
+
 1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
 #### Preprocessors
