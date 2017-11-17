@@ -16,7 +16,7 @@
 
 
 ## Cloud Computing
-   ### Amazon Web Services
+   Amazon Web Services
 
 1. [AWS Introduction](dir/)
 1. [Identity Management](dir/)
