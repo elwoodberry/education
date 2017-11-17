@@ -6,11 +6,11 @@
 
 ## Table Of Contents
 1. [What is AJAX](#what-is-ajax) (00:57)
-1. [Diagram How it works](#Diagram-wow-it-works) (01:59)
+1. [Diagram How it works](#diagram-wow-it-works) (01:59)
 1. [Basic idea of the web](#basic-idea-of-the-web) (00:00)
 1. [With AJAX...](#with-ajax) (00:00)
 1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
-1. [Libraries & Other Methods](#libraries-other-methods) (05:06)
+1. [Libraries & Other Methods](#libraries-&-other-methods) (05:06)
 ## +
 
 
