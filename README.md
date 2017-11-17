@@ -31,6 +31,8 @@
 ## Languages
 ### Cascading Style Sheets
 #### Animation
+Alt-H2
+------
 1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
 #### Preprocessors
@@ -43,7 +45,7 @@
 ### JavaScript
 #### Authentication
   1. [Auth0](dir/languages/javascript/auth0)
-    1. [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
+      1. [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
 
 #### Web Technologies  
   1. [Ajax](dir/languages/javascript/ajax)
