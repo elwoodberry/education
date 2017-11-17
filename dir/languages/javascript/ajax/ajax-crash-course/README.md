@@ -8,9 +8,9 @@
 1. [What is AJAX](#what-is-ajax) (00:57)
 1. [Diagram How it works](#Diagram-wow-it-works) (01:59)
 1. [Basic idea of the web](#basic-idea-of-the-web) (00:00)
-1. [With AJAX...](#With AJAX...) (00:00)
-1. [XmlHttpRequest (xhr) Object](#XmlHttpRequest (xhr) Object) (04:07)
-1. [Libraries & Other Methods](#Libraries & Other Methods) (05:06)
+1. [With AJAX...](#with-ajax) (00:00)
+1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
+1. [Libraries & Other Methods](#libraries-other-methods) (05:06)
 ## +
 
 
@@ -48,9 +48,7 @@
 1. Response is returned in XML/JSON format
 1. Request is made using the 'XmlHttpRequest' object.
 
-
-# 4:07
-# XmlHttpRequest (xhr) Object
+## XmlHttpRequest (xhr) Object
 
 1. API in the form of an object
    It has properties and methods attached to it.
@@ -62,10 +60,9 @@
 
 
 ## Libraries & Other Methods
-
-1. jQuery - DOM manipulation library
-1. Axios - Slim library
-1. SuperAgent - Slim library
-1. Fetch API - Baked into your favorite browser
-1. Prototype - Library
-1. Node HTTP - Node HTTP server
+1. [jQuery](https://jquery.com/) - DOM manipulation library
+1. [Axios](https://www.axios.com/) - Slim library
+1. [SuperAgent](https://github.com/visionmedia/superagent) - Slim library
+1. [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Baked into your favorite browser
+1. [Prototype](http://prototypejs.org/) - Library
+1. [Node HTTP](https://nodejs.org/api/http.html) - Node HTTP server
