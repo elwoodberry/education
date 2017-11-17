@@ -6,11 +6,11 @@
 
 ## Table Of Contents
 1. [What is AJAX](#what-is-ajax) (00:57)
-1. [Diagram How it works](#diagram-wow-it-works) (01:59)
+1. [Diagram How it works](#diagram-how-it-works) (01:59)
 1. [Basic idea of the web](#basic-idea-of-the-web) (00:00)
 1. [With AJAX...](#with-ajax) (00:00)
 1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
-1. [Libraries & Other Methods](#libraries-&-other-methods) (05:06)
+1. [Libraries and Other Methods](#libraries-and-other-methods) (05:06)
 ## +
 
 
@@ -59,7 +59,7 @@
 1. Can work with data other than XML(JSON, plain text)
 
 
-## Libraries & Other Methods
+## Libraries and Other Methods
 1. [jQuery](https://jquery.com/) - DOM manipulation library
 1. [Axios](https://www.axios.com/) - Slim library
 1. [SuperAgent](https://github.com/visionmedia/superagent) - Slim library

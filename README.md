@@ -15,13 +15,12 @@
 
 
 
-## Cloud Computing
-   Amazon Web Services
-
+# Cloud Computing
+## Amazon Web Services
 1. [AWS Introduction](dir/)
 1. [Identity Management](dir/)
 
-### Google Cloud
+## Google Cloud
 1. [Google Domains](dir/)
 
 
