@@ -75,29 +75,29 @@
     button(id="button" class="btn btn-primary btn-lg" role="button") Get Text File!  
     ```
 1. Add an event listener for a click on that button.
-  ```
-  document.getElementById('button').addEventListener('click', loadText);
-  ```
+    ```
+    document.getElementById('button').addEventListener('click', loadText);
+    ```
 1. Create a 'load text' function.
-  ```
-  function loadText(){
+    ```
+    function loadText(){
 
-  }
-  ```
+    }
+    ```
 1. **Test**: Console log the click
-  ```
-  console.log('Test The Click');
-  ```
+    ```
+    console.log('Test The Click');
+    ```
 1. Create 'sample-text__00001.txt'
 1. Create 'xhr' for XmlHttpRequest Object
-  ```
-  const xhr = new XMLHttpRequest();
-  ```
-  * **Make** The Request  
-  * **Type** of Request  
-  * **URL** of Request
+    ```
+    const xhr = new XMLHttpRequest();
+    ```
+    * **Make** The Request  
+    * **Type** of Request  
+    * **URL** of Request
 1. Open Function
-  Parameters (type, url/file, async)
-  ```
-  xhr.open('GET', 'sample-text__00001.txt', true);
-  ```
+    Parameters (type, url/file, async)
+    ```
+    xhr.open('GET', 'sample-text__00001.txt', true);
+    ```
