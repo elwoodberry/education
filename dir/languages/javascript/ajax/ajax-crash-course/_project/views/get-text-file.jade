@@ -1,0 +1,16 @@
+extends ./layouts/default
+
+block content
+
+  h1
+  small
+
+  .jumbotron
+    h1(class="display-3") #{title}
+    p(class="lead") #{description}
+    hr(class="my-4")
+    p It uses utility classes for typography and spacing to space content out within the larger container.
+    p(class="lead")
+      button(id="button" class="btn btn-primary btn-lg" role="button") Get Text File!
+
+  script(src="js/get-text-file.js")

@@ -23,14 +23,9 @@
 ## Google Cloud
 1. [Google Domains](dir/)
 
-
-
-
-
-
-## Languages
-> Cascading Style Sheets
-#### Animation
+# Languages
+## Cascading Style Sheets
+### Animation
 
 1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 

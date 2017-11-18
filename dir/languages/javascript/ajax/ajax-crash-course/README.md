@@ -11,6 +11,7 @@
 1. [With AJAX...](#with-ajax) (00:00)
 1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
 1. [Libraries and Other Methods](#libraries-and-other-methods) (05:06)
+1. [Get A Text File](#Get A Text File)
 ## +
 
 
@@ -66,3 +67,37 @@
 1. [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - Baked into your favorite browser
 1. [Prototype](http://prototypejs.org/) - Library
 1. [Node HTTP](https://nodejs.org/api/http.html) - Node HTTP server
+
+## Get A Text File
+1. Create an HTML File
+1. Add A Button
+  ```
+  button(id="button" class="btn btn-primary btn-lg" role="button") Get Text File!  
+  ```
+1. Add an event listener for a click on that button.
+  ```
+  document.getElementById('button').addEventListener('click', loadText);
+  ```
+1. Create a 'load text' function.
+  ```
+  function loadText(){
+
+  }
+  ```
+1. **Test**: Console log the click
+  ```
+  console.log('Test The Click');
+  ```
+1. Create 'sample-text__00001.txt'
+1. Create 'xhr' for XmlHttpRequest Object
+  ```
+  const xhr = new XMLHttpRequest();
+  ```
+  * **Make** The Request  
+  * **Type** of Request  
+  * **URL** of Request
+1. Open Function
+  Parameters (type, url/file, async)
+  ```
+  xhr.open('GET', 'sample-text__00001.txt', true);
+  ```
