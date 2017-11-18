@@ -71,9 +71,9 @@
 ## Get A Text File
 1. Create an HTML File
 1. Add A Button
-  ```
-  button(id="button" class="btn btn-primary btn-lg" role="button") Get Text File!  
-  ```
+    ```
+    button(id="button" class="btn btn-primary btn-lg" role="button") Get Text File!  
+    ```
 1. Add an event listener for a click on that button.
   ```
   document.getElementById('button').addEventListener('click', loadText);
