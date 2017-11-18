@@ -112,10 +112,27 @@
     // Sends request
     xhr.send();
     ```
-    status
+    Status
     * HTTP Statuses
     * 200: "OK"
     * 403: "Forbidden"
     * 404: "Not Found"
 
 1. OnReadyStateChange Function
+    ```
+    xhr.onreadystatechange = function(){
+      // Check for ready state
+      if(this.readyState == 4 && this.status == 200){
+        console.log(this.responseText);
+      }
+    }
+
+    // Sends a request
+    xhr.send();
+    ```
+    Ready State Values  
+    * 0: Request not initialized
+    * 1: Server Connection Established  
+    * 2: Request Received  
+    * 3: Processing Request  
+    * 4: Request Finished and Response is ready
