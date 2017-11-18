@@ -101,3 +101,21 @@
     ```
     xhr.open('GET', 'sample-text__00001.txt', true);
     ```
+
+1. Onload Function
+    ```
+    xhr.onload = function(){
+      // Check for status of the response
+      if(this.status == 200)
+    }
+
+    // Sends request
+    xhr.send();
+    ```
+    status
+    * HTTP Statuses
+    * 200: "OK"
+    * 403: "Forbidden"
+    * 404: "Not Found"
+
+1. OnReadyStateChange Function

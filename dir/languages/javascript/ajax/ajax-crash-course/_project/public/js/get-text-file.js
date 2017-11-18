@@ -10,7 +10,10 @@ function loadText(){
   xhr.open('GET', 'sample-text__00001.txt', true);
 
   xhr.onload = function(){
+
+    // Check for status of the response
     if(this.status == 200){
+      // Get response from file.
       console.log(this.responseText);
     }
   }
