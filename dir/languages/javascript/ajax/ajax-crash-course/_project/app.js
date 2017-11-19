@@ -29,8 +29,16 @@ app.get('/', (req, res) => {
 // GET TEXT FILE
 app.get('/get-text-file', (req, res) => {
   res.render('get-text-file', {
-    title: 'Get Text File',
-    description: 'No Description'
+    title: 'TEXT ',
+    description: ' | Click the button to get response text.'
+  });
+});
+
+// GET JSON FILE
+app.get('/get-json-file', (req, res) => {
+  res.render('get-json-file', {
+    title: 'JSON ',
+    description: ' | Click the button to get response text.'
   });
 });
 

@@ -12,6 +12,7 @@
 1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
 1. [Libraries and Other Methods](#libraries-and-other-methods) (05:06)
 1. [Get A Text File](#Get A Text File)
+1. [Get A JSON File](#Get A JSON File)
 ## +
 
 
@@ -136,3 +137,119 @@
     * 2: Request Received  
     * 3: Processing Request  
     * 4: Request Finished and Response is ready
+
+1. Check ReadyState 1
+    ```
+    ...
+    xhr.open('GET', 'sample-text__00001.txt', true);
+
+    // Check ReadyState
+    console.log('READYSTATE: ', xhr.readyState);
+
+    xhr.onload = function(){
+    ...
+    ```
+1. OnLoad only executes on ReadyState 4
+    ```
+    ...
+    xhr.open('GET', 'sample-text__00001.txt', true);
+
+    // Check ReadyState
+    console.log('READYSTATE: ', xhr.readyState);
+
+    xhr.onload = function(){
+
+      // Check ReadyState
+      console.log('READYSTATE: ', xhr.readyState);
+    ...
+    ```
+1. OnProgress (22:25)
+    The readyState is always 3, Processing Request.  
+    ```
+    xhr.onprogress = function(){
+      console.log('READYSTATE: ', xhr.readyState);
+    }
+    ```
+1. OnError
+    ```
+    xhr.onerror = function(){
+      console.log('Request Error...');
+    }
+    ```
+1. Display response on the screen
+    Create a div with id of 'textGoesHere'
+    ```
+    blockquote(class="blockquote")
+      #textGoesHere.mb-0
+    ```
+    Get the element by id and change its inner HTML to the response text.  
+    ```
+    document.getElementById('textGoesHere').innerHTML = this.responseText;
+    ```
+1. Add a 404 status
+    ```
+    if(this.status == 200){
+      ...
+    }else if(this.status == 404){
+      document.getElementById('textGoesHere').innerHTML = 'File Not Found.';
+    }
+    ```
+
+## Get A JSON File
+1. Create an HTML File
+1. Create 'users.json' and 'user.json'
+1. 'user.json'
+    ```
+    {
+      "id": 1,
+      "name": "Rick",
+      "email": "rick@gmail.com"
+    }
+    ```
+1. 'users.json'
+    ```
+    [
+     ..an array of users
+    ]
+    ```
+1. Create 'Get User' and 'Get Users' buttons
+    ```
+    p(class="lead")
+      button(id="button1" class="btn btn-primary btn-lg" role="button") Get User
+      button(id="button2" class="btn btn-primary btn-lg" role="button") Get Users
+    ```
+1. Add An Event Listener for the click.
+    ```
+    document.getElementById('button1').addEventListener('click', loadUser);
+    ```
+1. Create 'loadUser' function
+    ```
+    function loadUser(){
+
+      const xhr = new XMLHttpRequest();
+
+      // Open
+      xhr.open('GET', 'user.json', true);
+
+      // Check ReadyState
+      console.log('JSON.chk1: READYSTATE: ', xhr.readyState);
+
+      // On Load
+      xhr.onload = function(){
+
+        console.log('JSON.chk2: READYSTATE: ', xhr.readyState);
+
+        // Check for status of the response
+        if(this.status == 200){
+          console.log('Everything Is OK!');
+          console.log(this.responseText);
+
+        }else if(this.status == 404){
+          document.getElementById('jsonUser').innerHTML = 'File Not Found.';
+        }
+      }
+
+      // Sends a request
+      xhr.send();
+    }
+    ```

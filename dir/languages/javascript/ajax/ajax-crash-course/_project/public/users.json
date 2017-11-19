@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "RZA",
+    "email": "rza@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Ghostface Killah",
+    "email": "ghostface.killah@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Raekwon",
+    "email": "raekwon@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Ol' Dirty Bastard",
+    "email": "ol.dirty.bastard@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Method Man",
+    "email": "method.man@gmail.com"
+  },
+  {
+    "id": 6,
+    "name": "GZA",
+    "email": "gza@gmail.com"
+  },
+  {
+    "id": 7,
+    "name": "Inspectah Deck",
+    "email": "inspectah.deck@gmail.com"
+  },
+  {
+    "id": 8,
+    "name": "U-God",
+    "email": "u.god@gmail.com"
+  },
+  {
+    "id": 9,
+    "name": "Masta Killa",
+    "email": "masta.killa@gmail.com"
+  },
+  {
+    "id": 10,
+    "name": "Cappadonna",
+    "email": "cappadonna@gmail.com"
+  }
+]
