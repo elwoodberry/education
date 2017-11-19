@@ -278,9 +278,9 @@
           // FOR loop
           for(var i in users){
             outputUsers += `
-            <ul>
-              <li><strong>Name</strong>: ${user.name}</li>
-              <li><strong>Email</strong>: ${user.email}</li>
+            <ul class="list-unstyled">
+              <li><strong>Name</strong>: ${users[i].name}</li>
+              <li><strong>Email</strong>: ${users[i].email}</li>
             </ul>
             `;
           }
@@ -294,5 +294,4 @@
 
       xhr.send();
     }
-
     ```
