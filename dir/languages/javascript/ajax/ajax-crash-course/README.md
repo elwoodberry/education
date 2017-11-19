@@ -13,6 +13,7 @@
 1. [Libraries and Other Methods](#libraries-and-other-methods) (05:06)
 1. [Get A Text File](#get-a-text-file)
 1. [Get A JSON File](#get-a-json-file)
+1. [External API](#external-api) (36:55)
 ## +
 
 
@@ -295,3 +296,49 @@
       xhr.send();
     }
     ```
+## External API
+See [GitHub Users API](https://api.github.com/users)
+```
+document.getElementById('button').addEventListener('click', loadUsers);
+
+function loadUsers(){
+  const xhr = new XMLHttpRequest();
+
+  xhr.open('GET', 'https://api.github.com/users', true);
+
+  xhr.onload = function(){
+    if(this.status == 200){
+      let users = JSON.parse(this.responseText);
+      let output = '';
+      let outputError = `
+      <div class="col-sm-12">
+        <h4>File Not Found.</h4>
+      </div>
+      `;
+
+      for(var i in users){
+        output += `
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="${users[i].avatar_url}" alt="${users[i].login}" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">${users[i].login}</h4>
+              <a href="${users[i].html_url}" target="_blank" class="btn btn-primary">Launch Profile</a>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
+      document.getElementById('githubUsers').innerHTML = output;
+
+    }else if(this.status == 404){
+      document.getElementById('githubUsers').innerHTML = outputError;
+    }
+
+
+  }
+
+  xhr.send();
+}
+```  

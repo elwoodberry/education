@@ -1,0 +1,20 @@
+extends ./layouts/default
+
+block content
+
+  h1
+  small
+
+  .jumbotron
+
+    h3 #{title}
+      small(class="text-muted") #{description}
+
+    p(class="lead")
+      button(id="button" class="btn btn-primary btn-lg" role="button") Load Users
+
+    hr(class="my-4")
+
+    .row(id="githubUsers")
+
+  script(src="js/external-api.js")

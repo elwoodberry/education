@@ -42,6 +42,14 @@ app.get('/get-json-file', (req, res) => {
   });
 });
 
+// EXTERNAL API
+app.get('/external-api', (req, res) => {
+  res.render('external-api', {
+    title: 'External API',
+    description: ' | Working With The GitHub API'
+  });
+});
+
 // LISTEN: PORT 3000
 app.listen(3000, () => {
   console.log('Port:' + 3000);

@@ -1,3 +1,8 @@
 button {
   cursor: pointer;
 }
+
+.card .btn {
+  color: #FFF !important;
+  width: 100%;
+}
