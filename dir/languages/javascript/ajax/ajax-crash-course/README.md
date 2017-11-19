@@ -11,8 +11,8 @@
 1. [With AJAX...](#with-ajax) (00:00)
 1. [XmlHttpRequest (xhr) Object](#xmlhttprequest-xhr-object) (04:07)
 1. [Libraries and Other Methods](#libraries-and-other-methods) (05:06)
-1. [Get A Text File](#Get A Text File)
-1. [Get A JSON File](#Get A JSON File)
+1. [Get A Text File](#get-a-text-file)
+1. [Get A JSON File](#get-a-json-file)
 ## +
 
 
@@ -231,17 +231,11 @@
       // Open
       xhr.open('GET', 'user.json', true);
 
-      // Check ReadyState
-      console.log('JSON.chk1: READYSTATE: ', xhr.readyState);
-
       // On Load
       xhr.onload = function(){
 
-        console.log('JSON.chk2: READYSTATE: ', xhr.readyState);
-
         // Check for status of the response
         if(this.status == 200){
-          console.log('Everything Is OK!');
           console.log(this.responseText);
 
         }else if(this.status == 404){
@@ -252,4 +246,53 @@
       // Sends a request
       xhr.send();
     }
+    ```
+1. Parse JSON Object
+    ```
+    let user = JSON.parse(this.responseText);
+    ```
+1. Output the object in the view
+    ```
+    let outputUser = '';
+    outputUser += `
+    <ul>
+      <li><strong>Name</strong>: ${user.name}</li>
+      <li><strong>Email</strong>: ${user.email}</li>
+    </ul>
+    `;
+    ```
+1. Output the array of Users
+    ```
+    document.getElementById('button1').addEventListener('click', loadUsers);
+    ```
+1. Create 'loadUsers' function
+    ```
+    function loadUsers(){
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'users.json', true);
+      xhr.onload = function(){
+        if(this.status == 200){
+          let users = JSON.parse(this.responseText);
+          let outputUsers = '';
+
+          // FOR loop
+          for(var i in users){
+            outputUsers += `
+            <ul>
+              <li><strong>Name</strong>: ${user.name}</li>
+              <li><strong>Email</strong>: ${user.email}</li>
+            </ul>
+            `;
+          }
+
+          document.getElementById('jsonUsers').innerHTML = outputUsers;
+
+        }else if(this.status == 404){
+          document.getElementById('jsonUsers').innerHTML = 'File Not Found.';
+        }
+      }
+
+      xhr.send();
+    }
+
     ```
