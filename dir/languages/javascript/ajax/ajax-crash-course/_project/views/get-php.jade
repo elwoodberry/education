@@ -15,6 +15,25 @@ block content
 
     hr(class="my-4")
 
-    .row(id="")
+    .row
+      .col-sm-6
+        form(id="getForm")
+          h5 GET
+          .input-group
+            input(id="name1" name="name" type="text" class="form-control" placeholder="What's Your Name?")
+            span(class="input-group-btn")
+              button(class="btn btn-secondary" type="submit") Submit
+
+          h1(id="displayName" class="display-4")
+
+      .col-sm-6
+        form(id="postForm")
+          h5 POST
+          .input-group
+            input(id="name2" name="name" type="text" class="form-control" placeholder="What's Your Name?")
+            span(class="input-group-btn")
+              button(class="btn btn-secondary" type="submit") Submit
+
+          h1(id="displayName" class="display-4")
 
   script(src="js/get-php.js")

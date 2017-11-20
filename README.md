@@ -1,15 +1,36 @@
 ![Layout](https://raw.github.com/elwoodberry/education/master/_img/headers/890x400__header_education.png)
 
+
+
+
+
+
+
+
+
+
+
 ## Table Of Contents
 1. [Cloud Computing](#cloud-computing)
 1. [Languages](#languages)
     1. [Cascading Style Sheets](#cascading-style-sheets)
+    1. [Hyper Text Markup Language (HTML5)](#hyper-text-markup-language-html5))
     1. [JavaScript](#javascript)
     1. [PHP](#php)
 
 1. [Version Control](#version-control)
     1. [Git](#git)
 ## +
+
+
+
+
+
+
+
+
+
+
 
 # Cloud Computing
 ## Amazon Web Services
@@ -19,13 +40,55 @@
 ## Google Cloud
 1. [Google Domains](dir/)
 
+
+
+
+
+
+
+
+
+
+
 # Languages
+
+
+
+
+
+
+
+
+
+
+
+
 ## Cascading Style Sheets
 ### Animation
 
 1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
 #### Preprocessors
+
+
+
+
+
+
+
+
+
+
+## Hyper Text Markup Language (HTML5)
+
+
+
+
+
+
+
+
+
 
 ### JavaScript
 #### Authentication
@@ -37,45 +100,55 @@
       1. [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
 
 ##### Build Systems
-    * [GulpJS](dir)
+    1. [GulpJS](dir/languages/javascript/)
 
-  * **Database**  
-    * [MongoDB](dir/languages/javascript/mongodb)
-      * [MongoDB](dir/languages/javascript/mongodb/mongodb) by MongoDB
-      * [Mongoose JS]()
+##### Database**  
+    1. [MongoDB](dir/languages/javascript/mongodb)
+      1. [MongoDB](dir/languages/javascript/mongodb/mongodb) by MongoDB
+      1. [Mongoose JS](dir/languages/javascript/)
 
-  * **eCommerce**
-    * [Stripe.JS](dir/languages/javascript/stripe)
-      * [Simple eBook](dir/languages/javascript/simple-ebook) by Traversy Media
+##### eCommerce**
+    1. [Stripe.JS](dir/languages/javascript/stripe)
+      1. [Simple eBook](dir/languages/javascript/simple-ebook) by Traversy Media
 
-  * **Frameworks**
-    * [Angular](dir/languages/javascript/angular)
-      * [Angular.io](dir/languages/javascript/angular/angular-io) by Angular
+##### Frameworks**
+    1. [Angular](dir/languages/javascript/angular)
+      1. [Angular.io](dir/languages/javascript/angular/angular-io) by Angular
 
-    * [Express](dir/languages/javascript/express)
-      * [Express v4.16.1](dir/languages/javascript/express/express_v4-16-1) by Express
-      * [Express Tutorial](dir/languages/javascript/express/express-tutorial) by Derek Banas
-      * [ExpressJS Crash Course](dir/languages/javascript/express/expressjs-crash-course) by Traversy Media
+    1. [Express](dir/languages/javascript/express)
+      1. [Express v4.16.1](dir/languages/javascript/express/express_v4-16-1) by Express
+      1. [Express Tutorial](dir/languages/javascript/express/express-tutorial) by Derek Banas
+      1. [ExpressJS Crash Course](dir/languages/javascript/express/expressjs-crash-course) by Traversy Media
 
-    * [Ionic](dir/languages/javascript/ionic)
+    1. [Ionic](dir/languages/javascript/ionic)
 
-  * **HTML Template Engines**
-    * [Jade](dir/languages/javascript/jade)
-      * [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
+##### HTML Template Engines**
+    1. [Jade](dir/languages/javascript/jade)
+      1. [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
 
-  * **Libraries**  
-    * [jQuery](dir/languages/javascript/jquery)
-      * [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
+##### Libraries**  
+    1. [jQuery](dir/languages/javascript/jquery)
+      1. [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
 
-  * **Servers**
-    * [Node](dir/languages/javascript/node)
-      * [Fixing NPM Permissions](dir/languages/javascript/node/fixing-npm-permissions) by NPM
+##### Servers**
+    1. [Node](dir/languages/javascript/node)
+      1. [Fixing NPM Permissions](dir/languages/javascript/node/fixing-npm-permissions) by NPM
 
-  * **Standards**
-    * [ECMAScript](dir/languages/javascript/ecmascript)
-      * [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
+##### Standards**
+    1. [ECMAScript](dir/languages/javascript/ecmascript)
+      1. [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
+
+
+
+
+
+
+
+
+
+
 
 ## Version Control
 
 ### Git
-[Git Command Line](dir/version-control/git)
+    1. [Git Command Line](dir/version-control/git)

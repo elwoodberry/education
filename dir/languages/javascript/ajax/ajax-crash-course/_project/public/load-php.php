@@ -10,3 +10,8 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
 if(isset($_GET['name'])){
   echo 'GET: Your Name Is ' . $_GET['name'];
 }
+
+// Check for POST variable
+if(isset($_POST['name'])){
+  echo 'GET: Your Name Is ' . $_POST['name'];
+}
