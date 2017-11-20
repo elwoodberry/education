@@ -15,6 +15,7 @@
 1. [Get A JSON File](#get-a-json-file)
 1. [External API](#external-api) (36:55)
 1. [Working With PHP](#working-with-php) (45:10)
+1. [Submit To Database(MYSQL)](#submit-to-database-mysql)(59:42)
 ## +
 
 
@@ -355,26 +356,87 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
     header('Access-Control-Max-Age: 86400');    // cache for 1 day
 }
 
-echo 'WU TANG';
-
 // Check for GET variable
 if(isset($_GET['name'])){
   echo 'GET: Your Name Is ' . $_GET['name'];
 }
 
+// Check for POST variable
+if(isset($_POST['name'])){
+  echo 'GET: Your Name Is ' . $_POST['name'];
+}
+
+
 ```
-JavaScript File  
 Send a GET variable to the load-php.php file.
 ```
-document.getElementById('button').addEventListener('click', getName);
+document.getElementById('getForm').addEventListener('submit', getName);
 
-function getName(){
+function getName(e){
+
+  e.preventDefault();
+
+  let name = document.getElementById('name1').value;
+
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://localhost:8888/load-php.php', true);
+
+  xhr.open('GET', 'http://localhost:8888/load-php.php?name=' + name, true);
+
   xhr.onload = function(){
     console.log(this.responseText);
+    document.getElementById('displayName').innerHTML = 'Your Name Is ' + name + '!';
   }
 
   xhr.send();
+}
+```
+Send a POST variable to the load-php.php file.
+```
+document.getElementById('postForm').addEventListener('submit', postName);
+
+function postName(e){
+
+  e.preventDefault();
+
+  let name = document.getElementById('name2').value;
+  let params = "name=" + name;
+
+  const xhr = new XMLHttpRequest();
+
+  xhr.open('POST', 'http://localhost:8888/load-php.php', true);
+
+  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  xhr.onload = function(){
+    console.log(this.responseText);
+    document.getElementById('displayName').innerHTML = name + ', You have been submitted!';
+  }
+
+  xhr.send(params);
+}
+```
+## Submit To Database(MYSQL)
+Create A Database
+![Layout](https://raw.github.com/elwoodberry/education/master/_img/diagrams/ajax-crash-course__002.png)
+
+Create A Table Called "Users" with 2 columns
+![Layout](https://raw.github.com/elwoodberry/education/master/_img/diagrams/ajax-crash-course__003.png)
+
+Column 1
+```
+{
+  name: id,
+  type: int,
+  length: 11,
+  default: none,
+  nullIndex: primary
+}
+```
+Column 2
+```
+{
+  name: name,
+  type: varchar,
+  length: 100
 }
 ```

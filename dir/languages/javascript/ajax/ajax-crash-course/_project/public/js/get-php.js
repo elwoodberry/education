@@ -1,9 +1,9 @@
 console.log('GET PHP');
 
-document.getElementById('button').addEventListener('click', getName);
-document.getElementById('getForm').addEventListener('submit', getName);
-document.getElementById('postForm').addEventListener('submit', postName);
+document.getElementById('bigButton').addEventListener('click', getName);
 
+
+document.getElementById('getForm').addEventListener('submit', getName);
 function getName(e){
 
   e.preventDefault();
@@ -21,6 +21,7 @@ function getName(e){
   xhr.send();
 }
 
+document.getElementById('postForm').addEventListener('submit', postName);
 function postName(e){
 
   e.preventDefault();
@@ -36,7 +37,7 @@ function postName(e){
 
   xhr.onload = function(){
     console.log(this.responseText);
-    document.getElementById('displayName').innerHTML = name + ', You have been submitted!';
+    document.getElementById('displayName2').innerHTML = name + ', You have been submitted!';
   }
 
   xhr.send(params);
