@@ -50,6 +50,15 @@ app.get('/external-api', (req, res) => {
   });
 });
 
+// GET PHP
+app.get('/get-php', (req, res) => {
+  res.render('get-php', {
+    title: 'Get PHP',
+    description: ' | Getting Data From PHP file'
+  });
+});
+
+
 // LISTEN: PORT 3000
 app.listen(3000, () => {
   console.log('Port:' + 3000);

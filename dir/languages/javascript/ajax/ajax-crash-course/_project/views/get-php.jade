@@ -1,0 +1,20 @@
+extends ./layouts/default
+
+block content
+
+  h1
+  small
+
+  .jumbotron
+
+    h3 #{title}
+      small(class="text-muted") #{description}
+
+    p(class="lead")
+      button(id="button" class="btn btn-primary btn-lg" role="button") Get PHP
+
+    hr(class="my-4")
+
+    .row(id="")
+
+  script(src="js/get-php.js")

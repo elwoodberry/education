@@ -14,6 +14,7 @@
 1. [Get A Text File](#get-a-text-file)
 1. [Get A JSON File](#get-a-json-file)
 1. [External API](#external-api) (36:55)
+1. [Working With PHP](#working-with-php) (45:10)
 ## +
 
 
@@ -342,3 +343,38 @@ function loadUsers(){
   xhr.send();
 }
 ```  
+## Working With PHP
+PHP file, 'load-php.php'.  
+Cross domain resource sharing was a problem at first. Setting header of PHP file was the solution.
+```
+<?php
+
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+    header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+    header('Access-Control-Allow-Credentials: true');
+    header('Access-Control-Max-Age: 86400');    // cache for 1 day
+}
+
+echo 'WU TANG';
+
+// Check for GET variable
+if(isset($_GET['name'])){
+  echo 'GET: Your Name Is ' . $_GET['name'];
+}
+
+```
+JavaScript File  
+Send a GET variable to the load-php.php file.
+```
+document.getElementById('button').addEventListener('click', getName);
+
+function getName(){
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'http://localhost:8888/load-php.php', true);
+  xhr.onload = function(){
+    console.log(this.responseText);
+  }
+
+  xhr.send();
+}
+```

@@ -5,15 +5,11 @@
 1. [Languages](#languages)
     1. [Cascading Style Sheets](#cascading-style-sheets)
     1. [JavaScript](#javascript)
+    1. [PHP](#php)
 
 1. [Version Control](#version-control)
     1. [Git](#git)
 ## +
-
-
-
-
-
 
 # Cloud Computing
 ## Amazon Web Services
@@ -31,11 +27,6 @@
 
 #### Preprocessors
 
-
-
-
-
-
 ### JavaScript
 #### Authentication
   1. [Auth0](dir/languages/javascript/auth0)
@@ -43,8 +34,7 @@
 
 #### Web Technologies  
   1. [Ajax](dir/languages/javascript/ajax)
-    1. [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
-
+      1. [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
 
 ##### Build Systems
     * [GulpJS](dir)
