@@ -33,14 +33,11 @@
 
 
 # Cloud Computing
-## Amazon Web Services
-1. [AWS Introduction](dir/)
-1. [Identity Management](dir/)
 
-## Google Cloud
-1. [Google Domains](dir/)
-
-
+## Platform As A Service (PaaS)
+1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
+1. [Google Domains](dir/cloud-computing/google-cloud)
+1. [Twilio](dir/cloud-computing/twilio)
 
 
 
@@ -140,7 +137,7 @@
 
 ### Supersets
 1. [TypeScript](dir/languages/javascript/typescript)
-    1. [TypeScript Crash Course](dir/languages/javascript/typescript-crash-course) by Traversy Media
+    1. [TypeScript Crash Course](dir/languages/javascript/typescript/typescript-crash-course) by Traversy Media
 
 
 
