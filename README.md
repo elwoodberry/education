@@ -106,7 +106,7 @@
 
 ### eCommerce
 1. [Stripe.JS](dir/languages/javascript/stripe)
-    1. [Simple eBook](dir/languages/javascript/simple-ebook) by Traversy Media
+    1. [Simple eBook](dir/languages/javascript/stripe/simple-ebook) by Traversy Media
 
 ### Frameworks
 1. [Angular](dir/languages/javascript/angular)
