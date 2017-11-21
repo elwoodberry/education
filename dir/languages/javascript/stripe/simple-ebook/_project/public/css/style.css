@@ -1,0 +1,28 @@
+body {
+  background-color: #ffca00;
+}
+header {
+  background-color: #FFF;
+  box-shadow: 0px 4px 15px #DEA30F;
+  color: #000;
+  text-align: center;
+}
+header h1 {
+  color: #000;
+  font-size: 18px;
+  margin: 0px 0;
+  padding: 10px 0 0;
+}
+header small {}
+
+#shadow {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 122px;
+  bottom: 25px;
+  box-shadow: 5px 4px 10px #000;
+  height: 1px;
+  left: 24%;
+  margin: 0 auto;
+  position: absolute;
+  width: 51%;
+}
