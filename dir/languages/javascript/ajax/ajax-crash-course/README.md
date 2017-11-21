@@ -1,11 +1,5 @@
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-
-# AJAX Crash Course (Vanilla JavaScript)
+![Layout](https://raw.github.com/elwoodberry/education/master/_img/headers/890x275_header__ajax-crash-course.png)
 **Author**: [Traversy Media](https://www.youtube.com/user/TechGuyWeb)  
 **URL**: [Video](https://youtu.be/82hnvUYY6QA)  
 **Duration**: 01:09:42  
