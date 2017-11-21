@@ -1,0 +1,21 @@
+{
+  "name": "simpleebook",
+  "version": "1.0.0",
+  "description": "Node.js & Stripe API - Ebook Sales App & Heroku Deploy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elwoodberry/education/tree/master/dir/languages/javascript/stripe/simple-ebook"
+  },
+  "author": "Elwood Berry",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "stripe": "^5.3.0"
+  }
+}

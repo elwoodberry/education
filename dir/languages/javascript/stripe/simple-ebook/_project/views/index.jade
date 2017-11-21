@@ -1,0 +1,36 @@
+extends ./layouts/default
+
+block content
+
+  section(class="py-2")
+    .row
+    .col-md-12.text-center
+
+      div(style="padding: 85px 0 45px;")
+        img(src="img/book-cover.png" style="border: 1px solid rgba(0, 0, 0, 0.25);")
+        #shadow
+
+      div
+        h4 #{title}
+        small #{description}
+
+        h4 Who is this book for?
+        p This book is for any human being that has the desire to own a website that allows them to easily sell physical (ie. t-shirts, cellphones, jewelry) or digital (ie. music, ebooks, artwork) goods.
+
+        h4 What You Will Need For This Book.
+        ul
+          li Access to the world wide web via direct connection and/or WIFI
+          li A computer that is less than five years old. This can be a laptop, desktop or tablet. It can be either a PC or MAC.
+          li A little spending money will be needed. Approximately $20 USD.
+
+      form(action="/charge" method="POST")
+        script(
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_SyIUzWttOOSwXyh9srZBoAIU"
+        data-amount="2500"
+        data-name="Web Development eBook"
+        data-description="Create an app that allows you to sell an eBook using Node, Strip and Heroku."
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        )
