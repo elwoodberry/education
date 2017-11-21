@@ -1,3 +1,10 @@
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+
 # AJAX Crash Course (Vanilla JavaScript)
 **Author**: [Traversy Media](https://www.youtube.com/user/TechGuyWeb)  
 **URL**: [Video](https://youtu.be/82hnvUYY6QA)  

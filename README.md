@@ -14,7 +14,7 @@
 1. [Cloud Computing](#cloud-computing)
 1. [Languages](#languages)
     1. [Cascading Style Sheets](#cascading-style-sheets)
-    1. [Hyper Text Markup Language (HTML5)](#hyper-text-markup-language-html5))
+    1. [Hyper Text Markup Language (HTML5)](#hyper-text-markup-language-html5)
     1. [JavaScript](#javascript)
     1. [PHP](#php)
 
