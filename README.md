@@ -138,9 +138,9 @@
 1. [ECMAScript](dir/languages/javascript/ecmascript)
     1. [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
 
-
-
-
+### Supersets
+1. [TypeScript](dir/languages/javascript/typescript)
+    1. [TypeScript Crash Course](dir/languages/javascript/typescript-crash-course) by Traversy Media
 
 
 
