@@ -5,10 +5,14 @@
 **Donate to Author**: [Patreon](https://www.patreon.com/traversymedia)  
 
 ## Table Of Contents
-1. [What is Gulp?](#what-is-gulp?) (00:00)
+1. [What is Gulp?](#what-is-gulp) (00:00)
 1. [Common Task](#common-task) (00:00)
 1. [How Gulp Works](#how-gulp-works) (00:00)
 1. [Gulp Verse Grunt](#gulp-verse-grunt) (00:00)
+1. [Getting Started](#getting-started) (00:00)
+1. [Top Level Functions](#Top Level Functions) (09:41)
+1. [GULPFILE.JS](#gulpfilejs) (00:00)
+1. [Copy Files](#copy-files) (00:00)
 ## +
 
 
@@ -41,5 +45,92 @@
 * Grunt is configuration over code  
    "..tasks are configured inside of configuration object inside the grunt file."
 * Gulp is easier to read than Grunt
-* Gulp is based on streams, Grunt is based on files.
+* Gulp is based on streams, Grunt is based on files.  
 See [Grunt](https://gruntjs.com/)
+
+## Getting Started
+Install Gulp globally
+```
+$ npm install -g gulp
+```
+Create project
+```
+$ touch _project
+```
+Create Package.JSON
+```
+$ npm init
+```
+Install Gulp Locally as a Dev Dependency
+```
+$ npm install --save-dev gulp
+```
+Create 'src' directory. Where the tasks live.
+```
+$ touch src
+```
+Create 'public' directory.
+```
+$ touch public
+```
+Create 'gulpfile.js'
+```
+$ touch gulpfile.js
+```
+
+## Top Level Functions
+Define Tasks
+```
+gulp.task
+```
+Point to files to use
+```
+gulp.src
+```
+Points to folder to output
+```
+gulp.dest
+```
+Watch files and folders for changes
+```
+gulp.watch
+```
+
+## GULPFILE.JS
+
+### Individual Task
+Logs Message ('gulpfile.js')
+```
+gulp.task('message', function(){
+  return console.log('Gulp is running...');
+});
+```
+Command Line
+```
+gulp message
+```
+### Default Task
+Change the name of the task to default ('gulpfile.js')
+```
+gulp.task('default', function(){
+  return console.log('Gulp is running...');
+});
+```
+Command Line
+```
+gulp
+```
+
+## Copy Files
+Create HTML files
+```
+$ touch index.html about.html
+```
+gulpfile.js
+```
+// Copy HTML files
+gulp.task('copyHtml', function(){
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('public'));
+});
+```
