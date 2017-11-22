@@ -15,6 +15,10 @@
 1. [Copy Files](#copy-files) (00:00)
 1. [Optimize Images](#optimize-images) (14:28)
 1. [Minify JavaScript](#minify-javascript) (17:56)
+1. [Gulp SASS](#gulp-sass) (20:51)
+1. [Run All Tasks](#run-all-tasks) (26:00)
+1. [Concatenate](#concatenate) (27:12)
+1. [Watch](#watch) (31:48)
 ## +
 
 
@@ -193,4 +197,170 @@ gulp.task('minify', () => {
 Minify JS
 ```
 gulp minify
+```
+
+## Gulp SASS
+See [Gulp SASS](https://www.npmjs.com/package/gulp-sass)
+```
+$ npm install --save-dev gulp-sass
+```
+gulpfile.js
+```
+// GULP
+const gulp = require('gulp');
+
+// GULP SASS
+const sass = require('gulp-sass');
+
+// Compile SASS
+gulp.task('sass', function(){
+  gulp.src('src/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('public/css'));
+});
+```
+Compile CSS
+```
+gulp sass
+```
+
+## Run All Tasks
+gulpfilejs
+```
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
+
+// Compile SASS
+gulp.task('sass', function(){
+  gulp.src('src/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('public/css'));
+});
+
+// MINIFY JS
+gulp.task('minify', function() {
+  gulp.src('src/js/*.js')
+    .pipe(uglify())
+      .pipe(gulp.dest('public/js'))
+});
+
+// Optimize Images
+gulp.task('imageMin', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/img'))
+);
+
+// Copy HTML files
+gulp.task('copyHtml', function(){
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('public'));
+});
+
+// default Message
+gulp.task('default', [
+  'copyHtml',
+  'imageMin',
+  'minify',
+  'sass'
+]);
+```
+
+## Concatenate
+See [Gulp Concat]()(https://www.npmjs.com/package/gulp-concat)
+```
+$ npm install --save-dev gulp-concat
+```
+gulpfile.js
+```
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+
+// Copy HTML files
+gulp.task('copyHtml', function(){
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('public'));
+});
+
+// CONCAT
+gulp.task('scripts', function(){
+  gulp.src('src/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/js'));
+});
+
+// Compile SASS
+gulp.task('sass', function(){
+  gulp.src('src/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('public/css'));
+});
+
+// Optimize Images
+gulp.task('imageMin', function(){
+  gulp.src('src/img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('public/img'));
+});
+
+// Default Message
+gulp.task('default', ['copyHtml', 'scripts', 'sass', 'imageMin']);
+```
+Run GULP
+```
+gulp
+```
+
+## Watch
+gulpfile.js
+```
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+
+// Copy HTML files
+gulp.task('copyHtml', function(){
+  gulp.src('src/*.html')
+    .pipe(gulp.dest('public'));
+});
+
+// CONCAT
+gulp.task('scripts', function(){
+  gulp.src('src/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/js'));
+});
+
+// Compile SASS
+gulp.task('sass', function(){
+  gulp.src('src/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('public/css'));
+});
+
+// Optimize Images
+gulp.task('imageMin', function(){
+  gulp.src('src/img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('public/img'));
+});
+
+// default Message
+gulp.task('default', ['copyHtml', 'scripts', 'sass', 'imageMin']);
+
+gulp.task('watch', function(){
+  gulp.watch('src/*.html',['copyHtml']);
+  gulp.watch('src/js/*.js',['scripts']);
+  gulp.watch('src/sass/*.scss',['sass']);
+  gulp.watch('src/img/*',['imageMin']);
+});
 ```
