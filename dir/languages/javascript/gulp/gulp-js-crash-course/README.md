@@ -13,6 +13,8 @@
 1. [Top Level Functions](#Top Level Functions) (09:41)
 1. [GULPFILE.JS](#gulpfilejs) (00:00)
 1. [Copy Files](#copy-files) (00:00)
+1. [Optimize Images](#optimize-images) (14:28)
+1. [Minify JavaScript](#minify-javascript) (17:56)
 ## +
 
 
@@ -133,4 +135,62 @@ gulp.task('copyHtml', function(){
   gulp.src('src/*.html')
     .pipe(gulp.dest('public'));
 });
+```
+
+## Optimize Images
+See [Gulp Imagemin](https://www.npmjs.com/package/gulp-imagemin)
+```
+$ npm install --save-dev gulp-imagemin
+```
+gulpfile.js
+```
+// GULP
+const gulp = require('gulp');
+
+// IMAGEMIN
+const imagemin = require('gulp-imagemin');
+
+gulp.task('imageMin', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/img'))
+);
+```
+Optimize image
+```
+gulp imageMin
+```
+
+## Minify JavaScript
+Create a javascript file in the 'src' folder.
+```
+function init(){
+  let biggie = "Christopher Wallace";
+  let jayz = "Sean Carter";
+  let nas = "Nasir Jones";
+}
+```
+See [Gulp-Uglify](https://www.npmjs.com/package/gulp-uglify)
+```
+$ npm install --save-dev gulp-uglify
+```
+gulpfile.js
+```
+// GULP
+const gulp = require('gulp');
+
+// Gulp-Uglify
+const uglify = require('gulp-uglify');
+
+
+// MINIFY JS
+gulp.task('minify', () => {
+  gulp.src('src/js/*.js')
+    .pipe(uglify())
+      .pipe(gulp.dest('public/js'))
+});
+```
+Minify JS
+```
+gulp minify
 ```

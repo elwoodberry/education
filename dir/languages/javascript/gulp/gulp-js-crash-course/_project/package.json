@@ -13,6 +13,8 @@
   "author": "Elwood Berry (me@elwoodberry.com)",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
