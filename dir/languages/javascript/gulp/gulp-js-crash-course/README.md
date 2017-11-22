@@ -12,21 +12,21 @@
 ## +
 
 
-## What is Gulp? (00:00)
+## What is Gulp?
 * Open source JavaScript toolkit & task runner
 * Front-end build system
 * Built on Node.js and NPM
 * Used for time consuming & repetitive tasks
 * Hundreds of plugins available for different tasks.
 
-## Common Task (00:00)
+## Common Task
 * Minification of scripts and styles
 * Concatenation
 * Cache Busing
 * testing, linting & optimazation
 * Dev servers
 
-## How Gulp Works (02:24)
+## How Gulp Works
 ![Layout](https://raw.github.com/elwoodberry/education/master/_img/diagrams/gulp-crash-course__001.png)
 "..Gulp is built on node streams. A node stream is a continuous flow of data that can be manipulated asynchronously. The stream facilitate the connection of file operations through a pipeline. A pipeline is a chain of processing elements. They are arranged so the output from one element is the input of the next element."
 
@@ -35,7 +35,7 @@
 * Single purpose plugins
 * Files not affected until all plugins are processed.
 
-## Gulp Verse Grunt (02:24)
+## Gulp Verse Grunt
 * Gulp is code over configuration
    "..tasks are coded using node style syntax."
 * Grunt is configuration over code  
