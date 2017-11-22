@@ -97,7 +97,7 @@
     1. [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
 
 ### Build Systems
-1. [GulpJS](dir/languages/javascript/)
+1. [GulpJS](dir/languages/javascript/gulp)
 
 ### Database  
 1. [MongoDB](dir/languages/javascript/mongodb)
