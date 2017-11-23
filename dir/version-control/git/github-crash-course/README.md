@@ -17,7 +17,7 @@
 ## +
 
 
-##What is GIT
+## What is GIT
 Version Control System (VCS) for tracking changes on computer files.
 1. Distributed version control
 1. Coordinates work between multiple developers
