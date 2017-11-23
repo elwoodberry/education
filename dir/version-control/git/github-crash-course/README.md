@@ -72,17 +72,18 @@ $ git clone
     ```
 3. [Mac](http://git-scm/download/mac)
 4. [Windows](http://git-scm/download/win)
+
 ## Getting Started
-1. (09:42) Create a new folder ('sample-app')
+1. Create a new folder ('sample-app')
     ```
     mkdir sample-app
     ```
-2. Create some files in the folder
-    **'index.html'**
+2. Create some files in the folder  
+    **'index.html'**  
     ```
     touch sample-app/index.html
     ```
-    **'app.js'**
+    **'app.js'**  
     ```
     touch sample-app/app.js
     ```
