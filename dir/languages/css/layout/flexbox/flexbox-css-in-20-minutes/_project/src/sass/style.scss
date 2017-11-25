@@ -1,18 +1,23 @@
 
 .container-1 {
+  align-items: center;
   display: flex;
+  flex-direction: column;
 
   div {
     border: 1px #CCCCCC solid;
     padding: 11px;
   }
   .box-1 {
-    flex: 1;
+    flex: 2;
+    order: 2;
   }
   .box-2 {
-    flex: 2;
+    flex: 1;
+    order: 1;
   }
   .box-3 {
     flex: 1;
+    order: 3;
   }
 }

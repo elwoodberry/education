@@ -127,19 +127,7 @@ CSS
 ![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__003.png)
 HTML
 ```
-.container-1
-  .box-1
-    h3 box.one
-    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
-
-  .box-2
-    h3 box.two
-    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
-
-  .box-3
-    h3 box.three
-    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
-
+(same as above)
 ```
 CSS
 ```
@@ -158,6 +146,96 @@ CSS
   }
   .box-3 {
     flex: 1;
+  }
+}
+```
+### Example 3
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__004.png)
+HTML
+```
+(same as above)
+```
+CSS
+```
+.container-1 {
+  display: flex;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+  .box-1 {
+    flex: 2;
+    order: 2;
+  }
+  .box-2 {
+    flex: 1;
+    order: 1;
+  }
+  .box-3 {
+    flex: 1;
+    order: 3;
+  }
+}
+```
+### Example 4
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__005.png)
+HTML
+```
+(same as above)
+```
+CSS
+```
+.container-1 {
+  display: flex;
+  align-items: center;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+  .box-1 {
+    flex: 2;
+    order: 2;
+  }
+  .box-2 {
+    flex: 1;
+    order: 1;
+  }
+  .box-3 {
+    flex: 1;
+    order: 3;
+  }
+}
+```
+### Example 5
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__006.png)
+HTML
+```
+(same as above)
+```
+CSS
+```
+.container-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+  .box-1 {
+    flex: 2;
+    order: 2;
+  }
+  .box-2 {
+    flex: 1;
+    order: 1;
+  }
+  .box-3 {
+    flex: 1;
+    order: 3;
   }
 }
 ```
