@@ -22,4 +22,4 @@ A CSS3 layout mode that provides an easy and clean way to arrange items within a
 * Built for small-scale layouts while the upcoming 'Grid' specification is for more large scale.
 
 ## How Flexbox Looks
-![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__01.png)
+![Layout](https://raw.github.com/elwoodberry/education/master/_img/headers/890x400__header_education.png)
