@@ -1,16 +1,12 @@
 .container-1 {
-  align-items: center;
   display: flex;
-  flex-direction: column; }
+  justify-content: space-between; }
   .container-1 div {
     border: 1px #CCCCCC solid;
     padding: 11px; }
   .container-1 .box-1 {
-    flex: 2;
-    order: 2; }
+    width: 27%; }
   .container-1 .box-2 {
-    flex: 1;
-    order: 1; }
+    width: 27%; }
   .container-1 .box-3 {
-    flex: 1;
-    order: 3; }
+    width: 27%; }

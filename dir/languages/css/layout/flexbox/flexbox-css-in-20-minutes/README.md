@@ -239,3 +239,30 @@ CSS
   }
 }
 ```
+### Example 6
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__007.png)
+HTML
+```
+(same as above)
+```
+CSS
+```
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+  .box-1 {
+    width: 27%;
+  }
+  .box-2 {
+    width: 27%;
+  }
+  .box-3 {
+    width: 27%;
+  }
+}
+```
