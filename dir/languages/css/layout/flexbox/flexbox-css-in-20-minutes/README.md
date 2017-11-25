@@ -5,7 +5,11 @@
 **Donate to Author**: [Patreon](https://www.patreon.com/traversymedia)  
 
 ## Table Of Contents
-1. [](#) (00:00)
+1. [What Is Flexbox?](#what-is-flexbox) (00:00)
+1. [Flexible Box Model Concept](#flexible-box-model-concept) (00:00)
+1. [How Flexbox Looks](#how-flexbox-looks) (00:00)
+1. [Properties](#properties) (00:00)
+1. [Code Examples](#code-examples) (00:00)
 ## +
 
 ## What Is Flexbox?
@@ -256,13 +260,60 @@ CSS
     padding: 11px;
   }
   .box-1 {
-    width: 27%;
+    flex-basis: 27%;
   }
   .box-2 {
-    width: 27%;
+    flex-basis: 27%;
   }
   .box-3 {
-    width: 27%;
+    flex-basis: 27%;
+  }
+}
+```
+### Example 7
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__008.png)
+HTML
+```
+.container-1
+  .box-1
+    h3 box.one
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-2
+    h3 box.two
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-3
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-4
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-5
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-6
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-7
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+```
+CSS
+```
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+    flex-basis: 27%;
   }
 }
 ```

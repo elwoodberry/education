@@ -1,12 +1,8 @@
 .container-1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
   .container-1 div {
     border: 1px #CCCCCC solid;
-    padding: 11px; }
-  .container-1 .box-1 {
-    width: 27%; }
-  .container-1 .box-2 {
-    width: 27%; }
-  .container-1 .box-3 {
-    width: 27%; }
+    padding: 11px;
+    flex-basis: 27%; }
