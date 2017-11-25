@@ -1,0 +1,11 @@
+.container-1 {
+  display: flex; }
+  .container-1 div {
+    border: 1px #CCCCCC solid;
+    padding: 11px; }
+  .container-1 .box-1 {
+    flex: 1; }
+  .container-1 .box-2 {
+    flex: 2; }
+  .container-1 .box-3 {
+    flex: 1; }

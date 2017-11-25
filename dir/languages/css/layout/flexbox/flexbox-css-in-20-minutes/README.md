@@ -23,3 +23,141 @@ A CSS3 layout mode that provides an easy and clean way to arrange items within a
 
 ## How Flexbox Looks
 ![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__001.png)
+
+## Properties
+Display  
+Goes on the main container element.  
+```
+display: flex | inline-flex;
+```
+Direction  
+Row = Horizontal  
+Column = Vertical  
+```
+flex-direction: row | column
+```
+Wrap  
+Wrap elements based on the width of the window?
+```
+flex-wrap: wrap | nowrap | wrapreverse
+```
+Basis  
+Similar to width.
+```
+flex-basis: <length>
+```
+Justify  
+Start = Left  
+End = Right  
+Center = Center
+```
+justify-content: flex-start | flex-end | center
+```
+Align Self  
+Start = Left  
+End = Right  
+Center = Center
+```
+align-self : flex-start | flex-end | center
+```
+Align Items  
+Start = Left  
+End = Right  
+Center = Center
+```
+align-items : flex-start | flex-end | center
+```
+Align Content  
+Start = Left  
+End = Right  
+Center = Center
+```
+align-content : flex-start | flex-end | center
+```
+Grow  
+Different elements have different sizes.
+```
+flex-grow: <number>
+```
+Shrink  
+Different elements have different sizes.
+```
+flex-shrink: <number>
+```
+Flex
+```
+flex: <integer>
+```
+Order
+```
+order: <integer>
+```
+
+## Code Examples
+### Example 1
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__002.png)
+HTML
+```
+.container-1
+  .box-1
+    h3 box.one
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-2
+    h3 box.two
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-3
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+```
+CSS
+```
+.container-1 {
+  display: flex;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+}
+```
+### Example 2
+![Layout](https://raw.github.com/elwoodberry/javascript/master/_img/diagrams/flexbox-css-in-20-minutes__003.png)
+HTML
+```
+.container-1
+  .box-1
+    h3 box.one
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-2
+    h3 box.two
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+  .box-3
+    h3 box.three
+    p Lorem ipsum dolor sit amet, consectetur adipisicing ...
+
+```
+CSS
+```
+.container-1 {
+  display: flex;
+
+  div {
+    border: 1px #CCCCCC solid;
+    padding: 11px;
+  }
+  .box-1 {
+    flex: 1;
+  }
+  .box-2 {
+    flex: 2;
+  }
+  .box-3 {
+    flex: 1;
+  }
+}
+```
