@@ -95,11 +95,12 @@
 
 
 
-
 ## JavaScript
 ### Authentication
 1. [Auth0](dir/languages/javascript/auth0)
     1. [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
+1. [Passport](dir/languages/javascript/passport)
+    1. [Node.js Login System With Passport](dir/languages/javascript/passport/login-system-with-passport) by Traversy Media
 
 ### Web Technologies  
 1. [Ajax](dir/languages/javascript/ajax)
