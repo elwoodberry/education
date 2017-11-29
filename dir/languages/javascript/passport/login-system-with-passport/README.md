@@ -278,9 +278,9 @@ block content
 
 ## Modification
 See [http://mongoosejs.com/docs](http://mongoosejs.com/docs/connections.html#use-mongo-client)
-```
-(node:1074) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
-```
+
+> (node:1074) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+
 
 
 
