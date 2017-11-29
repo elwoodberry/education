@@ -75,7 +75,7 @@
 
 ### Preprocessors
 #### SASS
-1. [SASS Tutorial](dir/css/preprocessor/sass/sass-tutorial) by Derek Banas
+1. [SASS Tutorial](dir/languages/css/preprocessor/sass/sass-tutorial) by Derek Banas
 
 
 
