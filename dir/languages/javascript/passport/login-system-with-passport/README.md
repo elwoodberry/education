@@ -446,6 +446,8 @@ html
 
 ## Modification Pt2
 
+### Conditional Display Of HTML Using PUG
+Need to solve the problem of displaying the alerts using conditions in PUG. The empty alerts are displaying before the flash message is displayed.
 
 
 
