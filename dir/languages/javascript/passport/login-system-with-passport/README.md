@@ -188,7 +188,16 @@ var express = require('express'),
 // ROOT
 router.get('/', function(req, res){
   res.render('index', {
-    title: "The Index Title Has Been Here"
+    title: "The Index Title Has Been Here",
+    description: "index description"
+  })
+});
+
+// DASHBOARD
+router.get('/dashboard', function(req, res){
+  res.render('dashboard', {
+    title: "Dashboard Title Has Been Here",
+    description: "index description"
   })
 });
 
@@ -200,17 +209,11 @@ var express = require('express'),
     router = express.Router();
 
 // REGISTER
-router.get('/register', function(req, res){
-  res.render('index', {
-    title: "Register Title Goes Here"
-  })
-});
-
-// LOG IN
-router.get('/login', function(req, res){
-  res.render('index', {
-    title: "Log In Title Goes Here"
-  })
+router.get('/register', function(req, res, next) {
+  res.render('register', {
+    title: "Register Title Goes Here",
+    description: "index description"
+  });
 });
 
 

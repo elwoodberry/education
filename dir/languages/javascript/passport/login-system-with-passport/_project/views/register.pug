@@ -2,4 +2,31 @@ extends layouts/auth.pug
 
 block content
 
-  h1 Register
+  h1(style="margin-top:25px;") Register
+
+  .card
+    .card-body
+      h4(class="card-title") Card title
+      h6(class="card-subtitle mb-2 text-muted") Card subtitle
+      form(method="post" action="/users/register")
+        .form-group
+          label Name
+          input(type="text" class="form-control" placeholder="Name" name="name")
+
+        .form-group
+          label Username
+          input(type="text" class="form-control" placeholder="Username" name="Username")
+
+        .form-group
+          label email
+          input(type="email" class="form-control" placeholder="email" name="email")
+
+        .form-group
+          label password
+          input(type="password" class="form-control" placeholder="password" name="password")
+
+        .form-group
+          label Confirm Password
+          input(type="password" class="form-control" placeholder="password" name="password2")
+
+        button(type="submit" class="btn btn-primary") Register
