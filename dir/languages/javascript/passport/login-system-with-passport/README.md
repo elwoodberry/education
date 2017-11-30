@@ -11,15 +11,15 @@
 1. [Getting Started](#getting-started)
 1. [Routes](#routes)
 1. [Views](#views)
-1. [Modification](#Modification)
+1. [Modification Pt1](#modification-pt1)
 ## +
 
 ## Part Two Content
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
-1. [](#)
+1. [Post Request](#post-request)
+1. [Form Errors](#form-errors)
+1. [User Schema](#user-schema)
+1. [Display Success Message](#display-success-message)
+1. [Modification Pt2](#modification-pt2)
 ## +
 
 ## Part Three Content
@@ -279,7 +279,7 @@ block content
 
 
 
-## Modification
+## Modification Pt1
 See [http://mongoosejs.com/docs](http://mongoosejs.com/docs/connections.html#use-mongo-client)
 
 > (node:1074) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
@@ -287,7 +287,175 @@ See [http://mongoosejs.com/docs](http://mongoosejs.com/docs/connections.html#use
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Part Two
+
+## Post Request
+Created POST request for registration form.  
+routes/users.js
+```
+var express = require('express'),
+    router = express.Router();
+
+var User = require('../models/user');
+
+// GET REQ: REGISTER
+router.get('/register', function(req, res, next) {
+  res.render('register', {
+    title: "Register Title Goes Here",
+    description: "index description"
+  });
+});
+
+// POST REQ: REGISTER
+router.post('/register', function(req, res, next) {
+  var name = req.body.name,
+      email = req.body.email,
+      username = req.body.username,
+      password = req.body.password,
+      password2 = req.body.password2;
+
+  // VALIDATION
+  req.checkBody('name', 'Name is required').notEmpty();
+  req.checkBody('email', 'Email is required').notEmpty();
+  req.checkBody('email', 'Email is not valid.').isEmail();
+  req.checkBody('username', 'Username is required').notEmpty();
+  req.checkBody('password', 'Password is required').notEmpty();
+  req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
+
+  var errors = req.validationErrors();
+
+  if(errors){
+    res.render('register', {
+      log: "Something is Wrong..",
+      errors: errors
+    });
+  } else {
+    var newUser = new User({
+      name: name,
+      email: email,
+      username: username,
+      password: password
+    });
+
+    User.createUser(newUser, function(err, user){
+      if(err) throw err;
+      console.log(user);
+    });
+
+    req.flash('success_msg', 'You Are Registered And Can Now Log In.');
+
+    res.redirect('/');
+  }
+});
+
+module.exports = router;
+
+```
+
+## Form Errors
+Display Errors    
+register.pug
+```
+if(errors)
+  each error in errors
+    .alert.alert-danger= error.msg
+```  
+## User Schema
+Create USER model  
+models/users.js
+```
+var mongoose = require('mongoose'),
+    bcrypt = require('bcryptjs');
+
+var UserSchema = mongoose.Schema({
+  username: {
+    type: String,
+    index: true
+  },
+  password: {
+    type: String
+  },
+  email: {
+    type: String
+  },
+  name: {
+    type: String
+  }
+});
+
+var User = module.exports = mongoose.model('User', UserSchema);
+
+module.exports.createUser = function(newUser, callback){
+  bcrypt.genSalt(10, function(err, salt){
+    bcrypt.hash(newUser.password, salt, function(err, hash){
+      newUser.password = hash;
+      newUser.save(callback);
+    });
+  });
+}
+
+```
+## Display Success Message
+Update main layout to include errors.  
+views/layouts/auth.pug
+```
+doctype transitional
+html
+
+  include ../partials/head.pug
+
+  body
+
+    include ../partials/nav.pug
+
+    .container
+
+      if(success_msg)
+      .row
+        .col-lg-12
+          .alert.alert-success= success_msg
+
+      if(error_msg)
+        .row
+          .col-lg-12
+            .alert.alert-danger= error_msg
+
+      if(error)
+        .row
+          .col-lg-12
+            .alert.alert-danger= error
+
+      block content
+```
+
+## Modification Pt2
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Part Three
