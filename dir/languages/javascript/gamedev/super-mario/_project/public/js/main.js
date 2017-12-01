@@ -1,0 +1,1 @@
+var canvas=document.getElementById("screen"),context=canvas.getContext("2d");context.fillRect(0,0,50,50);

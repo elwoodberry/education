@@ -4,7 +4,7 @@
 1. [Backgrounds And Tiles](https://youtu.be/g-FpDQ8Eqw8) (25:34)
 
 ## Episode 01 : Backgrounds And Tiles
-1. [Getting Started](#getting-started)(00:00)
+1. [Getting Started](#getting-started) (00:00)
 ## +
 
 
@@ -29,7 +29,7 @@ $ npm install --save express pug
 ```
 Install Dev Dependencies
 ```
-$ npm install --save-dev gulp gulp-sass
+$ npm install --save-dev gulp gulp-sass gulp-uglify gulp-concat
 ```
 Create folders
 ```
