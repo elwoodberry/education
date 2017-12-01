@@ -2,8 +2,8 @@
 **Author**: [Traversy Media](https://www.youtube.com/user/TechGuyWeb)  
 **URL(s)**  
 1. [Part One](https://youtu.be/Z1ktxiqyiLA) (22:53)
-1. [Part Two](https://youtu.be/Z1ktxiqyiLA) (22:53)
-1. [Part Three](https://youtu.be/Z1ktxiqyiLA) (22:53)
+1. [Part Two](https://youtu.be/OnuC3VtEQks) (17:11)
+1. [Part Three](https://youtu.be/iX8UhDOmkPE) (19:39)
 **Donate to Author**: [Patreon](https://www.patreon.com/traversymedia)  
 
 ## Part One Content
@@ -460,4 +460,161 @@ Need to solve the problem of displaying the alerts using conditions in PUG. The 
 
 
 
+
+
+
+
 ## Part Three
+
+## Post Route
+See [Passport: Authenticate](http://www.passportjs.org/docs/authenticate/) Documentation  
+routes/users.js
+```
+< code.. >  
+
+// Authenticate
+router.post('/login',
+  passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/users/register',
+    failureFlash: true
+  }), function(req, res) {
+    res.redirect('/dashboard');
+});
+
+
+module.exports = router;
+```
+
+## Local Strategy
+See [Passport: Configure](http://www.passportjs.org/docs/configure/) Documentation
+Three pieces need to be configured to use Passport for authentication:  
+
+1. Authentication strategies
+2. Application middleware
+3. Sessions (optional)
+
+routes/users.js
+```
+< code.. >
+
+passport.use(new LocalStrategy(function(username, password, done) {
+
+  User.getUserByUsername(username, function(err, user){
+    if(err) throw err;
+    if(!user){
+      return done(null, false, {message: "Unknown User"});
+    }
+
+    User.comparePassword(password, user.password, function(err, isMatch){
+      if(err) throw err;
+      if(isMatch){
+        return done(null, user);
+      }else {
+        return done(null, false, {message: "Invalid Password"})
+      }
+    });
+  });
+}));
+
+< code.. >
+
+module.exports = router;
+```
+
+## Create Functions In The Model
+models/user.js  
+
+Get User By Username  
+See MongoDB Documentation  
+```
+module.exports.getUserByUsername = function(username, callback){
+  var query = {username: username}
+  User.findOne(query, callback);
+}
+```
+Get User By Id
+```
+module.exports.getUserById = function(id, callback){
+  User.findById(id, callback);
+}
+```
+Compare Password
+```
+module.exports.comparePassword = function(candidatePassword, hash, callback){
+  bcrypt.compare(candidatePassword, hash, function(err, isMatch){
+    if(err) throw err;
+    callback(null, isMatch);
+  });
+}
+```
+
+
+## Serialize and Deserialize
+routes/user.js  
+
+Serialize
+```
+passport.serializeUser(function(user, done){
+  done(null, user.id);
+});
+```
+Deserialize
+```
+passport.deserializeUser(function(id, done){
+  User.getUserById(id, function(err, user){
+    done(err, user);
+  });
+});
+
+```
+
+## Ability To Logout  
+routes/user.js  
+
+```
+router.get('/logout', function(req, res){
+  req.logout();
+
+  req.flash('success_msg', 'You Are Logged Out.');
+
+  res.redirect('/');
+
+});
+```
+
+## Modify Global Variables
+app.js
+```
+app.use(function(req, res, next){
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  res.locals.user = req.user || null;
+  next();
+});
+```
+dashboard.pug
+```
+extends layouts/auth.pug
+
+block content
+
+  if(user)
+
+    h1(style="margin-top:25px;") Dashboard
+
+    a(href="users/logout" class="btn btn-warning") Sign Out.
+
+  else
+
+    h1 You Are Not Logged In
+    a(href="users/login") Sign In
+```
+
+## Ensure Authentication
+```
+function ensureAuthenticated(req, res, next){
+
+}
+```

@@ -2,19 +2,12 @@ extends layouts/auth.pug
 
 block content
 
-  h1(style="margin-top:25px;") Login
+  .jumbotron
 
-  .card
-    .card-body
-      h4(class="card-title") Card title
-      h6(class="card-subtitle mb-2 text-muted") Card subtitle
-      form(method="post" action="/users/login")
-        .form-group
-          label Username
-          input(type="text" class="form-control" placeholder="Username")
+    h1(class="display-3") Jumbotron heading
 
-        .form-group
-          label Password
-          input(type="text" class="form-control" placeholder="Password")
+    p(class="lead") Be stupid, be dumb, be funny, if that's who you are. Don't try to be someone that society wants you to be; that's stupid. So be yourself.
 
-        button(type="submit" class="btn btn-warning" style="width: 100%; cursor: pointer;") Submit
+    div(style="display: flex;")
+      a(class="btn btn-lg btn-success" href="users/register" role="button") Register An Account
+      a(class="btn btn-lg btn-warning" href="users/login" role="button") Sign In

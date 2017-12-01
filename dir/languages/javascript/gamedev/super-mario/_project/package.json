@@ -1,0 +1,27 @@
+{
+  "name": "supermario",
+  "version": "1.0.0",
+  "description": "HTML5 Game Dev",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elwoodberry/javascript.git#javascript"
+  },
+  "author": "Elwood Berry (me@elwoodberry.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elwoodberry/javascript/issues"
+  },
+  "homepage": "https://github.com/elwoodberry/javascript/tree/javascript#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

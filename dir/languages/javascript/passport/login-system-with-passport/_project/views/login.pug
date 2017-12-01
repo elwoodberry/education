@@ -1,0 +1,22 @@
+extends layouts/auth.pug
+
+block content
+
+  h1(style="margin-top:25px;") Login
+
+  include partials/bread-crumbs.pug
+
+  .card
+    .card-body
+      h4(class="card-title") Card title
+      h6(class="card-subtitle mb-2 text-muted") Card subtitle
+      form(method="post" action="/users/login")
+        .form-group
+          label Username
+          input(type="text" class="form-control" name="username" placeholder="Username")
+
+        .form-group
+          label Password
+          input(type="password" class="form-control" name="password" placeholder="Password")
+
+        button(type="submit" class="btn btn-warning" style="width: 100%; cursor: pointer;") Submit

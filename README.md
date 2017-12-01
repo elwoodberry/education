@@ -129,6 +129,9 @@
 
 1. [Ionic](dir/languages/javascript/ionic)
 
+### Game Development
+1. [Super Mario Replica](dir/languages/javascript/gamedev/super-mario) by Meth Meth Method
+
 ### HTML Template Engines
 1. [Jade](dir/languages/javascript/jade)
     1. [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
