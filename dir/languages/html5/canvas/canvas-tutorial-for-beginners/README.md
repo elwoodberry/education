@@ -3,12 +3,22 @@
 
 ---  
 **Author**: [Chris Courses](https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA)  
-**URL**:
-1. [Episode 1](https://youtu.be/EO6OkltgudE)  
-1. [Episode 2](https://youtu.be/EO6OkltgudE)  
+**URL**(s)
+1. [Episode 1: Creating And Resizing Your Canvas](https://youtu.be/EO6OkltgudE)  
+1. [Episode 2: Drawing On the Canvas](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 3: Animating The Canvas](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 4: Interacting With The Canvas](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 5: How To Code Gravity](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 6: Collision Detection Pt 1](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 7: Collision Detection Pt 2](https://youtu.be/83L6B13ixQ0)
+1. [Episode 8: Circular motion](https://youtu.be/83L6B13ixQ0)
 **Duration**: 14:54
 ---
 ## Episode 1
+1. [Creating And Resizing Your Canvas](#Creating And Resizing Your Canvas) (00:00)
+## +
+
+## Episode 2
 1. [Creating And Resizing Your Canvas](#Creating And Resizing Your Canvas) (00:00)
 ## +
 
@@ -77,3 +87,13 @@ c.fillRect(300, 300, 100, 100);
 console.log(canvas);
 console.log('ready');
 ```
+
+## Drawing On the Canvas
+
+Canvas Objects Include:
+1. Rectangles
+1. Lines
+1. Arcs/Circles
+1. Bezier Curves
+1. Images
+1. Text
