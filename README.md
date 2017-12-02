@@ -60,7 +60,7 @@
 
 
 ---
-##Cascading Style Sheets
+## Cascading Style Sheets
 ---
 ### Animation
 
@@ -86,7 +86,7 @@
 
 
 ---
-##Hyper Text Markup Language (HTML5)
+## Hyper Text Markup Language (HTML5)
 ---
 ### Canvas
 1. [HTML5 Canvas Tutorial for Beginners](dir/languages/html5/canvas/canvas-tutorial-for-beginners) by Chris Courses
@@ -98,7 +98,7 @@
 
 
 ---
-##JavaScript
+## JavaScript
 ---
 ### Authentication
 1. [Auth0](dir/languages/javascript/auth0)
@@ -162,7 +162,7 @@
 
 
 ---
-##Version Control
+## Version Control
 ---
 ### Git
 1. [Git Command Line](dir/version-control/git)
