@@ -14,6 +14,7 @@
 1. [Episode 8: Circular motion](https://youtu.be/83L6B13ixQ0)
 
 **Duration**: 14:54
+
 ---
 ## Episode 1
 1. [Creating And Resizing Your Canvas](#Creating And Resizing Your Canvas) (00:00)
