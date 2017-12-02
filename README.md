@@ -86,7 +86,8 @@
 
 
 ## Hyper Text Markup Language (HTML5)
-
+### Canvas
+1. [HTML5 Canvas Tutorial for Beginners](dir/languages/html5/canvas/canvas-tutorial-for-beginners) by Chris Courses
 
 
 
@@ -147,7 +148,7 @@
 ### Standards
 1. [ECMAScript](dir/languages/javascript/ecmascript)
     1. [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
-
+    1. [Compile ES6 With Babel](dir/languages/javascript/ecmascript/compile-es6-with-babel) by Traversy Media
 ### Supersets
 1. [TypeScript](dir/languages/javascript/typescript)
     1. [TypeScript Crash Course](dir/languages/javascript/typescript/typescript-crash-course) by Traversy Media

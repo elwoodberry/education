@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 gulp.task('scripts', function(){
   gulp.src('src/js/*.js')
     .pipe(concat('main.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('public/js'));
 });
 
