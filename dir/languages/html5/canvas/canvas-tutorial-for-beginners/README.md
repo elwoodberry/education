@@ -3,8 +3,8 @@
 
 ---  
 **Author**: [Chris Courses](https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA)  
-**URL**(s)
-1. [Episode 1: Creating And Resizing Your Canvas](https://youtu.be/EO6OkltgudE)  
+**URL**(s) || **Duration**  
+1. [Episode 1: Creating And Resizing Your Canvas](https://youtu.be/EO6OkltgudE) (14:54)
 1. [Episode 2: Drawing On the Canvas](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 3: Animating The Canvas](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 4: Interacting With The Canvas](https://youtu.be/83L6B13ixQ0)  
@@ -12,8 +12,6 @@
 1. [Episode 6: Collision Detection Pt 1](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 7: Collision Detection Pt 2](https://youtu.be/83L6B13ixQ0)
 1. [Episode 8: Circular motion](https://youtu.be/83L6B13ixQ0)
-
-**Duration**: 14:54
 
 ---
 ## Episode 1
