@@ -12,6 +12,7 @@
 1. [Episode 6: Collision Detection Pt 1](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 7: Collision Detection Pt 2](https://youtu.be/83L6B13ixQ0)
 1. [Episode 8: Circular motion](https://youtu.be/83L6B13ixQ0)
+
 **Duration**: 14:54
 ---
 ## Episode 1
