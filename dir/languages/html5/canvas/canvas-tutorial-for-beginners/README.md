@@ -1,9 +1,7 @@
 # HTML5 Canvas Tutorial for Beginners  
-> An Intro to Becoming a Pro - Ep. 1  
-
 ---  
 **Author**: [Chris Courses](https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA)  
-**URL**(s) || **Duration**  
+**URL (Duration)**  
 1. [Episode 1: Creating And Resizing Your Canvas](https://youtu.be/EO6OkltgudE) (14:54)
 1. [Episode 2: Drawing On the Canvas](https://youtu.be/83L6B13ixQ0) (16:29)
 1. [Episode 3: Animating The Canvas](https://youtu.be/83L6B13ixQ0)  
@@ -12,10 +10,9 @@
 1. [Episode 6: Collision Detection Pt 1](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 7: Collision Detection Pt 2](https://youtu.be/83L6B13ixQ0)
 1. [Episode 8: Circular motion](https://youtu.be/83L6B13ixQ0)
-
 ---
 ## Episode 1
-1. [Creating And Resizing Your Canvas](#Creating And Resizing Your Canvas) (00:00)
+1. [Creating And Resizing Your Canvas](#creating-and-resizing-your-canvas) (00:00)
 ## +
 
 ## Episode 2 : Drawing On the Canvas
@@ -168,10 +165,11 @@ Create An Arch
 1. 'y' - The 'y' axis
 1. 'r' - The radius
 1. 'startAngle'
-   This doe not take degrees. It takes radiants. "What angle would you like to start drawing this arch."
+    * This doe not take degrees. It takes radiants. "What angle would you like to start drawing this arch."
 1. 'endAngle'
-  This doe not take degrees. It takes radiants. "How long would we like the arch to go on for."
-1. 'drawCounterClockwise' - Which direction should the arc be drawn in?
+    * This doe not take degrees. It takes radiants. "How long would we like the arch to go on for."
+1. 'drawCounterClockwise' - Which direction should the arc be drawn in?  
+
 See [HTML Canvas Tutorials](http://www.html5canvastutorials.com/)  
 See [Intro To Radians](https://www.khanacademy.org/math/algebra2/trig-functions/intro-to-radians-alg2/v/introduction-to-radians)  
 
