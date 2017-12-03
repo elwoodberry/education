@@ -4,7 +4,7 @@
 **URL (Duration)**  
 1. [Episode 1: Creating And Resizing Your Canvas](https://youtu.be/EO6OkltgudE) (14:54)
 1. [Episode 2: Drawing On the Canvas](https://youtu.be/83L6B13ixQ0) (16:29)
-1. [Episode 3: Animating The Canvas](https://youtu.be/83L6B13ixQ0)  
+1. [Episode 3: Animating The Canvas](https://youtu.be/83L6B13ixQ0) (32:06)  
 1. [Episode 4: Interacting With The Canvas](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 5: How To Code Gravity](https://youtu.be/83L6B13ixQ0)  
 1. [Episode 6: Collision Detection Pt 1](https://youtu.be/83L6B13ixQ0)  
@@ -13,7 +13,7 @@
 ---
 ## Episode 1
 1. [Creating And Resizing Your Canvas](#creating-and-resizing-your-canvas) (00:00)
-## +
+---
 
 ## Episode 2 : Drawing On the Canvas
 1. [Canvas Objects](#canvas-objects) (00:00)
@@ -21,7 +21,11 @@
 1. [Adding Color To Lines And Fills](#adding-color-to-lines-and-fills) (04:37)
 1. [Creating An Arch](#creating-an-arch) (07:10)
 1. [Creating Hundreds Of Circles](#creating-hundreds-of-circles) (10:17)
-## +
+---
+
+## Episode 3 : Animating The Canvas
+1. [](#) (00:00)
+---
 
 ## Creating And Resizing Your Canvas
 > **Note**  
