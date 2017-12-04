@@ -5,25 +5,25 @@ head
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
 
   // META
-  title #{description}
-  meta(name="description" content=" #{description} ")
-  meta(name="robots" content="#{robots}")
-  link(rel="canonical" href="#{canonical}")
+  title #{title}
+  meta(name="description" content=""+description)
+  meta(name="robots" content=""+robots)
+  link(rel="canonical" href=""+canonical)
 
   // META: OPEN GRAPH
   meta(property="og:locale" content="en_US")
   meta(property="og:type" content="article")
-  meta(property="og:title" content='#{title}')
-  meta(property="og:description" content="#{description}")
-  meta(property="og:url" content="#{canonical}")
-  meta(property="og:site_name" content="#{title}")
+  meta(property="og:title" content=""+title)
+  meta(property="og:description" content=""+description)
+  meta(property="og:url" content=""+canonical)
+  meta(property="og:site_name" content=""+title)
   meta(property="article:section" content="portfolio")
 
   // META: TWITTER
   meta(name="twitter:card" content="summary")
-  meta(name="twitter:description" content="#{description}")
-  meta(name="twitter:title" content="#{title}")
-  meta(name="twitter:image" content="#{twitterImage}")
+  meta(name="twitter:description" content=""+description)
+  meta(name="twitter:title" content=""+title)
+  meta(name="twitter:image" content=""+twitterImage)
 
   // CSS - THIRD PARTY
   link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")

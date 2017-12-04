@@ -4,17 +4,17 @@
 
 # Scaffold | Express Basic Scaffold
 
-## Express
-See [ExpressJS | Application Generator](https://expressjs.com/en/starter/generator.html)  
-View Engine: Pug  
-CSS: Plain CSS  
-GIT: Add GIT Ignore File
+
+
+## Install Packages
 ```
-$ express --view=pug --git _project
+$ npm install
 ```
-
-## Create FAVICON
-
-## Create FAVICON
-
-## Create FAVICON
+## Run the app.
+```
+$ npm start
+```
+## Run Gulp Watch
+```
+$ gulp watch
+```
