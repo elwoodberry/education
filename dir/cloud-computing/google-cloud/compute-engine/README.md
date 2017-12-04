@@ -1,9 +1,12 @@
 # Google Cloud Platform  
 
 
-Table of Contents
+## Table of Contents
 1. [Setting Up A New Project](#setting-up-a-new-project)
-1. [Create the Front End Instance](#create-the-front-end-instance)
+1. [Create The Front End Instance](#create-the-front-end-instance)
+1. [Setting Up The New Instance](#setting-up-the-new-instance)
+1. [Cloning The Repository](#cloning-the-repository)
+---
 
 
 
@@ -15,6 +18,10 @@ We will assume you have (1) **created an account** and (2) **set up your billing
 1. Click '**Go To Console**'  
 2. From the dropdown, click '**Create Project**'  
 
+
+
+
+
 ## Create the Front End Instance
 Once you have created the a new project you will find yourself on the dashboard of the new project.  
 
@@ -23,7 +30,7 @@ Once you have created the a new project you will find yourself on the dashboard 
 3. Click 'Create Instance'
 
 | Attributes   | .   |
-| :------------- |:-------------|
+| -------------: |:-------------|
 | Name:      | '###-frontend' |
 | Zone:      | 'us-east1-b'      |
 | Machine Type: | 'micro'      |
@@ -31,6 +38,10 @@ Once you have created the a new project you will find yourself on the dashboard 
 | Firewall: | 'Allow HTTP', 'Allow HTTPS'      |
 
 4. Click Create
+
+
+
+
 
 ## Setting up the new instance
 We are going to [SSH](https://en.wikipedia.org/wiki/Secure_Shell) into the new instance and setup the basics to run the project.
@@ -44,6 +55,10 @@ We are going to [SSH](https://en.wikipedia.org/wiki/Secure_Shell) into the new i
 	```
 	$ sudo apt-get install git nodejs npm
 	```
+
+
+
+
 
 ## Cloning The Repository
 
