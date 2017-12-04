@@ -22,17 +22,13 @@ Once you have created the a new project you will find yourself on the dashboard 
 2. It will reveal a menu of Google Platform tools. Find the 'Compute' section and click **Compute Engine**
 3. Click 'Create Instance'
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-  - **Name**: '###-frontend'
-  - **Zone**: 'us-east1-b'
-  - **Machine Type**: 'micro'
-  - **Boot Disk**: 'Ubuntu 14.04 LTS'
-  - **Firewall**: 'Allow HTTP', 'Allow HTTPS'
+| Attributes   | .   |
+| :------------- |:-------------|
+| Name:      | '###-frontend' |
+| Zone:      | 'us-east1-b'      |
+| Machine Type: | 'micro'      |
+| Boot Disk: | 'Ubuntu 14.04 LTS'      |
+| Firewall: | 'Allow HTTP', 'Allow HTTPS'      |
 
 4. Click Create
 
