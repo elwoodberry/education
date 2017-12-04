@@ -39,7 +39,12 @@
 
 ## Platform As A Service (PaaS)
 1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
-1. [Google Domains](dir/cloud-computing/google-cloud)
+
+### Google
+1. [Compute Engine Basics](dir/cloud-computing/google-cloud/compute-engine)
+1. [Google Domains](dir/cloud-computing/google-cloud/google-domains)
+
+### Twillio
 1. [Twilio](dir/cloud-computing/twilio)
 
 
