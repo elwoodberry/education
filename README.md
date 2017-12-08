@@ -36,7 +36,7 @@
 # ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png) Cloud Computing
 
 ## Platform As A Service (PaaS)
-1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Amazon Web Service](dir/cloud-computing/amazon-web-services)
 
 ### Google
 1. [Compute Engine Basics](dir/cloud-computing/google-cloud/compute-engine)
