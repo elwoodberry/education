@@ -16,6 +16,12 @@
 1. [Server Side Technology](#server-side-technology)
 1. [Database](#database)
 1. [Server Side Frameworks](#server-side-frameworks)
+1. [Content Management](#content-management)
+1. [Dev Ops and Deploying Applications](Dev Ops and Deploying Applications)
+1. [Mobile Applications](#mobile-applications)
+1. [You Are A Full Stack Developer](#you-are-a-full-stack-developer)
+1. [Biggest Changes From Last Year](#biggest-changes-from-last-year)
+1. [What Now](#what-now)
 ## +
 
 This is a guide to web development technologies and your options.  
@@ -126,3 +132,46 @@ Responsive Layouts Are Very Important
 | PHP   | <ul><li>[Laravel](http://getbootstrap.com/)</li><li><a>[Symfony](http://materializecss.com/)</a></li><li><a>[CodeIgniter](http://materializecss.com/)</a></li><li><a>[Yii2](http://materializecss.com/)</a></li></ul>   |
 | Ruby   | <ul><li>[Ruby On Rails](http://getbootstrap.com/)</li><li><a>[Sinatra](http://materializecss.com/)</a></li><li><a>[Nitro](http://materializecss.com/)</a></li></ul>   |
 | C#   | <ul><li>[.NET](http://getbootstrap.com/)</li></ul>   |
+
+
+## Content Management
+1. Wordpress, Drupal, Joomla
+1. Great for clients
+1. Thousands of plugins and addons
+1. Fast Development
+1. Can be limiting
+
+
+## Dev Ops and Deploying Applications
+1. Dedicated Server - VPS
+1. Cloud Hosting - Digital Ocean, Heroku, AWS
+1. Cloud Storage -Amazon S3
+1. Working with SSH and command line
+1. Server maintenance and software updates
+
+## Mobile Applications
+1. [ReactNative]()
+1. [NativeScript]()
+1. [Ionic]()
+1. [PhoneGap - Cordova]
+1. [Xamarin]()
+
+## You Are A Full Stack Developer
+1. Create simple to advanced web applications (Front and Back end)
+1. Create secure REST APIs
+1. Deploy and maintain applications
+1. Administer Databases
+
+You should now be able to get a very good job or run your own business...
+
+## Biggest Changes From Last Year
+1. New technologies (Grid CSS, Fetch API, Materialize, NativeScript)
+1. More focus on full stack and REST APIs rather than server rendered views
+1. More focus on vanilla Javascript in addition to frameworks
+1. Single Page Applications
+1. Python and C# over PHP
+
+## What Now
+1. Focus on your career and whatever technologies your company uses.
+1. Learn other languages / stacks in your spare time
+1. Stay up to date with trends and technologies.
