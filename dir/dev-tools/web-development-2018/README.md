@@ -13,6 +13,8 @@
 1. [Where to next](#where-to-next)
 1. [HTML CSS Frameworks](#html-css-frameworks)
 1. [Front End JS Frameworks](#front-end-js-frameworks)
+1. [Server Side Technology](#server-side-technology)
+1. [Database](#database)
 ## +
 
 This is a guide to web development technologies and your options.  
@@ -94,3 +96,23 @@ Responsive Layouts Are Very Important
 | [APIs REST](https://reactjs.org/)   | Learn how REST APIs work   |
 | [CSS Pre-Processor](https://reactjs.org/)   | Learn how REST APIs work   |
 | [Webpack and Babel](https://reactjs.org/)   | Module loader and JS compiler   |
+
+## Server Side Technology
+| Type   | Options   |
+| :---   | :---   |
+| [Node.JS](https://nodejs.org/en/)   | Fast, scalable and powerful   |
+| [Python](https://www.python.org/)   | Popular, rapid development, great integration  |
+| [PHP](http://php.net/)   | Practical, easy to deploy - Wordpress and Laravel   |
+| [Ruby](https://www.ruby-lang.org/en/)   | Rapid development, strong community   |
+| [C# and ASP.NET](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)   | Very powerful, Microsoft   |
+
+
+## Database
+| Type   | Options   |
+| :---   | :---   |
+| [MongoDB](https://nodejs.org/en/)   | NoSQL, non-relational, suggested for Node.js   |
+| [MySQL](https://nodejs.org/en/)   | Popular relational database   |
+| [PostgreSQL](https://nodejs.org/en/)   | Powerful but a bit more difficult than MySQL   |
+| [SQLServer](https://nodejs.org/en/)   | Microsoft's implementation of SQL   |
+| [Oracle](https://nodejs.org/en/)   | Heavily used in enterprise   |
+| [Firebase](https://nodejs.org/en/)   | Cloud database maintained by Google   |
