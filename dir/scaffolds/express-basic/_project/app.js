@@ -49,4 +49,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+// PORT
+app.listen(3000, () => {
+  console.log('Ready');
+});

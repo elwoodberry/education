@@ -64,10 +64,16 @@ We are going to [SSH](https://en.wikipedia.org/wiki/Secure_Shell) into the new i
 
 1. Clone the Repository
 	```  
-	$ git clone https://github.com/####/####.git
+	$ git clone <domain>
 	```  
 
 2. Change Directory to the '####' directory
 	```
-	$ cd ####
+	$ cd <directory>
 	```  
+
+
+## Start The Server
+```
+$ sudo nohup nodejs app.js &
+```

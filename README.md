@@ -20,10 +20,10 @@
 
 1. [Version Control](#version-control)
     1. [Git](#git)
-
+1. [Dev Tools](#dev-tools)
 1. [Scaffolds](#scaffolds)
-    1. [Express Basic](#express-basic)
-## +
+    1. [Express Scaffolds](#express-scaffolds)
+---
 
 
 
@@ -180,9 +180,16 @@
 
 
 
+---
+## Dev Tools
+---
+1. [Web Development In 2018](dir/dev-tools/web-development-2018)
+
+
+
 
 ---
 ## Scaffolds
 ---
-### Simple
+### Express Scaffolds
 1. [Express Basic](dir/scaffolds/express-basic)
