@@ -1,5 +1,6 @@
 # CSS Animations Series
 **Author**: [DevTips](https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ)  
+**Donate**: [Patreon](https://www.patreon.com/DevTips)  
 
 **Video Series**  
 1. [Transitions](https://youtu.be/wz3kElLbEHE) (00:00)
