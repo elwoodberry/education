@@ -20,7 +20,9 @@ TRANSITIONS
   -webkit-margin-after: 0;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-padding-start: 0; }
+  -webkit-padding-start: 0;
+  /* ONE */
+  /* TWO */ }
   #example-01 li {
     border: 5px #ffffff solid;
     cursor: pointer;
@@ -28,7 +30,6 @@ TRANSITIONS
     position: relative;
     text-align: center; }
   #example-01 [id*="element-"] {
-    background-color: #FFF000;
     position: absolute;
     left: 0;
     pointer-events: none;
@@ -38,15 +39,18 @@ TRANSITIONS
   #example-01 #trigger-01:hover #element-01 {
     transform: translate(200px, 100px) rotate(10deg); }
   #example-01 #element-01 {
-    transition: transform 300ms ease-in-out 1s;
-    -webkit-transition: transform 300ms ease-in-out 1s;
-    -moz-transition: transform 300ms ease-in-out 1s;
-    -o-transition: transform 300ms ease-in-out 1s; }
+    transition: transform 300ms ease-in-out 0ms;
+    -webkit-transition: transform 300ms ease-in-out 0ms;
+    -moz-transition: transform 300ms ease-in-out 0ms;
+    -o-transition: transform 300ms ease-in-out 0ms;
+    background-color: #FFF000; }
+  #example-01 #trigger-02.clicked #element-02 {
+    transform: translate(200px, 100px) rotate(10deg); }
   #example-01 #element-02 {
-    transition: opacity 300ms ease-in-out 1s;
-    -webkit-transition: opacity 300ms ease-in-out 1s;
-    -moz-transition: opacity 300ms ease-in-out 1s;
-    -o-transition: opacity 300ms ease-in-out 1s;
+    transition: transform 300ms ease-in-out 0ms;
+    -webkit-transition: transform 300ms ease-in-out 0ms;
+    -moz-transition: transform 300ms ease-in-out 0ms;
+    -o-transition: transform 300ms ease-in-out 0ms;
     background-color: #48ff00; }
   #example-01 #element-03 {
     transition: opacity 300ms ease-in-out 1s;

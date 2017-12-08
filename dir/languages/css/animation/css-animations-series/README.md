@@ -56,7 +56,7 @@ ul(id="example-01")
 ```
 CSS (SCSS)
 ```
-#trigger {
+#trigger-01 {
   ...
 
   #element-01 {
@@ -65,7 +65,7 @@ CSS (SCSS)
     pointer-events: none;
   }
 }
-#trigger:hover #element-01 {
+#trigger-01:hover #element-01 {
   ...
   transform: translate(200px, 150px) rotate(20deg)
 }
@@ -79,7 +79,7 @@ ul(id="example-01")
 ```
 CSS (SCSS)
 ```
-#trigger {
+#trigger-02 {
   ...
 
   .element-02 {
@@ -88,7 +88,38 @@ CSS (SCSS)
     pointer-events: none;
   }
 }
-#trigger:hover element-02 {
+#trigger-02:hover element-02 {
+  ...
+  transform: translate(200px, 150px) rotate(20deg)
+}
+```
+JS (jQuery)
+```
+$('#trigger-02').on('click', function(){
+  $(this).toggleClass('clicked');
+});
+```
+
+![element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__002.png)
+### Cubic Bezier
+HTML (jade)
+```
+ul(id="example-01")
+  li(id="trigger-03") Element 1
+    span(id="element-03") Element 1
+```
+CSS (SCSS)
+```
+#trigger-03 {
+  ...
+
+  .element-03 {
+    ...
+    transition: transform 300ms cubic-bezier(0, 0.56, 0, 0.85);
+    pointer-events: none;
+  }
+}
+#trigger-02:hover element-02 {
   ...
   transform: translate(200px, 150px) rotate(20deg)
 }

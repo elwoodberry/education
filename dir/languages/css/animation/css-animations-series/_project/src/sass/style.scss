@@ -19,20 +19,33 @@ TRANSITIONS
   [id*="element-"] {
     @include element-default;
   }
+
+
+
+  /* ONE */
   #trigger-01:hover #element-01 {
     transform: translate(200px, 100px) rotate(10deg);
   }
   #element-01 {
-    @include transition-default(transform, 300ms, ease-in-out, 1s);
-
+    @include transition-default(transform, 300ms, ease-in-out, 0ms);
+    background-color: #FFF000;
   }
 
 
 
+
+  /* TWO */
+  #trigger-02.clicked #element-02 {
+    transform: translate(200px, 100px) rotate(10deg);
+  }
   #element-02 {
-    @include transition-default(opacity, 300ms, ease-in-out , 1s);
+    @include transition-default(transform, 300ms, ease-in-out, 0ms );
     background-color: #48ff00;
   }
+
+
+
+
   #element-03 {
     @include transition-default(opacity, 300ms, ease-in-out, 1s);
     background-color: #00e5ff;
