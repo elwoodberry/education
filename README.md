@@ -183,7 +183,7 @@
 ---
 ## Dev Tools
 ---
-1. [Web Development In 2018](dir/dev-tools/web-development-2018)
+1. [Web Development In 2018](dir/dev-tools/web-development-2018) by Traversy Media
 
 
 
