@@ -39,11 +39,11 @@
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Amazon Web Service](dir/cloud-computing/amazon-web-services)
 
 ### Google
-1. [Compute Engine Basics](dir/cloud-computing/google-cloud/compute-engine)
-1. [Google Domains](dir/cloud-computing/google-cloud/google-domains)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Compute Engine Basics](dir/cloud-computing/google-cloud/compute-engine)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Google Domains](dir/cloud-computing/google-cloud/google-domains)
 
 ### Twillio
-1. [Twilio](dir/cloud-computing/twilio)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Twilio](dir/cloud-computing/twilio)
 
 
 
