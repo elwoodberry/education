@@ -165,7 +165,7 @@ Responsive Layouts Are Very Important
 You should now be able to get a very good job or run your own business...
 
 ## Biggest Changes From Last Year
-1. New technologies (Grid CSS, Fetch API, Materialize, NativeScript)
+1. New technologies ([Grid CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/grid), Fetch API, Materialize, NativeScript)
 1. More focus on full stack and REST APIs rather than server rendered views
 1. More focus on vanilla Javascript in addition to frameworks
 1. Single Page Applications
