@@ -33,8 +33,8 @@
 
 
 
-![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png)
-## Cloud Computing
+![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png) Cloud Computing
+======
 
 ## Platform As A Service (PaaS)
 1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
