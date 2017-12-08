@@ -11,7 +11,7 @@
 
 
 ## Table Of Contents
-1. [Cloud Computing](#cloud-computing)
+1. [Cloud Computing](#-cloud-computing)
 1. [Languages](#languages)
     1. [Cascading Style Sheets](#cascading-style-sheets)
     1. [Hyper Text Markup Language (HTML5)](#hyper-text-markup-language-html5)
@@ -33,7 +33,7 @@
 
 
 
-## ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png) Cloud Computing
+# ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png) Cloud Computing
 
 ## Platform As A Service (PaaS)
 1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
