@@ -55,22 +55,22 @@
 
 # ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/code.png) Languages
 
+---
 ## Cascading Style Sheets
 ### Animation
-1.  ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
 ### Frameworks
 #### Bootstrap
-1. [What's New In BootStrap 4?](dir/languages/css/frameworks/bootstrap/whats-new-in-bootstrap4) by Traversy Media
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [What's New In BootStrap 4?](dir/languages/css/frameworks/bootstrap/whats-new-in-bootstrap4) by Traversy Media
 
 ### Layout
 #### Flexbox
-1. [Flexbox CSS In 20 Minutes](dir/languages/css/layout/flexbox/flexbox-css-in-20-minutes) by Traversy Media
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Flexbox CSS In 20 Minutes](dir/languages/css/layout/flexbox/flexbox-css-in-20-minutes) by Traversy Media
 
 ### Preprocessors
 #### SASS
-1. [SASS Tutorial](dir/languages/css/preprocessor/sass/sass-tutorial) by Derek Banas
-
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [SASS Tutorial](dir/languages/css/preprocessor/sass/sass-tutorial) by Derek Banas
 
 
 
@@ -80,9 +80,8 @@
 
 ---
 ## Hyper Text Markup Language (HTML5)
----
 ### Canvas
-1. [HTML5 Canvas Tutorial for Beginners](dir/languages/html5/canvas/canvas-tutorial-for-beginners) by Chris Courses
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [HTML5 Canvas Tutorial for Beginners](dir/languages/html5/canvas/canvas-tutorial-for-beginners) by Chris Courses
 
 
 
@@ -92,46 +91,48 @@
 
 ---
 ## JavaScript
----
 ### Authentication
-1. [Auth0](dir/languages/javascript/auth0)
-    1. [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0
-1. [Passport](dir/languages/javascript/passport)
-    1. [Node.js Login System With Passport](dir/languages/javascript/passport/login-system-with-passport) by Traversy Media
+#### Auth0
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Auth0.com](dir/languages/javascript/auth0/auth0) by Auth0  
+
+#### Passport
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Node.js Login System With Passport](dir/languages/javascript/passport/login-system-with-passport) by Traversy Media
 
 ### Web Technologies  
-1. [Ajax](dir/languages/javascript/ajax)
-    1. [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
+#### Ajax
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Ajax Crash Course](dir/languages/javascript/ajax/ajax-crash-course) by Traversy Media
 
 ### Build Systems
-1. [GulpJS](dir/languages/javascript/gulp)
+#### GulpJS
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [GulpJS Crash Course](dir/languages/javascript/gulp/gulp-js-crash-course) by Traversy Media
 
 ### Database  
-1. [MongoDB](dir/languages/javascript/mongodb)
-    1. [MongoDB](dir/languages/javascript/mongodb/mongodb) by MongoDB
-    1. [Mongoose JS](dir/languages/javascript/)
+#### MongoDB
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [MongoDB](dir/languages/javascript/mongodb/mongodb) by MongoDB
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Mongoose JS](dir/languages/javascript/)
 
 ### eCommerce
-1. [Stripe.JS](dir/languages/javascript/stripe)
-    1. [Simple eBook](dir/languages/javascript/stripe/simple-ebook) by Traversy Media
+#### Stripe.JS
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png)[Simple eBook](dir/languages/javascript/stripe/simple-ebook) by Traversy Media
 
 ### Frameworks
-1. [Angular](dir/languages/javascript/angular)
-    1. [Angular.io](dir/languages/javascript/angular/angular-io) by Angular
+#### Angular
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Angular.io](dir/languages/javascript/angular/angular-io) by Angular
 
-1. [Express](dir/languages/javascript/express)
-    1. [Express v4.16.1](dir/languages/javascript/express/express_v4-16-1) by Express
-    1. [Express Tutorial](dir/languages/javascript/express/express-tutorial) by Derek Banas
-    1. [ExpressJS Crash Course](dir/languages/javascript/express/expressjs-crash-course) by Traversy Media
+#### Express
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Express v4.16.1](dir/languages/javascript/express/express_v4-16-1) by Express
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Express Tutorial](dir/languages/javascript/express/express-tutorial) by Derek Banas
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [ExpressJS Crash Course](dir/languages/javascript/express/expressjs-crash-course) by Traversy Media
 
-1. [Ionic](dir/languages/javascript/ionic)
+### Mobile
+#### Ionic
 
-### Game Development
-1. [Super Mario Replica](dir/languages/javascript/gamedev/super-mario) by Meth Meth Method
+## Game Development
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Super Mario Replica](dir/languages/javascript/gamedev/super-mario) by Meth Meth Method
 
 ### HTML Template Engines
-1. [Jade](dir/languages/javascript/jade)
-    1. [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
+#### Jade
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
 
 ### Libraries  
 1. [jQuery](dir/languages/javascript/jquery)
