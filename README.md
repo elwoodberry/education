@@ -127,7 +127,7 @@
 ### Mobile
 #### Ionic
 
-## Game Development
+### Game Development
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Super Mario Replica](dir/languages/javascript/gamedev/super-mario) by Meth Meth Method
 
 ### HTML Template Engines
@@ -135,47 +135,42 @@
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Jade Pug](dir/languages/javascript/jade/jade-pug) by Derek Banas
 
 ### Libraries  
-1. [jQuery](dir/languages/javascript/jquery)
-    1. [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
+#### jQuery
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
 
 ### Servers
-1. [Node](dir/languages/javascript/node)
-    1. [Fixing NPM Permissions](dir/languages/javascript/node/fixing-npm-permissions) by NPM
+#### Node
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Fixing NPM Permissions](dir/languages/javascript/node/fixing-npm-permissions) by NPM
 
 ### Standards
-1. [ECMAScript](dir/languages/javascript/ecmascript)
-    1. [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
-    1. [Compile ES6 With Babel](dir/languages/javascript/ecmascript/compile-es6-with-babel) by Traversy Media
+#### ECMAScript 2015+
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Compile ES6 With Babel](dir/languages/javascript/ecmascript/compile-es6-with-babel) by Traversy Media
+
 ### Supersets
-1. [TypeScript](dir/languages/javascript/typescript)
-    1. [TypeScript Crash Course](dir/languages/javascript/typescript/typescript-crash-course) by Traversy Media
+#### TypeScript
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [TypeScript Crash Course](dir/languages/javascript/typescript/typescript-crash-course) by Traversy Media
 
 
 
 
 
-
----
 ## Version Control
 ---
 ### Git
-1. [Git Command Line](dir/version-control/git)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Git Command Line](dir/version-control/git)
 
 
 
 
-
-
----
 ## Dev Tools
 ---
-1. [Web Development In 2018](dir/dev-tools/web-development-2018) by Traversy Media
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Web Development In 2018](dir/dev-tools/web-development-2018) by Traversy Media
 
 
 
 
----
 ## Scaffolds
 ---
 ### Express Scaffolds
-1. [Express Basic](dir/scaffolds/express-basic)
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Express Basic](dir/scaffolds/express-basic)
