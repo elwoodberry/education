@@ -27,7 +27,7 @@ TRANSITIONS
     transform: translate(200px, 100px) rotate(10deg);
   }
   #element-01 {
-    @include transition-default(transform, 300ms, ease-in-out, 0ms);
+    @include transition-default(transform, 300ms, cubic-bezier(0.43,-0.01, 0.2, 1), 0ms);
     background-color: #FFF000;
   }
 

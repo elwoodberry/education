@@ -99,9 +99,10 @@ $('#trigger-02').on('click', function(){
   $(this).toggleClass('clicked');
 });
 ```
-
-![element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__002.png)
 ### Cubic Bezier
+---
+![element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__002.png)
+---
 HTML (jade)
 ```
 ul(id="example-01")

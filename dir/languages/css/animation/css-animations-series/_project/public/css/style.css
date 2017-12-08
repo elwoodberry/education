@@ -39,10 +39,10 @@ TRANSITIONS
   #example-01 #trigger-01:hover #element-01 {
     transform: translate(200px, 100px) rotate(10deg); }
   #example-01 #element-01 {
-    transition: transform 300ms ease-in-out 0ms;
-    -webkit-transition: transform 300ms ease-in-out 0ms;
-    -moz-transition: transform 300ms ease-in-out 0ms;
-    -o-transition: transform 300ms ease-in-out 0ms;
+    transition: transform 300ms cubic-bezier(0.43, -0.01, 0.2, 1) 0ms;
+    -webkit-transition: transform 300ms cubic-bezier(0.43, -0.01, 0.2, 1) 0ms;
+    -moz-transition: transform 300ms cubic-bezier(0.43, -0.01, 0.2, 1) 0ms;
+    -o-transition: transform 300ms cubic-bezier(0.43, -0.01, 0.2, 1) 0ms;
     background-color: #FFF000; }
   #example-01 #trigger-02.clicked #element-02 {
     transform: translate(200px, 100px) rotate(10deg); }
