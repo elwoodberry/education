@@ -12,7 +12,7 @@ $ npm install
 ```
 ## Run the app.
 ```
-$ npm start
+$ node app.js
 ```
 ## Run Gulp Watch
 ```

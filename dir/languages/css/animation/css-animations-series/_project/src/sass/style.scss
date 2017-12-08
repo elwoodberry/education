@@ -1,3 +1,44 @@
 /* BASE */
 @import "variables";
 @import "mixins";
+
+
+/*
+TRANSITIONS
+*/
+#example-01 {
+  @include ul-default;
+
+  li {
+    border: 5px #ffffff solid;
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    text-align: center;
+  }
+  [id*="element-"] {
+    @include element-default;
+  }
+  #trigger-01:hover #element-01 {
+    transform: translate(200px, 100px) rotate(10deg);
+  }
+  #element-01 {
+    @include transition-default(transform, 300ms, ease-in-out, 1s);
+
+  }
+
+
+
+  #element-02 {
+    @include transition-default(opacity, 300ms, ease-in-out , 1s);
+    background-color: #48ff00;
+  }
+  #element-03 {
+    @include transition-default(opacity, 300ms, ease-in-out, 1s);
+    background-color: #00e5ff;
+  }
+  #element-04 {
+    @include transition-default(opacity, 300ms, ease-in-out, 1s);
+    background-color: #ff00d2;
+  }
+}

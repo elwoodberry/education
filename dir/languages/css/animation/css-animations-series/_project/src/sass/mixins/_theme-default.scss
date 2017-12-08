@@ -1,5 +1,5 @@
 @mixin h1-defaults {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(240, 240, 240, 0.2);
   border-bottom: 1px solid $color;
   display: block;
   width: 100%;
@@ -7,5 +7,31 @@
 }
 
 @mixin transition-default($property, $duration, $ease, $delay){
-  
+  transition: $property $duration $ease $delay;
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
+}
+
+@mixin ul-default {
+  display: flex;
+  list-style: none;
+  background-color: aliceblue;
+  height: 150px;
+  margin-bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+}
+
+@mixin element-default {
+  background-color: #FFF000;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
