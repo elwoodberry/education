@@ -34,7 +34,7 @@
 
 
 
-| ![icon](../_img/cloud.png)   | <h2>Cloud Computing</h2>   |
+| ![icon](../_img/icons/cloud.png)   | <h2>Cloud Computing</h2>   |
 
 ## Platform As A Service (PaaS)
 1. [Amazon Web Service](dir/cloud-computing/amazon-web-services)
