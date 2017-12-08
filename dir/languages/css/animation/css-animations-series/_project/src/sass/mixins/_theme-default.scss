@@ -1,0 +1,11 @@
+@mixin h1-defaults {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-bottom: 1px solid $color;
+  display: block;
+  width: 100%;
+  z-index: 100;
+}
+
+@mixin transition-default($property, $duration, $ease, $delay){
+  
+}
