@@ -11,6 +11,8 @@
 1. [Deploying A Basic Website](#deploying-a-basic-website)
 1. [Web Designer Basic Front End Dev](#web-designer-basic-front-end-dev)
 1. [Where to next](#where-to-next)
+1. [HTML CSS Frameworks](#html-css-frameworks)
+1. [Front End JS Frameworks](#front-end-js-frameworks)
 ## +
 
 This is a guide to web development technologies and your options.  
@@ -62,7 +64,33 @@ Responsive Layouts Are Very Important
 ## Where to next
 | Type   | Options   |
 | :---   | :---   |
-| HTML/CSS Frameworks   | <ul><li>[BootStrap](https://code.visualstudio.com/download)</li><li><a>[Materialize](https://atom.io/)</a></li></ul>   |
+| HTML/CSS Frameworks   | <ul><li>[BootStrap](http://getbootstrap.com/)</li><li><a>[Materialize](http://materializecss.com/)</a></li></ul>   |
 | Front End JavaScript Frameworks   | <ul><li>[React](https://code.visualstudio.com/download)</li><li><a>[Angular](https://atom.io/)</a></li></ul>   |
 | Server Side Language/ Technologies   | <ul><li>[Node.JS](https://code.visualstudio.com/download)</li><li><a>[Python](https://atom.io/)</a></li></ul>   |
 | Databases   | <ul><li>[MongoDB](https://code.visualstudio.com/download)</li><li><a>[MySQL](https://atom.io/)</a></li></ul>   |
+
+## HTML CSS Frameworks
+| Type   | Options   |
+| :---   | :---   |
+| [BootStrap](http://getbootstrap.com/)   | General framework, most popular   |
+| [Materialize](http://materializecss.com/)   | Primarily a UI/UX framework   |
+| [Bulma](https://bulma.io/)   | Easy to learn syntax, NO JS   |
+| [ZURB Foundation](https://foundation.zurb.com/)   | Alternative to bootstrap   |
+| [Skeleton](http://getskeleton.com/)   | VERY light boilerplate   |
+
+## Front End JS Frameworks
+| Type   | Options   |
+| :---   | :---   |
+| [React](https://reactjs.org/)   | Popular for startups, fast, [Redux](https://redux.js.org/), [JSX](https://reactjs.org/docs/introducing-jsx.html)   |
+| [Angular](https://angular.io/)   | General framework, most popular   |
+| [Vue](https://vuejs.org/)   | General framework, most popular   |
+| [Aurelia](http://aurelia.io/)   | General framework, most popular   |
+
+## Side Technologies You Should Learn
+| Type   | Options   |
+| :---   | :---   |
+| [GIT](https://reactjs.org/)   | Version Control   |
+| [Basic Command Line](https://reactjs.org/)   | Folder Navigation, file creation, etc.  |
+| [APIs REST](https://reactjs.org/)   | Learn how REST APIs work   |
+| [CSS Pre-Processor](https://reactjs.org/)   | Learn how REST APIs work   |
+| [Webpack and Babel](https://reactjs.org/)   | Module loader and JS compiler   |
