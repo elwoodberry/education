@@ -6,6 +6,7 @@
 
 ## Table Of Contents
 1. [Tools And Software](#tools-and-software)
+1. [HTML CSS](#html-css)
 ## +
 
 This is a guide to web development technologies and your options.  
@@ -20,5 +21,11 @@ Decide what type of developer you want to be before anything.
 ## Tools And Software
 | Type   | Options   |
 | :---   | :---   |
-| Text Editor   | <ul><li>[VSCode](http://www.google.com)</li><li><a>Atom</a></li><li><a>Sublime Text</a></li></ul>   |
-| Text Editor   | <ul><li><a>VSCode</a></li><li><a>Atom</a></li><li><a>Sublime Text</a></li></ul>   |
+| Text Editor   | <ul><li>[VSCode](https://code.visualstudio.com/download)</li><li><a>[Atom](https://atom.io/)</a></li><li><a>[Sublime Text](https://www.sublimetext.com/)</a></li></ul>   |
+| Browser   | <ul><li><a>[Chrome](https://www.google.com/chrome/browser/desktop/index.html)</a></li><li><a>[FireFox](https://www.mozilla.org/en-US/firefox/)</a></li></ul>   |
+| Image Editing   | <ul><li><a>[Pixlr Editor](https://pixlr.com/editor/)</a></li><li><a>[GIMP](https://www.gimp.org/)</a></li></ul>   |
+| Deployment Tools   | <ul><li>FTP Client</li><li>SSH Tool</li></ul>   |
+| Cloud Storage   | <ul><li>DropBox</li><li>Google Drive</li></ul>   |
+
+
+## HTML CSS
