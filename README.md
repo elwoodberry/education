@@ -53,28 +53,15 @@
 
 
 
-# Languages
+# ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/code.png) Languages
 
-
-
-
-
-
-
-
-
-
-
----
 ## Cascading Style Sheets
----
 ### Animation
-
-1. [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
+1.  ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
 
 ### Frameworks
 #### Bootstrap
-1. [What's New In BootStrap 4?](dir/css/frameworks/bootstrap/whats-new-in-bootstrap4) by Traversy Media
+1. [What's New In BootStrap 4?](dir/languages/css/frameworks/bootstrap/whats-new-in-bootstrap4) by Traversy Media
 
 ### Layout
 #### Flexbox
