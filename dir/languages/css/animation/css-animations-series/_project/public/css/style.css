@@ -4,6 +4,7 @@ h1 {
   background-color: rgba(240, 240, 240, 0.2);
   border-bottom: 1px solid #CCCCCC;
   display: block;
+  margin-top: 50px;
   width: 100%;
   z-index: 100; }
 

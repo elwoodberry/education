@@ -3,12 +3,14 @@
 **Donate**: [Patreon](https://www.patreon.com/DevTips)  
 
 **Video Series**  
-1. [Transitions](https://youtu.be/wz3kElLbEHE) (00:00)
-1. [Animation and Keyframes]()
+1. [Transitions](https://youtu.be/8kK-cA99SA0) (00:00)
+1. [Animation and Keyframes](https://youtu.be/f1WMjDx4snI) (23:52)
+1.
 ---
 
 ## Table Of Contents
 1. [Transitions](#transitions)
+1. [Animation and Keyframes](#animation-and-keyframes)
 ---
 
 
@@ -124,5 +126,38 @@ CSS (SCSS)
 #trigger-02:hover element-02 {
   ...
   transform: translate(200px, 150px) rotate(20deg)
+}
+```
+
+---
+---
+---
+
+## Animation and Keyframes
+
+### Keyframes
+---
+![keyframes](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__003.png)
+---
+1. Keyframes
+    Do not have any selectors on them. They are not nested into anything. They are on the root of the css document.  
+2. From
+    Start here
+3. To
+    End Here
+4. Styles
+    What attributes are changing?
+
+**Example**
+```
+@keyframe myframes {
+  from {
+    height: 200px;
+    background: orange;
+  }
+  to {
+    height: 400px;
+    background: pink;
+  }
 }
 ```
