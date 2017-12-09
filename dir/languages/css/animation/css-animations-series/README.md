@@ -139,13 +139,13 @@ CSS (SCSS)
 ---
 ![keyframes](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__003.png)
 ---
-1. Keyframes
+1. Keyframes  
     Do not have any selectors on them. They are not nested into anything. They are on the root of the css document.  
-2. From
+2. From  
     Start here
-3. To
+3. To  
     End Here
-4. Styles
+4. Styles  
     What attributes are changing?
 
 **Example**
