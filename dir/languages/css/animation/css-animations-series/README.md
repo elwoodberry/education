@@ -262,11 +262,11 @@ $('#kyfrm-element-04').on('click', function(){
 ---
 
 ## Animating the Moments
-Why you should be animating certain things and why you shouldn't be animating other things. Animation allows you to understand that you have traveled from somewhere.
+Why you should be animating certain things and why you shouldn't be animating other things.
 
 ### Orientation  
-**Answers the Question**: Where Am I Now?
-
+**Answers the Question**: Where Am I Now?  
+Animation allows you to understand that you have traveled from somewhere.
 ---
 ![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
 ---
@@ -288,10 +288,17 @@ Other Use Cases For The Orientation Principle:
 
 
 ### Functional Change
-**Answers the Question**: What Does It Do Now?
+**Answers the Question**: What Does It Do Now?  
+The thing we have clicked on, after we clicked on it, it has a different function.
 ---
 ![Functional Change](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__006.png)
 ---
+
+
+
+
+
+
 ### New Element
 **Answers the Question**: What Should I Look At?
 ---
