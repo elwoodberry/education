@@ -29,11 +29,12 @@
 }
 
 @mixin element-default {
-  position: absolute;
+  border-top-style: solid;
+  height: 100%;
   left: 0;
   pointer-events: none;
+  position: absolute;
   top: 0;
-  height: 100%;
   width: 100%;
 }
 

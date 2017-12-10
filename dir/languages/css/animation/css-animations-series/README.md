@@ -161,3 +161,59 @@ CSS (SCSS)
   }
 }
 ```
+Using 'From' and 'To'
+```
+@keyframes kyfrmElement01 {
+  from{
+    border-top-width: 0px;
+    background-color: #ffa3fb;
+  }
+  to {
+    border-top-width: 5px;
+    background-color: rgba(255, 163, 251, 0);
+  }
+}
+```
+Using Percentages
+```
+@keyframes kyfrmElement02 {
+  0% {
+    border-top-color: #FF0000;
+    border-top-width: 0px;
+    background-color: #6cffd8;
+  }
+
+  75% {
+    border-top-width: 5px;
+    background-color: rgba(255, 163, 251, .75);
+  }
+
+  100% {
+    border-top-color: #FF0000;
+    border-top-width: 1px;
+    background-color: rgba(255, 163, 251, 0);
+  }
+}
+```
+### Animation Property
+---
+![keyframes](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__004.png)
+---
+**Syntax**    
+Animation is an attribute of the selector.
+1. **Name**  
+    description goes here.
+1. **Duration**  
+    description goes here.
+1. **Timing Function**  
+    description goes here.  
+1. **Delay**  
+    description goes here.  
+1. **Iteration Count**  
+    description goes here.  
+1. **Direction**  
+    description goes here.  
+1. **Fill Mode**  
+    description goes here.  
+1. **Play State**  
+    description goes here.

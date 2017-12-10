@@ -1,29 +1,37 @@
 
+
+
 /*
-KEYFRAMES AND Animations
+KEYRAMES EXAMPLE
 */
 
-#keyframes {
-  @include ul-default;
+@keyframes kyfrmElement01 {
+  from{
+    border-top-width: 0px;
+    background-color: #ffa3fb;
+  }
+  to {
+    border-top-width: 5px;
+    background-color: rgba(255, 163, 251, 0);
+  }
+}
 
-  li {
-    @include li-default;
 
-    span {
-      @include element-default;
-    }
+@keyframes kyfrmElement02 {
+  0% {
+    border-top-color: #FF0000;
+    border-top-width: 0px;
+    background-color: #6cffd8;
+  }
 
-    #kyfrm-element-01 {
-      background-color: #ffa3fb;
-    }
-    #kyfrm-element-02 {
-      background-color: #6cffd8;
-    }
-    #kyfrm-element-03 {
-      background-color: #a3beff;
-    }
-    #kyfrm-element-04 {
-      background-color: #ffe8a3;
-    }
+  30%, 75% {
+    border-top-width: 5px;
+    background-color: rgba(255, 163, 251, .75);
+  }
+
+  100% {
+    border-top-color: #FF0000;
+    border-top-width: 1px;
+    background-color: rgba(255, 163, 251, 0);
   }
 }
