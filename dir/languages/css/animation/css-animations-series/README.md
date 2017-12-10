@@ -296,7 +296,9 @@ The thing we have clicked on, after we clicked on it, it has a different functio
 ![Functional Change](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__006.png)
 ---
 
-
+1. A toggle animation
+1. Hamburger menu icon that changes to an 'X' to close
+1. Mute music to unmute
 
 
 
@@ -307,21 +309,44 @@ The thing we have clicked on, after we clicked on it, it has a different functio
 ---
 ![New Element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__007.png)
 ---
+When we introduce a new element to the page... we are trying to let the user know that something new is on the page and try to let them know why it is there.
+1. What this thing is...
+1. Why is it here...
+1. Is it temporary (modal)
+1. Is it a new interface element (alert, success, error, dropdown menu, add a friend)
+
+
+
 ### Highlight
 **Answers the Question**: What Is Important Here?
 
 ---
 ![Highlight](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__008.png)
 ---
+UX demo or marketing page with beakons that give more information once hovered over.
+1. Bringing attention to a certain spot.
+1. Motion rises above all other things in terms of getting the user's attention
+1. Using motion to make things stand out in a crowded page
+1. Dropping down, popping up,
+
+
 ### Visual Feedback
 **Answers the Question**: Is The Layout Understanding What I Am Asking It To Do?
 
 ---
 ![Visual Feedback](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__009.png)
 ---
+I as the user am giving the page information(forms) and I am done. Using animation to indicate that the action has been completed and we are ready to move on (success, error, warning).  
+1. When animation embodies the concept of what is actually happening(sending an email)
+
+
 ### System Status
 **Answers the Question**: Is This Working? How Long Will It Take?
 
 ---
 ![System Status](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__010.png)
 ---
+Building a backend where information has to be processed(pulling a report, submitting a form, processing a credit card).
+1. Letting the user know that things are running smoothing without errors.
+1. Things are working, something is being processed.
+1. Google voice, when you speak, balls start jumping... is a system status. Visual feedback
