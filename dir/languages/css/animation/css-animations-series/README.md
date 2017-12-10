@@ -266,7 +266,22 @@ Why you should be animating certain things and why you shouldn't be animating ot
 
 ### Orientation  
 **Answers the Question**: Where Am I Now?  
-Animation allows you to understand that you have traveled from somewhere.
+Animation allows you to understand that you have traveled from somewhere.  
+
+**These are all moments**  
+If you look deeper into what is happening you will see that there is something that ties all these moments together. That is the idea of change.
+1. When the user performs a command
+1. Hovers over a button
+1. clicks a target
+1. open a modal
+1. send a form
+1. drop a menu
+1. check a box
+1. navigate to a new page
+
+These are all actions where the user is asking/expecting things to change. These are all moments of change. Animation is all about motion of changing one state into another and helping the user understand what has just happened and wha they should be doing now.
+
+
 
 ---
 ![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
