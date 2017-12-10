@@ -264,7 +264,7 @@ $('#kyfrm-element-04').on('click', function(){
 ## Animating the Moments
 Why you should be animating certain things and why you shouldn't be animating other things.
 
-### Orientation
+### Orientation  
 **Answers the Question**: What Does It Do Now?
 ---
 ![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
