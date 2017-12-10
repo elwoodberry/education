@@ -262,14 +262,30 @@ $('#kyfrm-element-04').on('click', function(){
 ---
 
 ## Animating the Moments
-Why you should be animating certain things and why you shouldn't be animating other things.
+Why you should be animating certain things and why you shouldn't be animating other things. Animation allows you to understand that you have traveled from somewhere.
 
 ### Orientation  
-**Answers the Question**: What Does It Do Now?
+**Answers the Question**: Where Am I Now?
 
 ---
 ![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
 ---
+1. Giving the user information about what they are going through right now (ie: form with email, cc info, etc).
+1. The UI is saying
+    1. "I've that, lets move to the next thing I need."
+    1. "I understand(and accept) your input, here is the next thing I need from you..."
+    1. "This is a sequence of events"
+    1. "You are doing great, move forward"
+    1. "This is part of a series"
+
+Other Use Cases For The Orientation Principle:
+1. Click on something and expands
+1. Click on a link and the page slides out.
+1. Models
+
+
+
+
 
 ### Functional Change
 **Answers the Question**: What Does It Do Now?
