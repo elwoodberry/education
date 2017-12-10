@@ -290,6 +290,7 @@ Other Use Cases For The Orientation Principle:
 ### Functional Change
 **Answers the Question**: What Does It Do Now?  
 The thing we have clicked on, after we clicked on it, it has a different function.
+
 ---
 ![Functional Change](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__006.png)
 ---
