@@ -3,14 +3,15 @@
 **Donate**: [Patreon](https://www.patreon.com/DevTips)  
 
 **Video Series**  
-1. [Transitions](https://youtu.be/8kK-cA99SA0) (00:00)
+1. [Transitions](https://youtu.be/8kK-cA99SA0) (27:29)
 1. [Animation and Keyframes](https://youtu.be/f1WMjDx4snI) (23:52)
-1.
+1. [Animating the Moments](https://youtu.be/GeuNIOuIEDA) (18:13)
 ---
 
 ## Table Of Contents
 1. [Transitions](#transitions)
 1. [Animation and Keyframes](#animation-and-keyframes)
+1. [Animating the Moments](#animating-the-moments)
 ---
 
 
@@ -255,3 +256,41 @@ $('#kyfrm-element-04').on('click', function(){
   $('#kyfrm-grid').append('<div class="grid-item">Grid Item</div>');
 });
 ```
+
+---
+---
+---
+
+## Animating the Moments
+Why you should be animating certain things and why you shouldn't be animating other things.
+
+### Orientation
+**Answers the Question**: What Does It Do Now?
+---
+![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
+---
+### Functional Change
+**Answers the Question**: What Does It Do Now?
+---
+![Functional Change](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__006.png)
+---
+### New Element
+**Answers the Question**: What Should I Look At?
+---
+![New Element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__007.png)
+---
+### Highlight
+**Answers the Question**: What Is Important Here?
+---
+![Highlight](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__008.png)
+---
+### Visual Feedback
+**Answers the Question**: Is The Layout Understanding What I Am Asking It To Do?
+---
+![Visual Feedback](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__009.png)
+---
+### System Status
+**Answers the Question**: Is This Working? How Long Will It Take?
+---
+![System Status](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__010.png)
+---
