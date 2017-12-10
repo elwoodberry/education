@@ -266,9 +266,11 @@ Why you should be animating certain things and why you shouldn't be animating ot
 
 ### Orientation  
 **Answers the Question**: What Does It Do Now?
+
 ---
 ![Orientation](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__005.png)
 ---
+
 ### Functional Change
 **Answers the Question**: What Does It Do Now?
 ---
