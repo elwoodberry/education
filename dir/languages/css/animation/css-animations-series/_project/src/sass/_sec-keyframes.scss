@@ -22,10 +22,29 @@ KEYFRAMES AND Animations
       animation: kyfrmElement02 500ms ease-in-out 0s infinite;
     }
     #kyfrm-element-03 {
+      @include animation-default(kyfrmElement02, 500ms, ease-in-out, 0s, 3, normal, normal, running)
       background-color: #a3beff;
     }
     #kyfrm-element-04 {
+      @include animation-default(kyfrmElement02, 500ms, ease-in-out, 0s, infinite, normal, normal, null)
       background-color: #ffe8a3;
+
+      #kyfrm-anchor-04 {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        background-color: #868e96;
+        color: #FFFFFF;
+      }
     }
   }
+
+  .is-paused {
+    background-color: #000000;
+    animation-play-state: paused;
+  }
+
+
 }

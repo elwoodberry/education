@@ -32,7 +32,6 @@
   border-top-style: solid;
   height: 100%;
   left: 0;
-  pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
@@ -43,4 +42,46 @@
   -webkit-transition: $property $duration $ease $delay;
   -moz-transition: $property $duration $ease $delay;
   -o-transition: $property $duration $ease $delay;
+}
+
+@mixin animation-default($name, $duration, $timing, $delay, $iteration, $direction, $fill, $state){
+  /* Default */
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+  animation-delay: $delay;
+  animation-iteration-count: $iteration;
+  animation-direction: $direction;
+  animation-fill-mode: $fill;
+  animation-play-state: $state;
+
+  /* WebKit */
+  -webkit-animation-name: $name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: $timing;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-iteration-count: $iteration;
+  -webkit-animation-direction: $direction;
+  -webkit-animation-fill-mode: $fill;
+  -webkit-animation-play-state: $state;
+
+  /* Mozilla */
+  -moz-animation-name: $name;
+  -moz-animation-duration: $duration;
+  -moz-animation-timing-function: $timing;
+  -moz-animation-delay: $delay;
+  -moz-animation-iteration-count: $iteration;
+  -moz-animation-direction: $direction;
+  -moz-animation-fill-mode: $fill;
+  -moz-animation-play-state: $state;
+
+  /* Opera */
+  -o-animation-name: $name;
+  -o-animation-duration: $duration;
+  -o-animation-timing-function: $timing;
+  -o-animation-delay: $delay;
+  -o-animation-iteration-count: $iteration;
+  -o-animation-direction: $direction;
+  -o-animation-fill-mode: $fill;
+  -o-animation-play-state: $state;
 }

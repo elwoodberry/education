@@ -199,21 +199,48 @@ Using Percentages
 ---
 ![keyframes](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__004.png)
 ---
-**Syntax**    
-Animation is an attribute of the selector.
+#### Syntax   
+Animation is an attribute of the selector.  
+See [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) by Mozilla
 1. **Name**  
-    description goes here.
+    The name of the keyframe.
 1. **Duration**  
-    description goes here.
+    Duration of the animation
 1. **Timing Function**  
-    description goes here.  
+    The transition of the animation
 1. **Delay**  
-    description goes here.  
+    How long are we going to wait once this animation is trigger before the visuals start happening. This relates to the animation in its entirety. Not the start of each iteration.
 1. **Iteration Count**  
-    description goes here.  
+    How many times will this animation happen?
 1. **Direction**  
-    description goes here.  
+    In terms of a timeline, which direction on the timeline are we moving?  
 1. **Fill Mode**  
-    description goes here.  
+    Controls what the animation will look like after it has been animated.
 1. **Play State**  
-    description goes here.
+    Running or paused.
+
+#### Example  
+Keep in mind the below example is shorthand. In a mixin you could spell out all these in greater detail.
+```
+.element {
+  animation: myframes 2s ease-in-out 0s infinite normal forwards paused;
+}
+```
+Long Hand
+```
+.element {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+  animation-delay: $delay;
+  animation-iteration-count: $iteration;
+  animation-direction: $direction;
+  animation-fill-mode: $fill;
+  animation-play-state: $state;
+}
+```
+
+#### Triggering
+main.js
+```
+```

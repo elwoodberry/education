@@ -35,3 +35,22 @@ KEYRAMES EXAMPLE
     background-color: rgba(255, 163, 251, 0);
   }
 }
+
+@keyframes kyfrmElement03 {
+  0% {
+    border-top-color: #FF0000;
+    border-top-width: 0px;
+    background-color: #6cffd8;
+  }
+
+  30%, 75% {
+    border-top-width: 5px;
+    background-color: rgba(255, 163, 251, .75);
+  }
+
+  100% {
+    border-top-color: #FF0000;
+    border-top-width: 1px;
+    background-color: rgba(255, 163, 251, 0);
+  }
+}
