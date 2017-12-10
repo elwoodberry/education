@@ -7,13 +7,6 @@
   z-index: 100;
 }
 
-@mixin transition-default($property, $duration, $ease, $delay){
-  transition: $property $duration $ease $delay;
-  -webkit-transition: $property $duration $ease $delay;
-  -moz-transition: $property $duration $ease $delay;
-  -o-transition: $property $duration $ease $delay;
-}
-
 @mixin ul-default {
   display: flex;
   list-style: none;
@@ -27,6 +20,14 @@
   -webkit-padding-start: 0;
 }
 
+@mixin li-default {
+  border: 5px #ffffff solid;
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
 @mixin element-default {
   position: absolute;
   left: 0;
@@ -34,4 +35,11 @@
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+@mixin transition-default($property, $duration, $ease, $delay){
+  transition: $property $duration $ease $delay;
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
 }

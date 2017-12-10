@@ -1,0 +1,29 @@
+
+/*
+KEYFRAMES AND Animations
+*/
+
+#keyframes {
+  @include ul-default;
+
+  li {
+    @include li-default;
+
+    span {
+      @include element-default;
+    }
+
+    #kyfrm-element-01 {
+      background-color: #ffa3fb;
+    }
+    #kyfrm-element-02 {
+      background-color: #6cffd8;
+    }
+    #kyfrm-element-03 {
+      background-color: #a3beff;
+    }
+    #kyfrm-element-04 {
+      background-color: #ffe8a3;
+    }
+  }
+}
