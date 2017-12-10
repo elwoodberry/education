@@ -303,21 +303,25 @@ The thing we have clicked on, after we clicked on it, it has a different functio
 
 ### New Element
 **Answers the Question**: What Should I Look At?
+
 ---
 ![New Element](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__007.png)
 ---
 ### Highlight
 **Answers the Question**: What Is Important Here?
+
 ---
 ![Highlight](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__008.png)
 ---
 ### Visual Feedback
 **Answers the Question**: Is The Layout Understanding What I Am Asking It To Do?
+
 ---
 ![Visual Feedback](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__009.png)
 ---
 ### System Status
 **Answers the Question**: Is This Working? How Long Will It Take?
+
 ---
 ![System Status](https://raw.github.com/elwoodberry/education/master/_img/diagrams/transitions__010.png)
 ---
