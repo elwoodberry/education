@@ -54,3 +54,15 @@ KEYRAMES EXAMPLE
     background-color: rgba(255, 163, 251, 0);
   }
 }
+
+@keyframes gridItem {
+  0% {
+    background-color: #a8ffd0;
+    height: 0px;
+  }
+
+  100% {
+    background-color: #a8ffd0;
+    height: 130px;
+  }
+}

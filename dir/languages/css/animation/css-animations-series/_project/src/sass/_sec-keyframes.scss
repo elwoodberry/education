@@ -26,7 +26,7 @@ KEYFRAMES AND Animations
       background-color: #a3beff;
     }
     #kyfrm-element-04 {
-      @include animation-default(kyfrmElement02, 500ms, ease-in-out, 0s, infinite, normal, normal, null)
+      @include animation-default(kyfrmElement02, 500ms, ease-in-out, 0s, infinite, normal, normal, null);
       background-color: #ffe8a3;
 
       #kyfrm-anchor-04 {
@@ -47,4 +47,15 @@ KEYFRAMES AND Animations
   }
 
 
+}
+
+
+#kyfrm-grid {
+  display: flex;
+  padding: 5px;
+
+  .grid-item {
+    @include animation-default(gridItem, 500ms, ease-in-out, 0s, 1, normal, forwards, null);
+    flex: 1;
+  }
 }

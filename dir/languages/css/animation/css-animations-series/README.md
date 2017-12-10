@@ -214,7 +214,7 @@ See [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) by M
     How many times will this animation happen?
 1. **Direction**  
     In terms of a timeline, which direction on the timeline are we moving?  
-1. **Fill Mode**  
+1. **Fill Mode** (See [Animation Fill Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode))  
     Controls what the animation will look like after it has been animated.
 1. **Play State**  
     Running or paused.
@@ -241,6 +241,17 @@ Long Hand
 ```
 
 #### Triggering
-main.js
+main.js  
+This will pause the animation. When the class is removed the animation continues.  
 ```
+$('#kyfrm-anchor-04').on('click', function(){
+  $('#kyfrm-element-04').toggleClass('is-paused');
+});
+```
+
+Append an animated element to the screen every time the button is clicked.
+```
+$('#kyfrm-element-04').on('click', function(){
+  $('#kyfrm-grid').append('<div class="grid-item">Grid Item</div>');
+});
 ```

@@ -175,6 +175,44 @@ KEYFRAMES AND Animations
     background-color: #000000;
     animation-play-state: paused; }
 
+#kyfrm-grid {
+  display: flex;
+  padding: 5px; }
+  #kyfrm-grid .grid-item {
+    /* Default */
+    animation-name: gridItem;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: gridItem;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: gridItem;
+    -moz-animation-duration: 500ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: gridItem;
+    -o-animation-duration: 500ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 0s;
+    -o-animation-iteration-count: 1;
+    -o-animation-direction: normal;
+    -o-animation-fill-mode: forwards;
+    flex: 1; }
+
 /*
 KEYRAMES EXAMPLE
 */
@@ -211,3 +249,11 @@ KEYRAMES EXAMPLE
     border-top-color: #FF0000;
     border-top-width: 1px;
     background-color: rgba(255, 163, 251, 0); } }
+
+@keyframes gridItem {
+  0% {
+    background-color: #a8ffd0;
+    height: 0px; }
+  100% {
+    background-color: #a8ffd0;
+    height: 130px; } }
