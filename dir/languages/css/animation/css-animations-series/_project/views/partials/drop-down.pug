@@ -1,0 +1,13 @@
+h1 Drop Down Menu
+
+nav: ul
+  - var i = 0;
+    while (i++ < 4)
+      li style #{i}
+        ul(class="drop-menu menu-#{i}")
+          li uno
+          li dos
+          li tres
+          li cuatro
+          li cinco
+          li seis

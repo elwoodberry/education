@@ -12,10 +12,10 @@ h1 {
 TRANSITIONS
 */
 #transitions {
-  display: flex;
-  list-style: none;
   background-color: aliceblue;
+  display: flex;
   height: 150px;
+  list-style: none;
   margin-bottom: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -62,10 +62,10 @@ TRANSITIONS
 KEYFRAMES AND Animations
 */
 #keyframes {
-  display: flex;
-  list-style: none;
   background-color: aliceblue;
+  display: flex;
   height: 150px;
+  list-style: none;
   margin-bottom: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -212,6 +212,59 @@ KEYFRAMES AND Animations
     -o-animation-direction: normal;
     -o-animation-fill-mode: forwards;
     flex: 1; }
+
+nav {
+  padding: 50px 0px;
+  text-align: center; }
+  nav > ul {
+    background-color: aliceblue;
+    display: flex;
+    height: 150px;
+    list-style: none;
+    margin-bottom: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+    height: 65px;
+    border-radius: 2px; }
+    nav > ul > li {
+      border: 5px #ffffff solid;
+      cursor: pointer;
+      flex: 1;
+      position: relative;
+      text-align: center;
+      border: 2px #ffffff solid;
+      height: 65px;
+      line-height: 65px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.7);
+      cursor: pointer; }
+      nav > ul > li:hover {
+        background: #D5D5D5;
+        border-radius: 2px; }
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0; }
+  ul.drop-menu li {
+    background: #666;
+    color: rgba(255, 255, 255, 0.7); }
+    ul.drop-menu li:hover {
+      background: #606060; }
+    ul.drop-menu li:last-child {
+      border-radius: 0px 0px 5px 5px; }
+
+ul.drop-menu li {
+  display: none; }
+
+li:hover > ul.drop-menu li {
+  display: block; }
 
 /*
 KEYRAMES EXAMPLE

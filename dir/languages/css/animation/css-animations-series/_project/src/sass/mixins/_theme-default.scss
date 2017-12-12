@@ -8,10 +8,10 @@
 }
 
 @mixin ul-default {
-  display: flex;
-  list-style: none;
   background-color: aliceblue;
+  display: flex;
   height: 150px;
+  list-style: none;
   margin-bottom: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;

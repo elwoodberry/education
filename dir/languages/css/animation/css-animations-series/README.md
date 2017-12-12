@@ -6,12 +6,14 @@
 1. [Transitions](https://youtu.be/8kK-cA99SA0) (27:29)
 1. [Animation and Keyframes](https://youtu.be/f1WMjDx4snI) (23:52)
 1. [Animating the Moments](https://youtu.be/GeuNIOuIEDA) (18:13)
+1. [Drop Down Menus](https://youtu.be/AIdslaUj9wg) (22:47)
 ---
 
 ## Table Of Contents
 1. [Transitions](#transitions)
 1. [Animation and Keyframes](#animation-and-keyframes)
 1. [Animating the Moments](#animating-the-moments)
+1. [Drop Down Menus](drop-down-menus)
 ---
 
 
@@ -365,3 +367,25 @@ Building a backend where information has to be processed(pulling a report, submi
 1. Letting the user know that things are running smoothing without errors.
 1. Things are working, something is being processed.
 1. Google voice, when you speak, balls start jumping... is a system status. Visual feedback
+
+
+---
+---
+---
+
+## Drop Down Menus
+
+Markup (jade)
+```
+nav: ul
+  - var i = 0;
+    while (i++ < 4)
+      li style #{i}
+        ul(class="drop-menu menu-#{i}")
+          li uno
+          li dos
+          li tres
+          li cuatro
+          li cinco
+          li seis
+```
