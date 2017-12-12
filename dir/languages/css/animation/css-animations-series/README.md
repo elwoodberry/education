@@ -389,3 +389,97 @@ nav: ul
           li cinco
           li seis
 ```
+
+CSS
+```
+// Structure
+nav {
+  padding: 50px 0px;
+  text-align: center;
+
+  > ul {
+    @include ul-default;
+    height: 65px;
+    border-radius: 2px;
+
+    > li {
+      @include li-default;
+      border: 2px #ffffff solid;
+      height: 65px;
+      line-height: 65px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: rgba(0,0,0,0.7);
+      cursor: pointer;
+
+      &:hover {
+        background: #D5D5D5;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+
+  li {
+    background: #666;
+    color: rgba(255,255,255,0.7);
+
+    &:hover {
+      background: #606060;
+    }
+
+    &:last-child {
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+// Default Trigger
+ul.drop-menu li {
+  display: none; // Hide
+}
+
+
+li:hover > ul.drop-menu li {
+  display: block;
+}
+
+```
+### Menu 1
+
+CSS (scss)
+```
+li:hover > ul.drop-menu.menu-1 li {
+  opacity: 0;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      @include animation-default(menu1, 300ms * $i, ease-in-out, (150ms * $i) - 300, null, null, forwards, null);
+    }
+  }
+
+}
+```
+
+Keyframes
+```
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+```
+### Menu 2

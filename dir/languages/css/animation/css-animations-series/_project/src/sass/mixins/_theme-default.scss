@@ -85,3 +85,9 @@
   -o-animation-fill-mode: $fill;
   -o-animation-play-state: $state;
 }
+
+@mixin footer {
+  background-color: #564343;
+  color: #FFFFFF;
+  padding: 10px 0;
+}

@@ -1,0 +1,20 @@
+#footer.fluid-container
+  .container
+
+    h1 Footer
+
+    - var i = 0;
+      while (i++ < 5)
+        .test
+
+    footer: ul
+      - var i = 0;
+        while (i++ < 4)
+          li style #{i}
+            ul(class="sub-menu footer-menu-#{i}")
+              li uno
+              li dos
+              li tres
+              li cuatro
+              li cinco
+              li seis

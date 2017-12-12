@@ -46,6 +46,40 @@ each user in users.length ? users : ['There are no users.']
 ```
 
 
+## Common Patterns
+
+### A variable as an attribute
+Problem
+```
+nav: ul
+  - var i = 0;
+    while (i++ < 4)
+      li style #{i}
+        ul(class="drop-menu menu-#{i}")
+          li uno
+          li dos
+          li tres
+          li cuatro
+          li cinco
+          li seis
+```
+Solution
+```
+nav: ul
+  - var i = 0;
+    while (i++ < 4)
+      li style #{i}
+        ul(class="drop-menu menu-"+i)
+          li uno
+          li dos
+          li tres
+          li cuatro
+          li cinco
+          li seis
+```
+
+
+
 ## References
 1. [Jade](http://jade-lang.com/)
 1. [NPM: Jade](https://www.npmjs.com/package/jade)

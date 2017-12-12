@@ -5,3 +5,17 @@ h1 {
   color: $color ;
   @include h1-defaults;
 }
+
+#footer {
+  @include footer;
+}
+
+@for $i from 1 through 15 {
+  .test {
+    &:nth-child(#{$i}) {
+      &:after {
+        content: "#{$i}"
+      }
+    }
+  }
+}

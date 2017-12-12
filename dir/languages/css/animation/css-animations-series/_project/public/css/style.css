@@ -8,6 +8,56 @@ h1 {
   width: 100%;
   z-index: 100; }
 
+#footer {
+  background-color: #564343;
+  color: #FFFFFF;
+  padding: 10px 0; }
+
+.test:nth-child(1):after {
+  content: "1"; }
+
+.test:nth-child(2):after {
+  content: "2"; }
+
+.test:nth-child(3):after {
+  content: "3"; }
+
+.test:nth-child(4):after {
+  content: "4"; }
+
+.test:nth-child(5):after {
+  content: "5"; }
+
+.test:nth-child(6):after {
+  content: "6"; }
+
+.test:nth-child(7):after {
+  content: "7"; }
+
+.test:nth-child(8):after {
+  content: "8"; }
+
+.test:nth-child(9):after {
+  content: "9"; }
+
+.test:nth-child(10):after {
+  content: "10"; }
+
+.test:nth-child(11):after {
+  content: "11"; }
+
+.test:nth-child(12):after {
+  content: "12"; }
+
+.test:nth-child(13):after {
+  content: "13"; }
+
+.test:nth-child(14):after {
+  content: "14"; }
+
+.test:nth-child(15):after {
+  content: "15"; }
+
 /*
 TRANSITIONS
 */
@@ -266,6 +316,159 @@ ul.drop-menu li {
 li:hover > ul.drop-menu li {
   display: block; }
 
+li:hover > ul.drop-menu.menu-1 li {
+  opacity: 0; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: -150ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 300ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: -150ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 300ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: -150ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 300ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: -150ms;
+    -o-animation-fill-mode: forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 600ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 600ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 600ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 0ms;
+    -o-animation-fill-mode: forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 900ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 900ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 150ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 900ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 150ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 900ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 150ms;
+    -o-animation-fill-mode: forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 1200ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 1200ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 300ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 1200ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 300ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 1200ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 300ms;
+    -o-animation-fill-mode: forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 450ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 1500ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 450ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 1500ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 450ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 1500ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 450ms;
+    -o-animation-fill-mode: forwards; }
+  li:hover > ul.drop-menu.menu-1 li:nth-child(6) {
+    /* Default */
+    animation-name: menu1;
+    animation-duration: 1800ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+    /* WebKit */
+    -webkit-animation-name: menu1;
+    -webkit-animation-duration: 1800ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 600ms;
+    -webkit-animation-fill-mode: forwards;
+    /* Mozilla */
+    -moz-animation-name: menu1;
+    -moz-animation-duration: 1800ms;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 600ms;
+    -moz-animation-fill-mode: forwards;
+    /* Opera */
+    -o-animation-name: menu1;
+    -o-animation-duration: 1800ms;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-delay: 600ms;
+    -o-animation-fill-mode: forwards; }
+
 /*
 KEYRAMES EXAMPLE
 */
@@ -310,3 +513,11 @@ KEYRAMES EXAMPLE
   100% {
     background-color: #a8ffd0;
     height: 130px; } }
+
+@keyframes menu1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }

@@ -1,8 +1,4 @@
-
-
-
 // Structure
-
 nav {
   padding: 50px 0px;
   text-align: center;
@@ -60,4 +56,16 @@ ul.drop-menu li {
 
 li:hover > ul.drop-menu li {
   display: block;
+}
+
+// MENU 1
+li:hover > ul.drop-menu.menu-1 li {
+  opacity: 0;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      @include animation-default(menu1, 300ms * $i, ease-in-out, (150ms * $i) - 300, null, null, forwards, null);
+    }
+  }
+
 }
