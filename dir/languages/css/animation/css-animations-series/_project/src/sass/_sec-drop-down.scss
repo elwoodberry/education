@@ -69,3 +69,16 @@ li:hover > ul.drop-menu.menu-1 li {
   }
 
 }
+
+// MENU 2
+li:hover > ul.drop-menu.menu-2 li {
+  opacity: 0;
+  transform-origin: top center;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      @include animation-default(menu2, 300ms * $i, ease-in-out, (150ms * $i) - 300, null, null, forwards, null);
+    }
+  }
+
+}
