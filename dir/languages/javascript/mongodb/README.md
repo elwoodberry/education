@@ -19,3 +19,5 @@ See [MongoDB Atlas](https://www.mongodb.com/cloud)
 1. [MongoDB](https://www.mongodb.com/)
 1. [Docs | MongoDB](https://docs.mongodb.com)
 1. [Wiki | MongoDB](https://en.wikipedia.org/wiki/MongoDB)
+
+1. [mongoDB Cheatsheet](http://tech.joshegan.com/posts/yr2017/mongodb-cheatsheet)

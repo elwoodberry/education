@@ -16,3 +16,12 @@
     $ sudo mkdir -p /data/db
     ```
 1. Set permissions for the data directory.
+
+
+## Common command line
+
+Delete the database
+```
+use mydb;
+> db.dropDatabase();
+```

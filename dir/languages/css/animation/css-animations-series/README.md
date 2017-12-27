@@ -7,6 +7,8 @@
 1. [Animation and Keyframes](https://youtu.be/f1WMjDx4snI) (23:52)
 1. [Animating the Moments](https://youtu.be/GeuNIOuIEDA) (18:13)
 1. [Drop Down Menus](https://youtu.be/AIdslaUj9wg) (22:47)
+1. [Notifications, Alerts, Menus](https://youtu.be/evaN55xnXG4) (39:12)
+
 ---
 
 ## Table Of Contents
@@ -14,6 +16,7 @@
 1. [Animation and Keyframes](#animation-and-keyframes)
 1. [Animating the Moments](#animating-the-moments)
 1. [Drop Down Menus](#drop-down-menus)
+1. [Notifications, Alerts, Menus](#notifications-alerts-menus)
 ---
 
 
@@ -483,3 +486,10 @@ Keyframes
 }
 ```
 ### Menu 2
+
+
+
+---
+---
+---
+## Notifications, Alerts, Menus
