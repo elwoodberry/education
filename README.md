@@ -1,15 +1,5 @@
 ![Layout](https://raw.github.com/elwoodberry/education/master/_img/headers/890x400__header_education.png)
 
-
-
-
-
-
-
-
-
-
-
 ## Table Of Contents
 1. [Cloud Computing](#-cloud-computing)
 1. [Languages](#languages)
@@ -25,14 +15,6 @@
     1. [Express Scaffolds](#express-scaffolds)
 ---
 
-
-
-
-
-
-
-
-
 # ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/cloud.png) Cloud Computing
 
 ## Platform As A Service (PaaS)
@@ -45,17 +27,8 @@
 ### Twillio
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Twilio](dir/cloud-computing/twilio)
 
-
-
-
-
-
-
-
-
 # ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/code.png) Languages
 
----
 ## Cascading Style Sheets
 ### Animation
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [CSS Animations Series](dir/languages/css/animation/css-animations-series) by Dev Tips
@@ -72,22 +45,10 @@
 #### SASS
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [SASS Tutorial](dir/languages/css/preprocessor/sass/sass-tutorial) by Derek Banas
 
-
-
-
-
-
-
 ---
 ## Hyper Text Markup Language (HTML5)
 ### Canvas
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [HTML5 Canvas Tutorial for Beginners](dir/languages/html5/canvas/canvas-tutorial-for-beginners) by Chris Courses
-
-
-
-
-
-
 
 ---
 ## JavaScript
@@ -137,6 +98,10 @@
 ### Libraries  
 #### jQuery
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Try jQuery](dir/languages/javascript/jquery/try-jquery) by CodeSchool
+
+### REST API
+#### Fetch
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Using FETCH](dir/languages/javascript/rest/api-code-along-with-fetch) by Chris
 
 ### Servers
 #### Node
