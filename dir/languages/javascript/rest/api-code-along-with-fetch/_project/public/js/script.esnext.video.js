@@ -7,6 +7,8 @@ const fetchOption = {
   mode: 'cors'
 }
 
+const flatten = (a,b) => [...a,...b];
+
 $('form').on('submit', function(e){
   e.preventDefault();
   let types = $('input[type=text]').val().replace(/\s/g, '');
@@ -17,22 +19,52 @@ $('form').on('submit', function(e){
 
   getPromiseData(trainerTypesCalls)
     .then(result => {
-
-      // PASSING TO FUNCTION (15:47)
-      // console.log(result);
       getDoubleDamagePokemon(result);
     });
 });
 
 
-function getDoubleDamagePokemon(pokemonTypes){
+function buildTeam(pokemons){
+  let team = [];
+  pokemons = pokemons.map( pokemon => {
+    return pokemon.pokemon;
+  }).reduce(flatten, [])
+  .map( pokemon => pokemon.pokemon );
 
-  // Using the map function to return the double damaged array
-  pokemonTypes = pokemonTypes.map( types => {
-    return type.damage_relations.double_damage_from
+  for(let i = 0; i < 6; i++){
+    // Call 'getRandomPokemon'
+    team.push( getRandomPokemon(pokemons) );
+  }
+
+  team = team.map(pokemon => {
+    return fetch(pokemon.url, fetchOption);
   });
 
-  console.log(pokemonTypes)
+  getPromiseData(team)
+    .then(pokemonData => {
+      console.log(pokemonData);
+      displayPokemon(pokemonData)
+    });
+}
+
+function getRandomPokemon(pokemonArray){
+  return pokemonArray[ Math.floor(Math.random() * pokemonArray.length) ];
+}
+
+function getDoubleDamagePokemon(pokemonTypes){
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  })
+  .reduce(flatten, [])
+  .map( type => {
+      return fetch(type.url, fetchOption)
+  });
+
+  getPromiseData(pokemonTypes)
+    .then(results => {
+      buildTeam(results);
+    });
+
 }
 
 

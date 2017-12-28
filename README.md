@@ -101,7 +101,7 @@
 
 ### REST API
 #### Fetch
-1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Using FETCH](dir/languages/javascript/rest/api-code-along-with-fetch) by Chris
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/warning.png) [Using FETCH](dir/languages/javascript/rest/api-code-along-with-fetch) by Ryan Christiani
 
 ### Servers
 #### Node

@@ -1,7 +1,27 @@
-Let's Learn ES6 - API Code Along with Fetch
 
+# Let's Learn ES6 - API Code Along with Fetch  
+**Author**: [Ryan Christiani](https://www.youtube.com/user/Mrgexal/feed)    
+**URL**: [Video Tutorial](https://youtu.be/SdBs0CX9MFg) (22:53)  
+**Donate to Author**: [Patreon](https://www.patreon.com/traversymedia)  
 
-API
+## Table Of Content
+1. [The API](#)
+1. [Getting Started](#)
+1. [HTML (pug)](#html-pug)
+1. [MAP](#)
+1. [FETCH](#)
+
+1. [PROMISE](#)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
+
+---
+---
+---
+
+## The API
 [pokeapi.co](https://pokeapi.co/)
 
 
@@ -145,3 +165,107 @@ function getPromiseData(promisesArray){
   });
 }
 ```
+
+## getDoubleDamagePokemon FUNCTION
+Passing the data results along to the 'getDoubleDamagePokemon' function.  
+
+Calling the new function in the form submit.
+```
+$('form').on('submit', function(e){
+  ...
+
+  getPromiseData(trainerTypesCalls)
+    .then(result => {
+      getDoubleDamagePokemon(result);
+    });
+});
+```
+Defining the new function.
+```
+function getDoubleDamagePokemon(pokemonTypes){
+
+});
+```
+Return an array of the 'damage' Types  
+**Problem**  
+This returns an array of arrays.  
+We want an array of all the objects.  
+```
+function getDoubleDamagePokemon(pokemonTypes){
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  });
+});
+```
+
+## REDUCE
+Using a technique called 'flattening' to flatten the array of arrays down to one array.  
+
+### Learn More About The Reduce Method
+The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.  
+1. [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+
+Chain along 'reduce()' method.  
+```
+function getDoubleDamagePokemon(pokemonTypes){
+
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  })
+  .reduce((a,b) => [...a,...b], []);
+
+}
+```
+
+Store the function in a constant because we will use this over and over again.
+```
+const flatten = a,b) => [...a,...b];
+```
+
+Using the constant
+```
+function getDoubleDamagePokemon(pokemonTypes){
+
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  })
+  .reduce(flatten, []);
+
+}
+```
+
+### Using MAP method again.
+Chain on a map method.
+```
+function getDoubleDamagePokemon(pokemonTypes){
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  })
+  .reduce(flatten, [])
+  .map( type => {
+      return fetch(type.url, fetchOption)
+  });
+
+}
+```
+Call the 'getPromiseData' function using the 'pokemonTypes' as the argument's value.
+```
+function getDoubleDamagePokemon(pokemonTypes){
+  pokemonTypes = pokemonTypes.map( types => {
+    return types.damage_relations.double_damage_from
+  })
+  .reduce(flatten, [])
+  .map( type => {
+      return fetch(type.url, fetchOption)
+  });
+
+  getPromiseData(pokemonTypes)
+    .then(results => {
+      console.log(results);
+    });
+}
+```
+
+## buildTeam FUNCTION
+Passing the data results along to the 'buildTeam' function.  
