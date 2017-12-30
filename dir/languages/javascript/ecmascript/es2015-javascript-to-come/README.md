@@ -205,3 +205,62 @@ let candleId = candles.find(candle) => {
 };
 ```
 ### Challenges
+
+#### 4.3 De-Structuring and Rest Parameters
+Complete the code so that it assigns the first element of the array to the variable first, and the second and third elements of the array to a single variable called remainingUsers. Remember to use the rest parameter syntax from inside the array de-structuring assignment.
+**ORIGINAL CODE**
+```
+let = ["Sam", "Tyler", "Brook"];
+addActiveUsers(first, remainingUsers);
+```
+**SOLUTION**
+```
+let [first, ...remainingUsers] = ["Sam", "Tyler", "Brook"];
+addActiveUsers(first, remainingUsers);
+```
+
+#### 4.4 De-Structuring From Return Values
+Add a return value for the buildTopicInfo() function that will make the rest of the code function correctly.
+**ORIGINAL CODE**
+```
+function buildTopicInfo(topic){
+  let title = `<h1>${topic.title}</h1>`;
+  let author = `<small>${topic.author}<small>`;
+}
+
+let topic = getCurrentTopic();
+let [topicTitle, topicAuthor] = buildTopicInfo(topic);
+```
+**SOLUTION**
+```
+function buildTopicInfo(topic){
+  let title = `<h1>${topic.title}</h1>`;
+  let author = `<small>${topic.author}<small>`;
+
+  return [title, author];
+}
+
+let topic = getCurrentTopic();
+let [topicTitle, topicAuthor] = buildTopicInfo(topic);
+```
+
+#### 4.5 The for...of Loop
+Complete the following code using the new for… of loop. For each element in the activeUsers array, pass the current user name as the second argument to the notifyTopicReply() function.
+**ORIGINAL CODE**
+```
+let topicId = currentTopic();
+let activeUsers = ["Sam", "Tyler", "Brook"];
+
+for(  ){
+  notifyTopicReply(topicId,  );
+}
+```
+**SOLUTION**
+```
+let topicId = currentTopic();
+let activeUsers = ["Sam", "Tyler", "Brook"];
+
+for(let activeUser of activeUsers){
+  notifyTopicReply(topicId, activeUser);
+}
+```
