@@ -109,6 +109,7 @@
 
 ### Standards
 #### ECMAScript 2015+
+1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [ES2015 JavaScript To Come](dir/languages/javascript/ecmascript/es2015-javascript-to-come) by Code School
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [ECMAScript 6 Tutorial](dir/languages/javascript/ecmascript/ecmascript-6-tutorial) by Derek Banas
 1. ![icon](https://raw.github.com/elwoodberry/education/master/_img/icons/checkmark.png) [Compile ES6 With Babel](dir/languages/javascript/ecmascript/compile-es6-with-babel) by Traversy Media
 
