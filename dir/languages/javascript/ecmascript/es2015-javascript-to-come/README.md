@@ -1,6 +1,17 @@
 # ES2015 - JavaScript To Come
 
 
+## Table Of Contents
+1. [Arrays](#arrays)
+    1. [Reading values with Array De-Structuring](#reading-values-with-array-de-structuring)
+    1. [Values can be discarded](#values-can-be-discarded)
+    1. [Combining De-Structuring With Rest Params](#combining-de-structuring-with-rest-params)
+    1. [De-Structuring Arrays From Return Values](#de-structuring-arrays-from-return-values)
+    1. [Using for...of to loop over arrays](#using-forof-to-loop-over-arrays)
+    1. [Limitations of for...of and objects](#limitations-of-forof-and-objects)
+    1. [Finding An Element In An Array](#finding-an-element-in-an-array)
+    1. [Challenges](#)
+
 ---
 ---
 ---
@@ -193,3 +204,4 @@ let candleId = candles.find(candle) => {
 	return user.candleId;
 };
 ```
+### Challenges
