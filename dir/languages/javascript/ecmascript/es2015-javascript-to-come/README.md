@@ -39,7 +39,7 @@ let candles = [
 ```
 **RETURNS**  
 ```
-2017-05-may-d20-w20-1m-211", 2017-05-may-d20-w20-1m-212", 2017-05-may-d20-w20-1m-213
+2017-05-may-d20-w20-1m-211 2017-05-may-d20-w20-1m-212 2017-05-may-d20-w20-1m-213
 ```
 This works but it's more code than we actually need. If we add more candles to the array. If we add more candles to the array we will have to remember their exact index number to read the value. This doesn't scale well at all.
 ```

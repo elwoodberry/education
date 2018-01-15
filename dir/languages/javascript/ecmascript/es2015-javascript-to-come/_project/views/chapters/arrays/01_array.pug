@@ -4,13 +4,42 @@ block content
   p Assigning From Array to Local Variables
   We typically access elements by their index, but doing so, for more than just a couple of elements can quickly turn into a repetitive task.
 
-  div(style='display: flex; padding: 10px; background-color: fuchsia;')
+  ul(class="nav nav-tabs" id="sec01Array" role="tablist")
 
-    blockquote(style='flex: 1; padding: 5px; background-color: lightcyan;')
+    li(class="nav-item")
+      a(class="nav-link active" id="sec01-code-tab" data-toggle="tab" href="#sec01-code" role="tab" aria-controls="code" aria-selected="true") Code
+
+    li(class="nav-item")
+      a(class="nav-link" id="sec01-display-tab" data-toggle="tab" href="#sec01-display" role="tab" aria-controls="display" aria-selected="false") Display
+
+  #sec01ArrayContent.tab-content
+
+    div( id="sec01-code" class="tab-pane fade show active" role="tabpanel" aria-labelledby="sec01-code-tab")
       pre
         code
-          <ul></ul>
+          let candles = [
+            br
+            span 2017-05-may-d20-w20-1m-211,
+            br
+            span 2017-05-may-d20-w20-1m-212,
+            br
+            span 2017-05-may-d20-w20-1m-213
+            br
+            span ];
+            br
 
+            br
+            span let a = candles[0];
+            br
+            span let b = candles[1];
+            br
+            span let c = candles[2];
+            br
 
-    div(style='flex: 1; padding: 5px; background-color: darkmagenta;')
-      h4 Display Here
+            br
+            span console.log(a, b, c);
+
+    div(id="sec01-display" class="tab-pane fade" role="tabpanel" aria-labelledby="sec01-display-tab")
+      span See Console For Output
+
+  hr

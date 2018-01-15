@@ -17,3 +17,15 @@ From your 'Manage Domains' dashboard
 1. In the Forward box, enter a URL or IP address in the field
 1. Click the Forward button
 1. Check that your domain is forwarded to the intended location
+
+## Custom Resource Records
+
+### Adding An 'A' Record  
+NAME   | TYPE   | TTL   | DATA   
+|:---   |:---   |:---   |:---  
+@   | A   | 1h  | 00.000.000.000
+
+### Adding An 'A' Record  
+NAME   | TYPE   | TTL   | DATA   
+|:---   |:---   |:---   |:---  
+www   | CNAME   | 1h  | domain

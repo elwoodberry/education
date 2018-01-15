@@ -1,0 +1,48 @@
+block content
+
+  h2 Array Destructuring
+  p Assigning From Array to Local Variables
+  We typically access elements by their index, but doing so, for more than just a couple of elements can quickly turn into a repetitive task.
+
+  ul(class="nav nav-tabs" id="sec02Destructuring" role="tablist")
+
+    li(class="nav-item")
+      a(class="nav-link active" id="sec02-code-tab" data-toggle="tab" href="#sec02-code" role="tab" aria-controls="code" aria-selected="true") Code
+
+    li(class="nav-item")
+      a(class="nav-link" id="sec02-display-tab" data-toggle="tab" href="#sec02-display" role="tab" aria-controls="display" aria-selected="false") Display
+
+  #sec02DestructuringContent.tab-content
+
+    div( id="sec02-code" class="tab-pane fade show active" role="tabpanel" aria-labelledby="sec02-code-tab")
+      pre
+        code
+
+          span let candles = [
+          br
+          span "2017-05-may-d20-w20-1m-211",
+          br
+          span "2017-05-may-d20-w20-1m-212",
+          br
+          span "2017-05-may-d20-w20-1m-213"
+          br
+          span ];
+
+          br
+          br
+
+          span let [a, b, c] = candles;
+
+          br
+          br
+
+          span console.log(a, b, c);
+
+
+
+
+
+    div(id="sec02-display" class="tab-pane fade" role="tabpanel" aria-labelledby="sec02-display-tab")
+      span See Console For Output
+
+  hr
