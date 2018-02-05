@@ -1,0 +1,149 @@
+/*
+Theme Name: Romeo Stack
+Theme URI: https://romeopower.com/
+Author: steveberry@romeopower.com
+Author URI: https://romeopower.com/
+Description: Guest check in form. Built exclusively for iPad.
+Version: 1.0
+License: Property of Romeo Power
+License URI: https://romeopower.com/
+Text Domain: stack
+Tags: stack, guest-check-in
+*/
+/* BASE */
+@keyframes leftChevron {
+  from {
+    transform: translateX(0px);
+    opacity: 0; }
+  to {
+    transform: translateX(-55px);
+    opacity: 1; } }
+
+@keyframes rightChevron {
+  from {
+    transform: translateX(0px);
+    opacity: 0; }
+  to {
+    transform: translateX(55px);
+    opacity: 1; } }
+
+.active {
+  opacity: 1 !important;
+  z-index: 1 !important; }
+
+.hideMe {
+  opacity: 0 !important;
+  z-index: -1 !important; }
+
+.slide {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  opacity: 1; }
+  .slide header {
+    height: 75px;
+    background-color: rgba(108, 117, 125, 0.1);
+    position: relative; }
+    .slide header #back-btn {
+      font-size: 38px;
+      position: absolute;
+      left: 40px;
+      top: 0; }
+  .slide .next-btn {
+    position: absolute;
+    right: 45px;
+    top: 12px;
+    font-size: 24px;
+    background-color: #ffc107;
+    border-color: #ffc107; }
+  .slide h1 {
+    font-weight: 100;
+    margin: 20px 0; }
+  .slide .visitor-type {
+    background-color: #FFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 30px; }
+    .slide .visitor-type i {
+      flex: 1;
+      font-size: 40px; }
+    .slide .visitor-type span {
+      flex: 1;
+      font-size: 30px;
+      font-weight: 100; }
+
+#sld-welcome {
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  background-image: url(img/background-img.jpg);
+  background-position: center;
+  background-size: cover; }
+  #sld-welcome #transparency {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(108, 117, 125, 0.4);
+    height: 100%;
+    z-index: 0; }
+
+#touch-start {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1; }
+  #touch-start h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100; }
+  #touch-start #left-arrow {
+    font-size: 85px;
+    position: absolute;
+    background-color: transparent;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    padding-top: 80px;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    right: 0;
+    animation-name: leftChevron; }
+  #touch-start #right-arrow {
+    font-size: 85px;
+    position: absolute;
+    background-color: transparent;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    padding-top: 80px;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    left: 0;
+    animation-name: rightChevron; }
+  #touch-start #brand {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transform: translateX(-45px); }
+  #touch-start span {
+    font-size: 50px;
+    font-weight: 100;
+    display: block;
+    text-align: center; }

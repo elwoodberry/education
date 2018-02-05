@@ -1,0 +1,20 @@
+@keyframes leftChevron {
+  from{
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-55px);
+    opacity: 1;
+  }
+}
+@keyframes rightChevron {
+  from{
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(55px);
+    opacity: 1;
+  }
+}

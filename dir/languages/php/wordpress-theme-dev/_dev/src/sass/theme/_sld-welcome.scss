@@ -1,0 +1,76 @@
+
+// MIXIN: LEFT/RIGHT CHEVRONS
+@mixin chevron {
+  font-size: 85px;
+  position: absolute;
+  background-color: transparent;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  padding-top: 80px;
+  text-align: center;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#sld-welcome {
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  background-image: url(img/background-img.jpg);
+  background-position: center;
+  background-size: cover;
+
+  #transparency {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(108, 117, 125, 0.4);
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+#touch-start {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+  }
+
+  #left-arrow {
+    @include chevron;
+    right: 0;
+    animation-name: leftChevron;
+  }
+  #right-arrow {
+    @include chevron;
+    left: 0;
+    animation-name: rightChevron;
+  }
+
+  #brand {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transform: translateX(-45px);
+  }
+
+  span {
+    font-size: 50px;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+  }
+
+}

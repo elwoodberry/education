@@ -1,0 +1,29 @@
+#sld-visitor-info.slide.hideMe
+
+  header
+    a(id='back-btn' class="btn btn-link" onclick="go('#sld-visitor-info','#sld-visitor-type')")
+      i(class="fa fa-arrow-left")
+
+    a(id='next-btn' class="btn btn-link" onclick="go('#sld-visitor-info','#sld-nda')") Next
+
+  .container
+    h1 Please Enter Your Information
+
+    form
+
+      .form-group
+        input(type="email" class="form-control" id="" placeholder="Email Address")
+
+      .form-group
+        .row
+          .col
+            input(type="text" class="form-control" placeholder="First name")
+
+          .col
+            input(type="text" class="form-control" placeholder="Last name")
+
+      .form-group
+        input(type="text" class="form-control" id="" placeholder="Phone Number")
+
+      .form-group
+        input(type="text" class="form-control" id="" placeholder="Company Name")

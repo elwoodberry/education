@@ -1,0 +1,41 @@
+@mixin transition-default {
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+// DURATIONS
+@mixin transition-duration-400 {
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+
+@mixin transition-duration-600 {
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+
+@mixin transition-duration-1000 {
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+}
+
+// DELAYS
+@mixin transition-delay-400 {
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+@mixin transition-delay-600 {
+  -webkit-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+
+@mixin transition-delay-1000 {
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+
+@mixin transition-delay-1600 {
+  -webkit-transition-delay: 1600ms;
+  transition-delay: 1600ms;
+}

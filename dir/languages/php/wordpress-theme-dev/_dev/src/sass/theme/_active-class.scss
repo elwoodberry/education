@@ -1,0 +1,14 @@
+
+// When the element possesses this class
+// It is visiabile. It is at the top of the stack.
+.active {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+// When you add this class
+// The element disappears
+.hideMe {
+  opacity: 0 !important;
+  z-index: -1 !important;
+}

@@ -1,0 +1,47 @@
+#sld-visitor-type.slide.hideMe
+
+  header
+    a(id='back-btn' class="btn btn-link" onclick="go('#sld-visitor-type','#sld-welcome')")
+      i(class="fa fa-arrow-left")
+
+    a(id='next-btn' class="btn btn-link" onclick="go('#sld-visitor-type','#sld-visitor-info')") Next
+
+  .container
+    h1 Welcome to Romeo Power!
+
+    .row
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-wrench")
+          span Contractor
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-users")
+          span Customer
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-truck")
+          span Delivery
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-user-plus")
+          span Guest
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-calendar")
+          span Interview
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-building")
+          span Supplier
+
+      .col-sm-4
+        .visitor-type(onclick="go('#sld-visitor-type','#sld-visitor-info')")
+          i(class="fa fa-question-circle")
+          span Other

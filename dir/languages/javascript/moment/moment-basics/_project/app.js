@@ -1,24 +1,32 @@
 let moment = require('moment');
 
 let date = '2017-01-18 00:00';
+
 let format = 'YYYY';
 
 let hour = moment(date).format('hh');
 
 let result = moment(date).format(format);
 
-console.log(result);
+// 01.29.2018
+// Verifiying the timestamp
+let dateV2 = '20171229 165700';
+let formatV2 = 'hh:mm';
+let resultV2 = moment(dateV2).format(formatV2);
+console.log(resultV2);
+
+// console.log(result);
 
 // SESSION
-console.log( "SESSION: " + checkSession(hour) );
+// console.log( "SESSION: " + checkSession(hour) );
 
 // TIME
 let time = moment('2017-01-18 00:00').format('hh:mm');
-console.log("TIME: " + time);
+// console.log("TIME: " + time);
 
 // WEEK
 let week = moment('2017-01-18 00:00').week();
-console.log("WEEK: " + week);
+// console.log("WEEK: " + week);
 
 
 
